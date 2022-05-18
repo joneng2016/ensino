@@ -25,7 +25,8 @@ Disponíve no GitHub - https://github.com/joneng2016/ensino/tree/master/laborato
 
 ## Bibliografia do Curso
 * Linux Device Drivers
-* 
+* Sistemas Operacionais Modernos - Tanenbaun
+* Referencia Completa de Linux 
 ## Sistemas Escolhidos
 
 Linux
