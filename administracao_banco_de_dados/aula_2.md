@@ -136,7 +136,7 @@ INSERT INTO
     ;
 
 SELECT * FROM person;
-'''
+```
 ### Exercício
 
 Crie um Script .sq com os seguintes objetivos
