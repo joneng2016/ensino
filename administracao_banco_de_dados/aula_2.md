@@ -1,4 +1,4 @@
-# Insert/Update
+# Insert
 
 ## Estrutura do Comando Insert
 
