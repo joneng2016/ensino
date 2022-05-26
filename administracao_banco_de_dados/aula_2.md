@@ -128,7 +128,7 @@ INSERT INTO
         'Preto',
         '1971-03-01 10:15',
         'Rua Machado de Assis',
-        'Rio de Janeiro'
+        'Rio de Janeiro',
         'Rio de Janeiro',
         'Brasil',
         810025
