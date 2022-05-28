@@ -1,32 +1,13 @@
-# Constraints e Foreign Key
-
-# Constraints
-
-São restrições (tradução de constraints) que são adicionadas na tabela. Essas são:
-
-* NOT NULL
-* UNIQUE
-* PRIMARY KEY
-* FOREIGN KEY
-* CHECK
-* DEFAULT
-
-
-
-## NOT NULL
-
-```
 CREATE DATABASE IF NOT EXISTS aula5;
 
 USE aula5;
 
-DROP TABLE IF NOT EXISTS aula5tbl;
+DROP TABLE aula5tbl;
 
 CREATE TABLE IF NOT EXISTS aula5tbl (
     nome           VARCHAR(100),
     eu_sou_notnull VARCHAR(100) NOT NULL
 );
-
 
 SELECT 'NOT NULL' as '';
 
@@ -39,13 +20,6 @@ SELECT * FROM aula5tbl;
 
 
 
-SELECT 'UNIQUE' as '';
-
-```
-
-## UNIQUE
-
-```
 SELECT 'UNIQUE' as '';
 
 ALTER TABLE 
@@ -61,11 +35,9 @@ INSERT INTO aula5tbl
 VALUES
     ('only not null', 'sou-unico'),
     ('only not null', 'sou-unico');
-```
 
-## PRIMARY KEY - FOREIGN KEY
 
-```
+
 SELECT 'PRIMARY KEY - FOREIGN KEY' as '';
 
 DROP TABLE IF tempo;
@@ -77,6 +49,7 @@ CREATE TABLE IF NOT EXISTS tempo (
 
 DESCRIBE tempo;
 
+
 INSERT INTO tempo 
     (nome)
 VALUES
@@ -84,12 +57,10 @@ VALUES
     ('nublado'),
     ('chuva');
 
+
 select * from tempo;
-```
 
 
-
-```
 DROP TABLE IF EXISTS cidade;
 
 CREATE TABLE IF NOT EXISTS cidade (
@@ -111,10 +82,8 @@ FROM
   INFORMATION_SCHEMA.KEY_COLUMN_USAGE
 WHERE
   REFERENCED_TABLE_NAME = 'tempo';
-```
 
 
-```
 INSERT INTO 
     cidade
     (nome, temperatura, id_tempo)
@@ -126,10 +95,8 @@ VALUES
     ('Fortaleza', 35.2, 1);
 
 SELECT * FROM cidade;
-```
 
 
-```
 INSERT INTO 
     cidade
     (nome, temperatura, id_tempo)
@@ -138,17 +105,9 @@ VALUES
 
 
 SELECT * FROM cidade;
-```
 
-```
 DELETE FROM tempo where id_tempo = 2;
-```
 
-
-
-# CHECK
-
-```
 
 SELECT 'CHECK' as '';
 
@@ -175,4 +134,3 @@ VALUES
     ('Jony', 18, 'Curitiba');
     
 SELECT * FROM person;
-```
