@@ -128,3 +128,18 @@ DROP TABLE time_futebol;
 
 SHOW TABLES;
 ```
+
+
+
+## Exercício
+
+Crie uma tabela que contem os seguintes dados:
+
+*Nome ta tabela: bebidas*
+*Seguintes colunas: id_bebida, tipo, marca, data de insercao (sempre com a data do dia)*
+
+
+Faça a inserção de três bebidas a seu gosto (ex. vodka, conhaque, cachaça)
+
+Adicione a seguinte coluna depois da "marca": cor por default tem que ser transparente.
+Remova a coluna marca
