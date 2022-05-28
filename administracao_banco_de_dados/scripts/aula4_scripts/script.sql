@@ -1,20 +1,3 @@
-# Alter Table
-
-É possível realizar alterações em tabejas já criadas. Diversas operações são possíveis, tais
-como a criação de uma nova coluna, adaptação de colunas já existente e remoção de colunas.
-
-Estrutura do do comando
-
-```
-ALTER TABLE 
-    [nome da tabela]
-ADD
-    [nome da coluna]
-```
-
-## Script de Criação da Tabela
-
-```
 DROP IF EXISTS aula_4;
 CREATE DATABASE IF NOT EXISTS aula_4 CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE aula_4;
@@ -62,12 +45,7 @@ VALUES
 
 SELECT * FROM time_futebol;
 
-```
 
-
-## Script de Insert Column
-
-```
 SELECT 'Alter table insert column' AS 'PRINT DADO';
 
 ALTER TABLE
@@ -77,11 +55,7 @@ ADD COLUMN ponto_campeonato INTEGER NOT NULL DEFAULT 0 AFTER gols,
 ADD COLUMN campeonato enum('brasileiro','libertadores','paranaense','paulista') NOT NULL DEFAULT 'brasileiro' AFTER gols;
 
 SELECT * FROM time_futebol;
-```
 
-
-## Script de Drop Column
-```
 SELECT 'Alter table DROP Column column' AS 'PRINT DADO';
 
 ALTER TABLE
@@ -90,12 +64,8 @@ DROP COLUMN observacao;
 
 DESCRIBE time_futebol;
 SELECT * FROM time_futebol;
-```
 
 
-## Script de Modifica Coluna
-
-```
 SELECT 'Modifica uma Coluna' AS 'PRINT DADO';
 
 UPDATE 
@@ -116,15 +86,8 @@ SET
     ponto_campeonato = 25.2;
 
 SELECT * FROM time_futebol;
-```
 
-
-
-## Remove a tabela
-
-```
 
 DROP TABLE time_futebol;
 
 SHOW TABLES;
-```
