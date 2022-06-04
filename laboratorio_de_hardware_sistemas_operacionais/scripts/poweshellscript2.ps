@@ -1,0 +1,35 @@
+echo "INÍCIO DO PROGRAMA";
+
+#declara as variávies principais
+$NOME_DO_PROGRAMA = "servidor-linux";
+$NOME_DO_PROGRAMA_EXECUCAO = ".\servidor-linux";
+$ADDRES_MY_PROGRAM = "/home/www/ensino/laboratorio_de_hardware_sistemas_operacionais/scripts/apoio_script2/" + $NOME_DO_PROGRAMA;
+$ADDRESS_CREATE_NEW_SOFTWARE = "/servers/server-http"
+
+echo $NOME_DO_PROGRAMA;
+
+cd ~;
+
+echo "ENDEREÇO SERVIDOR HTTP ARMAZENADO NESTA VARIÁVEL";
+echo  "$ADDRES_MY_PROGRAM";
+
+echo "Criando diretório no pelo endereço absoluto";
+
+mkdir -p $ADDRESS_CREATE_NEW_SOFTWARE;
+
+if (Test-Path -Path $ADDRESS_CREATE_NEW_SOFTWARE) {
+
+    echo "Executando cópia"
+
+    cp $ADDRES_MY_PROGRAM $ADDRESS_CREATE_NEW_SOFTWARE
+
+    echo "start no programa"
+
+    cd $ADDRESS_CREATE_NEW_SOFTWARE;
+
+    Invoke-Expression $NOME_DO_PROGRAMA_EXECUCAO;
+}
+else {
+    # Lança uma exception de que algum problema aconteceu
+    throw "Houve um problema ao criar o diretório"
+}
