@@ -122,7 +122,10 @@ INNER JOIN
 WHERE city.city = 'Curitiba';
 
 
-SELECT 'RIGHT --------------' AS '';
+SELECT 'RIGHT JOIN' AS '';
+
+SELECT 'Retorna todas as linhas da tabela à direita, mesmo se não houver nenhuma correspondência na
+tabela à direita' AS '';
 
 
 SELECT
