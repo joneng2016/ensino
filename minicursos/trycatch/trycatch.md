@@ -22,7 +22,7 @@ console.log('chegou até aqui')
 
 ```
 
-## Apresentando o problema 
+## Possíveis soluções 
 
 ### Tratativa 1
 
