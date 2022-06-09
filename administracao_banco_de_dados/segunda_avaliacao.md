@@ -79,13 +79,22 @@ Todos os registros precisam ser feitos da forma mais eficiente possível
 
 
 1 - Query traz o nome do cargo, o nome do usuário, o nome do produto - trazer todos.
+
 2 - Query traz o nome do cargo, o nome do usuário, o nome do produto - trazer para o nome de um produto específico.
+
 3 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consome, o telefone do cliente e a quantidade do produto em estoque - trazer todos.
-3 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para o nome de um cliente específico (pelo nome).
-4 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consome, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2.
-5 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com limite de 3 registros
-6 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pela quantidade de produtos sendo essa descendente.
-7 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pelo preço de compra (do maior para o menor).
+
+4 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para o nome de um cliente 
+específico (pelo nome).
+
+5 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consome, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de 
+clientes (veja in) pelo nome - adicione 2.
+
+6 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com limite de 3 registros
+
+7 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pela quantidade de produtos sendo essa descendente.
+
+8 - Query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pelo preço de compra (do maior para o menor).
  
  
 ## Conteúdos que serão avaliados e medidos.
