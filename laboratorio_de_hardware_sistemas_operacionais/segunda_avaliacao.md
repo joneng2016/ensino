@@ -27,3 +27,5 @@
 Arial 12
 Mínimo 4 páginas
 Máximo 8 paginas
+
+<strong>Entrega 01/07/2022 23:59</strong>
