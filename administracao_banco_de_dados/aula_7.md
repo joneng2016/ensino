@@ -210,3 +210,46 @@ WHERE
     customer.first_name IN ('DAVE','BOB','DARYL','MORRI')
 ;
 ```
+
+
+## Exercícios
+
+![alt text](./db.png)
+
+
+
+1 Traga todas as datas de locação da Barbara Jones (veja tabela customer, payment, rental)
+
+2 Dado exercício 1, limite o resultado em apenas 10.
+
+3 Busque todos os filmes que foram locados por MELISSA
+
+4 Busque todos os atores que foram assistidos por DEBORAH e por ANGELA 
+
+5 Busque todos os atores que foram assistidos por DEBORAH ou por ANGELA 
+
+6 Busque a quantidade de clientes que assistiu a categoria de filmes *Comedy*
+
+7 Busque os clientes que assistiram filmes japoneses
+
+8 Busque todos os filmes que foram assistidos pelos cidadãos de Brasilia
+
+9 Crie um banco de dados chamado Bar. Esse banco de dados deve representar as bebidas do bar e os seus respectivos consumidores.
+
+9.1 Na tabela de bebidas, registre vodka, conhaque e uisque
+
+9.2 Na tabela consumidores, registre João, Alexandre e Henrique
+
+9.3 Crie uma estrutura capaz de representar os seguintes consumos:
+* João consumiu vodka
+* João consumiu conhaque
+* Alexandre consumiu uisque
+* Alexandre consumiu vodka
+* Henrique consumiu vodka
+* Henrique consumiu uisque
+
+9.4 Crie uma query que trás todo consumo de João
+
+9.5 Crie uma query que trás todas Bebidas consumidas por Alexandre e Henrique
+
+9.6 Crie uma query que trás todas as Bebidas consumidas por João ou por Henrique
