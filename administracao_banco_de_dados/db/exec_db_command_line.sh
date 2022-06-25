@@ -1,0 +1,1 @@
+docker exec -it 058ec635955d mysql -u root -proot
