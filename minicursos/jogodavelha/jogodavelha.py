@@ -1,3 +1,4 @@
+import win_line as wl
 import pygame as pg
 import pandas as pd
 import math
@@ -25,7 +26,7 @@ click_on_of = 0
 click_position_x = -1
 click_position_y = -1
 
-X_or_0_turn = 'x'
+X_or_O_turn = 'x'
 
 end_game = 0
 
@@ -55,7 +56,18 @@ def draw_selected_cell(window, board_array):
             if board_array[nn][n] == 'o':
                 jogador_o(window, n, nn)
             else:
-                pass                
+                pass
+
+def board_array_data(board_array, X_or_O_turn, end_game, x,y):
+    if x < 3 and y < 3:
+        if X_or_O_turn == 'x' and board_array[y][x] == 'n' and x != -1 and end_game == 0:
+            board_array[y][x] = 'x'
+            X_or_O_turn = 'o'
+        if X_or_O_turn == 'y' and board_array[y][x] == 'n' and x != -1 and end_game == 0:
+            board_array[y][x] = 'x'
+            X_or_O_turn = 'o'
+
+    return board_array, X_or_O_turn
 
 while True:
     for event in pg.event.get():
@@ -69,12 +81,14 @@ while True:
 
 
     click = pg.mouse.get_pressed()
+
     # Jogo
     grade_do_tabuleiro(window)
     click_on_of, click_last_status, click_position_x, click_position_y = click_logic(click_on_of, click_last_status, click_position_x, click_position_y)
     draw_selected_cell(window, board_array)
-    # 19:24    
-    
+    board_array, X_or_O_turn = board_array_data(board_array, X_or_O_turn, end_game, click_position_x, click_position_y)
+    end_game, X_or_O_turn = wl.win_line(window, board_array, end_game, X_or_O_turn, pg)
+
     if click[0] == 1:
         click_last_status = 1
     else:
