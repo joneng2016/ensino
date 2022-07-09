@@ -60,7 +60,6 @@ def draw_selected_cell(window, board_array):
                 pass
 
 def board_array_data(board_array, X_or_O_turn, end_game, x,y):
-    print(X_or_O_turn)
     if x < 3 and y < 3:
         if X_or_O_turn == 'x' and board_array[y][x] == 'n' and x != -1 and end_game == 0:
             board_array[y][x] = 'x'
@@ -103,9 +102,8 @@ def jogador_x(window, x,y):
     pg.draw.line(window, vermelho, ((x * 200) + 180, (y * 200) + 30), ((x * 200) + 30,  (y * 200) + 180), 10)
 
 def jogador_o(window, x,y):
-    print('aaa')
-    pg.draw.circle(window, azul, ((x * 200) + 150,  (y * 200) + 150), 75)
-    pg.draw.circle(window, branco, ((x * 200) + 105,  (y * 200) + 150), 65)
+    pg.draw.circle(window, azul, ((x * 200) + 105,  (y * 200) + 105), 75)
+    pg.draw.circle(window, branco, ((x * 200) + 105,  (y * 200) + 105), 65)
 
 
 while True:
@@ -117,12 +115,10 @@ while True:
     mouse = pg.mouse.get_pos()
     mouse_position_x = mouse[0]
     mouse_position_y = mouse[1]
-
-
     click = pg.mouse.get_pressed()
 
     # Jogo
-    
+
     grade_do_tabuleiro(window)
     click_on_of, click_last_status, click_position_x, click_position_y = click_logic(click_on_of, click_last_status, click_position_x, click_position_y)
     draw_selected_cell(window, board_array)
