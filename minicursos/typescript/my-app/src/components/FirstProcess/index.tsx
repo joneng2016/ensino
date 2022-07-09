@@ -28,7 +28,7 @@ export default class FirstProcess extends React.Component<IFirstProcessProps,IFi
         }
     }
     
-    render() {
+    public render() {
         return <div>
                 <h3>Olá, {this.state.finalText}</h3>                
             </div>
