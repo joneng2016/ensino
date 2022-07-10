@@ -82,13 +82,6 @@ def main(pg, window, data_structure):
     window.blit(texto, (750, 110))
 
 # restart jogo
-    print(mouse_position_x > 700) 
-    print(mouse_position_x < 899) 
-    print(mouse_position_y > 100)
-    print(mouse_position_y < 162) 
-    print(click_last_status == 1) 
-    print(end_game == 1)
-
     if mouse_position_x > 700 and mouse_position_x < 899 and mouse_position_y > 100 and mouse_position_y < 162 and click_last_status == 1 and end_game == 1:
         print("1")
         board_array = [['n','n','n'],
