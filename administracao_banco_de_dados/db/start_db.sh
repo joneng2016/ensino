@@ -1,5 +1,5 @@
 echo 'Criando arquivo importante'
-# cp -r /home/www/ensino/administracao_banco_de_dados/sample/ /home/www/ensino/administracao_banco_de_dados/db/db
+cp -r /home/www/ensino/administracao_banco_de_dados/sample/ /home/www/ensino/administracao_banco_de_dados/db/db
 
 echo 'buildando imagem conforme dockerfile'
 docker build -t classdb .;
