@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <article>
+            <header>
+                <h3>Utilização da tag progress</h3>
+            </header>
+            <section>
+                <p>A tag progress é usada da seguinte maneira</p>
+                <span>
+                    0
+                </span>
+                <progress id="update-progress" value="5" max="100">                    
+                </progress>
+                <span>
+                    10000
+                </span>
+            </section>
+            <button onclick="updateValue()">Botão que atualiza a barra</button>
+        </article>
+        <article>
+            <head>
+                <hgroup>
+                    <h2>
+                        Estudar a tag <strong>Mark</strong>
+                    </h2>
+                </hgroup>                
+            </head>
+            <section>
+                <p>
+                    Some very <span style="background-color:red;">important</span> information provided
+                    here!
+                </p>
+            </section>
+        </article>
+        <article>
+            <header>
+                <hgroup>
+                    <h3>
+                        Verificando o uso da tag div
+                    </h3>
+                </hgroup>
+                <section>
+                    <p>Vamos ver o exemplo do uso da tag div</p>
+                    <div>
+                        <h2>
+                            Um capítulo dentro da div
+                        </h2>
+                        <p>
+                            Um parágrafo dentro da div
+                        </p>
+                    </div>
+                </section>
+            </header>
+        </article>
+    </body>
+    <script>
+        function updateValue() {
+            const value = document.getElementById("update-progress").attributes.value.value
+            document.getElementById("update-progress").attributes.value.value = parseInt(value) + 5
+        }
+    </script>
+</html>
