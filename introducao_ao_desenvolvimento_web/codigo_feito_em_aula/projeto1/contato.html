@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                font-family:Verdana, Geneva, Tahoma, sans-serif
+            }
+            
+            body header div ul {
+                background-color: #e8eded;
+                border-radius: 5px;
+                font-size: 12px;
+                padding: 3px;
+                cursor: pointer;
+            }
+
+            body header div ul li {
+                list-style-type: none;
+                display: inline;
+                margin-left: 20px;                
+            }
+
+            body header div ul li a {
+                text-decoration: none;
+                color: black;
+            }
+            body header div ul li a:hover {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="informacao.html">
+                            Informações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cardapio.html">
+                            Cardápio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html   ">
+                            Contato
+                        </a>    
+                    </li>
+                </ul>
+            </div>            
+        </header>
+        <article>
+            <div>
+                <h3>Contato</h3>
+            </div>
+            <div>
+                <form>
+                    <h4>Cadastre os seus dados</h4>
+                    
+                    <label>
+                        Nome
+                    </label>
+                    <input type="text" />
+
+                    <label>
+                        Sobrenome
+                    </label>
+                    <input type="text" />
+
+                    <label>
+                        Idade
+                    </label>
+                    <input type="number" min="0" max="150">
+
+                </form>
+            </div>
+        </article>
+    </body>
+</html>

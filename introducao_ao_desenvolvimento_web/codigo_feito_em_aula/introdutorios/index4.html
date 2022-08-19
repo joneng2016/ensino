@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <article>
+            <header>
+                <hgroup>
+                    <h2>
+                        Entendendo um pouco melhor o uso de <strong>div</strong>
+                    </h2>
+                </hgroup>
+            </header>
+        </article>
+    </body>
+    <script>
+        var htmlCode = document.getElementsByTagName('body')[0].innerHTML
+
+        var elements = [
+            'inline',		
+            'block',
+            'contents',
+            'flex',	
+            'grid',	
+            'inline-block', 
+            'inline-flex',
+            'inline-grid',
+            'inline-table',	
+            'list-item',	
+            'run-in',	
+            'table',
+            'table-caption'	,
+            'table-column-group',	
+            'table-header-group',
+            'table-footer-group',	
+            'table-row-group',	
+            'table-cell',	
+            'table-column',	
+            'table-row',	
+            'none',
+            'initial',	
+            'inherit'
+        ]
+        
+        elements.forEach(function (e){
+            htmlCode += newHtmlCode(e)
+        })
+
+        document.getElementsByTagName('body')[0].innerHTML = htmlCode 
+        
+        function newHtmlCode(typeDisplay) {
+            return `<h2>${typeDisplay}</h2><div style="display:${typeDisplay};"><div style="background-color: blue;"><h3 style="color: #fff;">Essa aqui é a div 1</h3></div><div style="background-color:red;; "><h3 style="color: #fff;">Essa aqui é a div 2</h3></div></div>`
+        }
+    </script>
+</html>
