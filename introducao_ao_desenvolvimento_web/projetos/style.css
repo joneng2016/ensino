@@ -1,0 +1,68 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body header div ul {
+    background-color: #e8eded;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+body header div ul li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 20px;                
+}
+
+body header div ul li a {
+    text-decoration: none;
+    color: black;
+}
+body header div ul li a:hover {
+    color: white;
+}
+
+body article div form input {
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+    padding: 5px;
+}
+
+body article div form input:focus {
+    border-bottom: 2px solid;
+    background-color: #e8eded;
+    outline: none;
+}
+
+
+body article div form div {
+    margin-top: 25px;
+    margin-left: 15px;
+    display: block;
+    width: 100%;
+}
+
+
+body article div form div div div{
+    display: inline;
+}
+
+body article div form select {
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+    padding: 5px;
+}
+
+body article div form select:focus {
+    border-bottom: 2px solid;
+    background-color: #e8eded;
+    outline: none;
+}
