@@ -52,6 +52,7 @@ body article div form div div div{
     display: inline;
 }
 
+
 body article div form select {
     border-radius: 5px;
     border-top: none;
@@ -65,4 +66,35 @@ body article div form select:focus {
     border-bottom: 2px solid;
     background-color: #e8eded;
     outline: none;
+}
+
+#idade_input {
+    width: 40px;
+}
+
+#checkbox-field {
+    max-width: 500px;
+}
+
+.observaion-position {
+    display: block;
+}
+
+.observaion-position label {
+    position:relative;
+    bottom:80px;
+}
+
+.observaion-position textarea {
+    position:relative;
+    top:15px;
+    right: 110px;
+}
+
+.button-type {
+    border: none;
+}
+
+.button-type:focus {
+    border: solid 1px;
 }

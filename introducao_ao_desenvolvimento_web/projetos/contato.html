@@ -45,22 +45,23 @@
                                 <label>
                                     Nome
                                 </label>
-                                <input type="text"/>
+                                <input type="text" placeholder="Digite o seu nome"/>
                             </div>
 
                             <div>
                                 <label>
                                     Sobrenome
                                 </label>
-                                <input type="text" />
+                                <input type="text" placeholder="Digite o seu sobrenome"/>
                             </div>
 
                             <div>
                                 <label>
                                     Idade
                                 </label>
-                                <input type="number" min="0" max="150">                                            
+                                <input type="number" id="idade_input" min="0" max="120">
                             </div>
+
                         </div>
                             
                         <div>
@@ -68,17 +69,119 @@
                                 <label>
                                     País
                                 </label>
-                            </div>
-                            <div>
+
                                 <select name="cars" id="cars">
                                     <option value="brasil">Brasil</option>
                                     <option value="argentina">Argentina</option>
                                     <option value="chile">Chile</option>
                                     <option value="Peru">Peru</option>
                                 </select>
-                            </div>                            
+                            </div>
+
+                            <div>
+                                <label>
+                                    Cidade
+                                </label>
+
+                                <select name="cars" id="cars">
+                                    <option value="brasil">Brasil</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="Peru">Peru</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label>
+                                    Cidade                                    
+                                </label>
+                                <input type="text" placeholder="cidade onde você mora">
+                            </div>
+
                         </div>
-                    </div>                        
+
+                        <div>
+
+                            <div>
+                                <fieldset id="checkbox-field">
+                                    <legend>Qual é o tipo de contrato</legend>
+    
+                                    <div>
+                                        <input type="radio" name="contracttype">
+                                        <label>dobrado</label>
+                                    </div>
+    
+                                    <div>
+                                        <input type="radio" name="contracttype">
+                                        <label>total</label>
+                                    </div>
+    
+                                    <div>
+                                        <input type="radio" name="contracttype" checked>
+                                        <label>parcial</label>
+                                    </div>
+    
+                                    <div>
+                                        <input type="radio" name="contracttype">
+                                        <label>não efeutuar o contrato</label>
+                                    </div>
+                                    
+                                </fieldset>
+                            </div>
+    
+                        </div>
+
+                        <div>
+                            <fieldset id="checkbox-field">
+                                <legend>Quais são seus interesses</legend>
+
+                                <div>
+                                    <input type="checkbox" checked>
+                                    <label>comida</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox">
+                                    <label>jogos</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" >
+                                    <label>passeio</label>
+                                </div>
+                                
+
+                                <div>
+                                    <input type="checkbox">
+                                    <label>entretenimento</label>
+                                </div>
+
+                            </fieldset>
+                        </div>
+
+                        <div>
+                            <div class="observaion-position">
+                                <label>Observações</label>
+                                
+                                <textarea
+                                    name="observations"
+                                    rows="5"
+                                    cols="33"
+                                >
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <input
+                                    class="button-type"
+                                    type="button"
+                                    value="Enviar o Formulário"
+                                >
+                            </div>
+                        </div>
+                    </div>
 
                 </form>
             </div>
