@@ -123,4 +123,28 @@ esperando (como a chegada de alguma entrada) acontece.
 
 ### Execução de Processos
 
-<li>Alguns dos processos executam programas que levam adiante comandos digitados pelo usuário... Outros processos são parte do sistema e lidam com tarefas como levar adiante solicitações para serviços de arquivos ou gerenciar os detalhes do funcionamento de um acionador de disco ou fita…</li>
+* Alguns dos processos executam programas que levam adiante comandos digitados pelo usuário... Outros processos são parte do sistema e lidam com tarefas como levar adiante solicitações para serviços de arquivos ou gerenciar os detalhes do funcionamento de um acionador de disco ou fita…
+* Por exemplo, no caso de ocorrer uma interrupção de disco: o sistema toma uma decisão para parar de executar o processo atual e executa o processo de disco, que foi bloqueado esperando por essa interrupção. 
+* Cada pessoa autorizada a usar um sistema possui uma UID (User IDentification — identificação do usuário), indicada pelo administrador do sistema. Todo processo iniciado tem a UID da pessoa que o iniciou. Um processo filho tem a mesma UID que o seu processo pai. Usuários podem ser membros de grupos, cada qual com uma GID (Group IDentification — identificação do grupo)
+* Uma UID, chamada de superusuário (em UNIX), ou Administrador (no Windows), tem um poder especial e pode passar por cima de muitas das regras de proteção.
+
+
+### Espaços de Endereçamento
+
+* Todo computador tem alguma memória principal que ele usa para armazenar programas em execução.
+* Em um sistema operacional muito simples, apenas um programa de cada vez está na memória.
+* Para executar um segundo programa, o primeiro tem de ser removido e o segundo colocado na memória.
+* Sistemas operacionais mais sofisticados permitem que múltiplos programas estejam na memória ao mesmo tempo.
+* Para evitar que interfiram entre si (e com o sistema operacional), algum tipo de mecanismo de proteção é necessário.
+* Embora esse mecanismo deva estar no hardware, ele é controlado pelo sistema operacional.
+* Para evitar que interfiram entre si, existe um gerenciamento e proteção da
+memória principal do computador.
+* Cada processo tem algum conjunto de endereços que ele pode usar,tipicamente indo de 0 até algum máximo.
+* No caso mais simples, a quantidade máxima de espaço de endereços que um processo tem é menor do que a memória principal.
+* Dessa maneira, um processo pode preencher todo o seu espaço de endereçamento e haverá espaço suficiente na memória principal para armazená-lo inteiramente.
+* No entanto, em muitos computadores os endereços são de 32 ou 64 bits, dando um espaço de endereçamento de 2<sup>32</sup> e 2<sup>64</sup>, respectivamente.
+* Na essência, o sistema operacional cria a abstração de um espaço de
+endereçamento como o conjunto de endereços ao qual um processo pode se
+referir.
+* O espaço de endereçamento é desacoplado da memória física da máquina e
+pode ser maior ou menor do que a memória física.
