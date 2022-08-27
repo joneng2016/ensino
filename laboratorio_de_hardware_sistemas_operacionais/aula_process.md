@@ -82,7 +82,7 @@ autofinalizar.
     </div>
     <div style="display:inline;width:40%;float:right;">
         <img src="imgs/estados.png" style="border-radius:20px;"/>
-    </div>    
+    </div>
 </div>
 
 
