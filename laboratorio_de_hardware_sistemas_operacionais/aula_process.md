@@ -42,7 +42,9 @@ processo, fora o conteúdo do seu próprio espaço de endereçamento, estão
 armazenadas em uma tabela do sistema operacional chamada de tabela de
 processos
 
-<img src="imgs/tabela.png" />
+<center>
+    <img src="imgs/tabela.png" width="600px;" />
+</center>
 
 ### Execução de Processos
 * As principais chamadas de sistema de gerenciamento de processos são as que
@@ -60,8 +62,11 @@ autofinalizar.
     <img src="imgs/processos.png" width="350px" />
 </center>
 
+
+### Estados
+
 <div style="display:inline;">
-    <div style="display:inline;width:60%;float:left;">
+    <div>
           <ul >
             <li> 
                 Processos relacionados que estão cooperando para finalizar alguma tarefa muitas vezes precisam comunicar-se entre si e sincronizar as atividades.
@@ -76,14 +81,46 @@ autofinalizar.
                 Individualmente, cada processo pode pegar o sinal, ignorá-lo, ou assumir a ação predefinida, que é ser morto pelo sinal.
             </li>
             <li>
-                Processos podem interagir entre si
+                Os processos também podem interagir entre si.
+            </li>
+            <li>
+                Um processo pode gerar alguma saída que outro processo usa como entrada
+            </li>
+            <li>
+                Em geral, há três estados nos quais um processo pode se encontrar:
             </li>
           </ul>
     </div>
-    <div style="display:inline;width:40%;float:right;">
-        <img src="imgs/estados.png" style="border-radius:20px;"/>
+    <div>
+        <center>
+            <img src="imgs/estados.png" width="340px" style="border-radius:20px;"/>
+        </center>            
     </div>
 </div>
 
+<h3><i>Estado em si</i></h3>
+
+* Em execução (realmente usando a CPU naquele instante).
+* Pronto (executável, temporariamente parado para deixar outro processo
+ser executado).
+* Bloqueado (incapaz de ser executado até que algum evento externo
+aconteça). O terceiro estado é fundamentalmente diferente dos dois primeiros, pois o
+processo não pode ser executado, mesmo que a CPU esteja ociosa e não tenha
+nada mais a fazer.
+
+<h3><i>Transição de estados</i></h3>
+
+* A <b>transição 1</b> ocorre quando o sistema operacional descobre que um processo
+não pode continuar agora. Em alguns sistemas o processo pode executar uma chamada de sistema, como
+em pause, para entrar em um estado bloqueado.
+* As <b>transições 2 e 3</b> são causadas pelo escalonador de processos, uma parte do sistema operacional, sem o processo nem saber a respeito delas. Escalonamento: decidir qual processo deve ser executado, quando e por quanto tempo
+* A <b>transição</b> 2 ocorre quando o escalonador decide que o processo em andamento foi executado por tempo suficiente, e é o momento de outro ter algum tempo de CPU. 
+* A <b>transição 3</b> ocorre quando todos os outros processos tiveram sua parcela justa e está na hora de o primeiro processo chegar à CPU para ser executado novamente.
+* A <b>transição 4</b> se verifica quando o evento externo pelo qual um processo estava
+esperando (como a chegada de alguma entrada) acontece.
+* As informações são salvas quando um processo é trocado do estado em execução para pronto ou bloqueado, são de maneira que ele possa ser reiniciado mais tarde como se nunca tivesse sido parado.
 
 
+### Execução de Processos
+
+<li>Alguns dos processos executam programas que levam adiante comandos digitados pelo usuário... Outros processos são parte do sistema e lidam com tarefas como levar adiante solicitações para serviços de arquivos ou gerenciar os detalhes do funcionamento de um acionador de disco ou fita…</li>
