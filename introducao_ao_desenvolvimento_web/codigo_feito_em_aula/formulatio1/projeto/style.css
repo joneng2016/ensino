@@ -35,6 +35,7 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 15px;
+    background-color: #e9eaf1;
 }
 
 .title-style {
@@ -53,7 +54,32 @@ body {
     border-radius: 13px;
     padding: 5px;
     margin-top: 15px;
-    position: absolute;
-    top: 284px;
-    left: 335px;
+    display: inline;
+}
+
+.personal-input {
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 17px;
+    border: 1px solid;
+}
+
+.footer-style {
+    background: #6493bbeb;
+    margin-top: 15px;
+    height: 400px;
+    color: #fff;
+}
+
+.footer-part-first {
+    height: 70%;
+}
+
+.footer-part-second {
+    height: 30%;
+}
+
+.footer-part-columns {
+    display: inline;
+    width: 25%;
 }
