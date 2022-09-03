@@ -16,6 +16,7 @@ Sua tarefa consiste em reproduzir essa tela no mais fiel possível usando HTML e
 
 A imagem de fundo pode ser encontrada no seguinte link
 
+https://github.com/joneng2016/ensino/blob/master/introducao_ao_desenvolvimento_web/primeira_avaliacao/img/praia.jpg
 
 Para adicionar a imagem no fundo de tal forma preencha todo o element (no caso, tag body), você pode usar o seguinte css:
 
