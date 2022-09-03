@@ -1,7 +1,7 @@
 # Primeira Avaliação
 
 
-## Consturção do Banco de Dados
+## Construção do Banco de Dados
 
 
 Criar um banco de dados que será utilizado por um sistema de registro de estoque - esse banco deve ter as seguintes tabelas
