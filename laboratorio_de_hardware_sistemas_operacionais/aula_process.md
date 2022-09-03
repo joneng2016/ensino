@@ -1,6 +1,6 @@
 # Aula 2 - Processos e Threads
 
-## Sistemas Operacionais (SO) - Processadores
+## Sistemas Operacionais (SO) - Processos
 
 * Um programa em execução
 * Em um sistema de multiprogramação a CPU muda de um processo para outro muito rapidamente (em ms).
@@ -148,3 +148,38 @@ endereçamento como o conjunto de endereços ao qual um processo pode se
 referir.
 * O espaço de endereçamento é desacoplado da memória física da máquina e
 pode ser maior ou menor do que a memória física.
+
+
+### Criação de Processos
+
+* Quatro eventos principais fazem com que os processos sejam criados:
+  * Inicialização do sistema
+  * Execução de uma chamada de sistema de criação de processo por um
+processo em execução.
+  * Solicitação de um usuário para criar um novo processo
+  * Início de uma tarefa em lote
+
+* **primeiro plano:** processos que interagem com usuários e realizam
+trabalho para eles.
+* **segundo plano:** têm alguma função específica; quando lidam com algumas atividades, como e-mail, páginas da web, notícias, impressão e assim por diante, são chamados de daemons 
+* Em sistemas interativos, os usuários podem começar um programa digitando um comando ou clicando duas vezes sobre um ícone. Cada uma dessas ações inicia um novo processo e executa nele o programa selecionado.
+
+
+### Término de Processos
+
+* A maioria dos processos termina por terem realizado o seu trabalho. Quando um compilador termina de traduzir o programa dado a ele, o compilador executa uma chamada para dizer ao sistema operacional que ele terminou.
+* Essa chamada é exit em UNIX e ExitProcess no Windows.
+* Saída normal (voluntária)
+* Erro fatal (involuntário)
+* Saída por erro (voluntária)
+* Morto por outro processo (involuntário)
+* Exemplos de erro de programa: executar uma instrução
+
+
+## Threads
+
+* São processos com espaço de endereçamento compartilhado (*processos leves*)
+* Os threads acrescentam a capacidade para entidades em paralelo compartilharem um espaço de endereçamento e todos os seus dados entre si.
+* Um segundo argumento para a existência dos threads é que como eles são mais leves do que os processos, eles são mais fáceis (mais rápidos) para criar e destruir do que os processos (criar um thread pode ser algo de 10 a 100 vezes mais rápido do que criar um processo).
+* Os processadores de texto (Word) precisam lidar com comandos de usuário  (inserção de texto pelo teclado, cliques de mouse), precisa dar a resposta correta para o comando, dentre outras funções, como o salvamento automático
+* Threads para um processo do Word poderiam, cada uma, cuidar de uma função: - de escutar a entrada do usuário (cliques e teclado) - prover a resposta - salvar automaticamente
