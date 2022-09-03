@@ -9,6 +9,8 @@ Vamos supor que você é um desenvolvedor frontend trabalhando em uma empresa. V
 
 Sua tarefa consiste em reproduzir essa tela no mais fiel possível usando HTML e CSS
 
+**Sempre que possível use a tage semântica apropriada - main, section, article, header, footer...**
+
 
 ## Orientações
 
