@@ -1,4 +1,4 @@
-# Segunda Avaliação
+# Primeira Avaliação
 
 
 ## Consturção do Banco de Dados
@@ -84,11 +84,6 @@ Todos os registros precisam ser feitos da forma mais eficiente possível
 3 - Com inner join, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pelo preço de compra (do maior para o menor).
  
 4 - Com left join, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pelo preço de compra (do maior para o menor).
-
-5 - Com right join, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pela quantidade de produtos sendo essa descendente.
-
-6 - Com outer join, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pela quantidade de produtos sendo essa descendente.
-
 
  
 ## Conteúdos que serão avaliados e medidos.
