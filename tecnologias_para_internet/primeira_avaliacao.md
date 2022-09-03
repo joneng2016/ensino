@@ -8,6 +8,31 @@
 * A api deverá funcionar sobre o seguinte banco de dados - *Anexo 1*
 * Essa api deve conter as seguintes rotas
 
+Talvez você sinta uma certa dificuldade no que tange ao banco de dados. Para isso, você pode verificar como essa situação foi resolvida no serviço que está sendo desenvolvido em sala de aula. A seguinte classe foi montada:
+
+https://github.com/joneng2016/framework-senac022022/blob/master/app/FrameworkTools/Database/DatabaseConnection.php
+
+Ela foi posicionada conforme o namespace indica: app\FrameworkTools\Database\DatabaseConnection.php
+
+
+Para exemplificar o uso da mesma, eu criei uma controller, que é chamada da seguinte forma no arquivo de rotas
+
+https://github.com/joneng2016/framework-senac022022/blob/master/app/FrameworkTools/Implementations/Route/RouteProcess.php
+
+
+O código da controller, mostrado logo a segui, mostra exatamente como podemos podemos fazer uma query ao banco de dados: 
+
+https://github.com/joneng2016/framework-senac022022/blob/master/app/Controllers/TrainQueryController.php
+
+
+No caso desse exemplo, usei a seguinte tabela:
+
+https://github.com/joneng2016/framework-senac022022/blob/master/sql/query1.sql
+
+
+
+Não esqueça que seu banco de dados precisa estar ativo (ir no xampp e ativar)
+
 ```
 GET /car  
 ```
