@@ -40,13 +40,13 @@ retorna todos os carros
 
 
 ```
-GET /car?idCar=2
+GET /car/id-by-car?idCar=2
 ```
 retorna os carros com determinado id (o valor do id é só um exemplo)
 
 
 ```
-GET /car?nameCar=civic
+GET /car/name-by-car?nameCar=civic
 ```
 
 retorna todos os carros com determinado *nameCar* (o valor do *nameCar* é só um exemplo)
@@ -59,21 +59,21 @@ retorna todos os vendedores
 
 
 ```
-GET /seller?idSellerr=2
+GET /seller/id-by-seller?idSellerr=2
 ```
 retorna todos os vendedores com determinado id (o valor do id é só um exemplo)
 
 
 ```
-GET /seller?nameSeller=Joao
+GET /seller/name-by-seller?nameSeller=Joao
 ```
 retorna todos os vendedores com o nome nameSeller (o valor do *nameSeller* é só um exemplo)
 
 
 ```
-GET /seller/car?nameSeller=Joao
+GET /seller/get-all-car-by-seller?nameSeller=Joao
 ```
-retorna todos os carros venidos por nameSeller (João é só um exemplo)
+retorna todos os carros vendidos por nameSeller (João é só um exemplo)
 
 
 ```
@@ -83,20 +83,20 @@ retorna todos os compradores
 
 
 ```
-GET /buyer?idBuyer=2
+GET /buyer/id-by-buyer?idBuyer=2
 ```
 retorna todos os compradores com determinado id (o valor do id é só um exemplo)
 
 
 ```
-GET /buyer?nameBuyer=Joao
+GET /buyer/name-by-buyer?nameBuyer=Joao
 ```
 retorna todos os compradores com o nome nameBuyer (o valor do *nameBuyer* é só um exemplo)
 
 
 
 ```
-GET /buyer/car?nameBuyer=Joao
+GET /buyer/get-all-cars?nameBuyer=Joao
 ```
 retorna todos os carros comprados por nameBuyer (neste exemplo é João)
 
