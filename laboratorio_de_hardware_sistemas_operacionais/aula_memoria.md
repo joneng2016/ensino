@@ -5,9 +5,8 @@
 * Níveis de cache: Quando são usados múltiplos níveis, eles são indicados por
 L1, L2 e assim por diante.
 
-<center>
-  <img src="imgs/cache.png"  style="width:360px;">
-</center>
+
+  <img align="center" src="imgs/cache.png"  style="width:360px;">
 
 * Em seguida, vem a memória principal, que normalmente é uma memória dinâmica de acesso aleatório e dinâmico (DRAM). 
 * Todos estas anteriores são considerados internas ao sistema de computação. 
