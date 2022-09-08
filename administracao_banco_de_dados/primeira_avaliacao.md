@@ -5,7 +5,7 @@
 
 
 Criar um banco de dados que será utilizado por um sistema de registro de estoque - esse banco deve ter as seguintes tabelas
-* usuários
+* usuarios
 * cargos
 * usuarios_produtos
 * produtos
@@ -15,7 +15,7 @@ Criar um banco de dados que será utilizado por um sistema de registro de estoqu
 *Os nomes não precisam ser esses especificamente*
 
 
-A tabela *usuários* faz referência aos usuários do sistema (os usuários que podem acessar o sistema). Essa tabela deve conter informações como nome, endereço, cargo do usuário.
+A tabela *usuarios* faz referência aos usuários do sistema (os usuários que podem acessar o sistema). Essa tabela deve conter informações como nome, endereço, cargo do usuário.
 A tabela de "cargos" indica os possíveis cargos da empresa (estoquista, vendedor, secretário). Essa tabela deve guardar relação com a tabela usuários. Pense bem na natureza dessa relação porque 1 cargo pode ser atribuído a mais de um usuário (João é vendedor, Fábio é vendedor). Isso vai te dar um norte de como se dá relação de chave estrangeira.
 
 
@@ -77,13 +77,13 @@ Todos os registros precisam ser feitos da forma mais eficiente possível
 ## Consturção das Queries
 
 
-1 - Com subselect, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com limite de 3 registros
+1 - Com subselect, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome. Deve haver um limit de 3 registros.
 
-2 - Com subselect, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pela quantidade de produtos sendo essa descendente.
+2 - Com subselect, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome. Deve haver uma ordenação orientada pela quantidade de produtos sendo essa descendente.
 
-3 - Com inner join, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pelo preço de compra (do maior para o menor).
+3 - Com inner join, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome. Deve haver uma ordenação orientada pelo preço de compra (do maior para o menor).
  
-4 - Com left join, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consumo, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome - adicione 2 com a ordenação orientada pelo preço de compra (do maior para o menor).
+4 - Com left join, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome. Deve haver uma ordenação orientada pelo preço de compra (do maior para o menor).
 
  
 ## Conteúdos que serão avaliados e medidos.
