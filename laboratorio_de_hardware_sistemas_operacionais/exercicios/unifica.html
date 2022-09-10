@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercícios Lab de Hardware e S.Os</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body > header > ul {
+                background-color: black;
+                padding: 10px;
+                border-radius: 15px;
+            }
+
+            body > header > ul > li {
+                color: rgb(198, 193, 193);
+                list-style: none;
+                display: inline;
+                margin-left: 15px;
+                cursor:pointer;
+            }
+
+            body > header > ul > li:hover {
+                color: #fff;
+            }
+
+            body > main > section {
+                margin-bottom: 15px;
+            } 
+            
+            body > main {
+                min-height: 800px;
+            }
+
+            body > footer {
+                color: #fff;
+                background-color: black;
+                height: 200px;
+                text-align: center;
+            }
+
+            body > footer > span {
+                display: block;
+                position: relative;
+                top: 40px;
+                font-weight: 600;
+            }
+
+            body > main > section > button {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            #ossys {
+                display: none;
+            }
+
+            #sysfile {
+                display: none;
+                margin-bottom: 15px;                          
+            }
+
+            #process-thread {
+                display: none;
+
+            }
+
+            #memory {
+                display: none;                
+            }
+
+            #show-first {
+                position: relative;
+                top: 300px;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            #show-gab {
+                text-align: center;                
+            }
+            
+            #modal {
+                display: none;
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            #modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 40%; /* Could be more or less, depending on screen size */
+            }
+
+            #modal > #modal-content > #close {
+                float: right;
+                font-size: 30px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li onclick="showById('ossys')">
+                    Sistemas Operacionais
+                </li>
+                <li onclick="showById('sysfile')">
+                    Sistemas de Arquivos
+                </li>
+                <li onclick="showById('process-thread')">
+                    Processos e Threads
+                </li>
+                <li onclick="showById('memory')">
+                    Memória
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section id="show-first">
+                <h1>
+                    Lista de Exercícios de Laboratório de Hardware
+                </h1>
+            </section>
+
+            <section id="modal">
+                <div id="modal-content">
+                    <span id="close" onclick="closeTime()">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+            </section>
+
+
+            <section id="show-gab">
+                <button onclick="showGabInf()">Ver Gabarito</button>
+            </section>
+
+            <section id="ossys">
+
+
+                <h2>
+                    Sistemas Operacionais
+                </h2>
+
+                <h3>1) Qual é a finalidade de um sistema operacional</h3>
+    
+                <input type="radio" name="finality-exec" > a) Organizar a disposição dos dados em um dado elemento de memória </br>
+                <input type="radio" name="finality-exec" > b) Compilar linguagem de programação para linguagem de máquina </br>    
+                <input type="radio" name="finality-exec" > c) Gerencia recursos do computador, oferece serviços para os programadores e distribui execução de outros programas. </br>
+                <input type="radio" name="finality-exec" > d) Operacionalizar estruturas necessárias para que o usuário tenha acesso a internet
+    
+                
+    
+                <h3>2) Sobre sistemas operacionais assinale as alternativas Verdadeiras</h3>
+    
+                <input type="checkbox"> I)   torna o computador mais conveniente para o uso <br>
+                <input type="checkbox"> II)  torna o computador mais eficiente porque o processamento ocorrerá de forma mais rápida <br>
+                <input type="checkbox"> III) torna o computador mais eficiente porque sua ação diminui o uso da memória em tempo de execução <br>
+                <input type="checkbox"> IV)  possibilita que os recursos do sistema sejam usados de uma maneira mais eficiente <br>
+                <input type="checkbox"> V)   O conceito de um sistema operacional como fundamentalmente fornecendo abstrações para programas aplicativos é uma visão top-down
+                <br>
+                <br>
+                <input type="radio" name="true-sistem-operation" > a) Apenas I, II e III    <br>
+                <input type="radio" name="true-sistem-operation" > b) Apenas I, IV e V      <br>
+                <input type="radio" name="true-sistem-operation" > c) Pelo menos IV e V     <br>
+                <input type="radio" name="true-sistem-operation" > d) Apenas I, III,       
+                
+    
+                <h3>3) Sobre utilidade do sistema operacional, marque a verdadeira</h3>
+    
+                <input type="radio" name="utility-so-using" > a) Apesar do desenvolvimento de software ser algo complexo, o s.o não contribui em nada para facilidade dessa atividade<br>
+                <input type="radio" name="utility-so-using" > b) Não é papel do S.O esconder detalhes de hardware para o Programdor, logo essas questões devem ser pensadas por ele no momento de desenvolvimento do <i>software</i><br>
+                <input type="radio" name="utility-so-using" > c) O SO oferece facilidades e serviços, como editores e depuradores, para auxiliar o programador na criação de programas.<br>
+                <input type="radio" name="utility-so-using" > d) O sistema operacional não atua em questões vinculadas a entrada e saída de dados<br>
+                
+                <h3> 4) No que tange a Execução de Programas do S.O</h3>
+                <input type="radio" name="finality-so" > O sistema operacional não tem responsabilidade nenhuma nisso<br>
+                <input type="radio" name="finality-so" > Antes do programa ser executado, o S.O o carrega em um memória de rápido acesso conhecida como ROM, hoje em dia disponibilizada fisicamente em discos rígidos<br>
+                <input type="radio" name="finality-so" > É impossível fazer algum tipo de execução de programas sem a disponibilidade de um sistema operacional<br>
+                <input type="radio" name="finality-so" > Diversas tarefas precisam ser realizadas para executar um programa. As instruções/dados precisam ser carregados para a memória, dispositivos de E/S precisam ser inicializados, etc. O SO trata de tudo isso para o usuário.<br>
+    
+    
+                <h3> 5) No que tange a Entrada e Saída</h3>
+                <input type="radio" name="finality-so-inputoutput" > O sistema operacional gerencia apenas os dispositivos de entrada<br>
+                <input type="radio" name="finality-so-inputoutput" > Teclado é o exemplo de um dispositivo de saída<br>
+                <input type="radio" name="finality-so-inputoutput" > Nenhuma alternativa aqui presente é a correta<br>
+                <input type="radio" name="finality-so-inputoutput" > Monitor é o exemplo de um dispositivo de entrada<br>
+    
+                <h3> 6) Sobre drivers assina-le a única errada</h3>
+                <input type="radio" name="drivers-only-wrong" > Sistemas operacionais contêm muitos drivers para controlar dispositivos de E/S. <br>
+                <input type="radio" name="drivers-only-wrong" > Como cada tipo de controlador (controlador de memória, de E/S etc.) é diferente, diversos softwares são necessários para controlar cada um. <br>
+                <input type="radio" name="drivers-only-wrong" > Drivers são programas usados para fazer a edição de códigos cuja finalidade é executar algum tipo de operação no kernel do sistema operacional<br>
+                <input type="radio" name="drivers-only-wrong" > O software que conversa com um controlador, dando a ele comandos e aceitando respostas, é chamado de driver de dispositivo. <br>
+    
+                <h3> 6) No que tange a relação de um sistema operacional e acessos ao sistema, marque a única errada</h3>
+                <input type="radio" name="access-only-wrong" > No caso de um sistema compartilhado ou público, o SO controla o acesso ao sistema e a seus recursos.<br>
+                <input type="radio" name="access-only-wrong" > No caso de um sistema compartilhado ou público, o SO oferece proteção de recursos e dados de usuários não autorizados, e resolver conflitos para disputa de recurso<br>
+                <input type="radio" name="access-only-wrong" > A adminsitração de tipos de acessos a um dado arquivo não é de responsabilidade do sistema operacional<br>
+                <input type="radio" name="access-only-wrong" > O SO precisa tomar uma medida que encerre a condição de erro com o mínimo de impacto sobre as aplicações em execução, no caso deles ocorrem tem tempo de execução<br>
+    
+                <h3> 7) No que tange ao Gerenciamento de Recursos</h3>
+    
+                <input type="checkbox"> I)   O conceito de um sistema operacional como fundamentalmente fornecendo abstrações para programas aplicativos é uma visão top-down (abstração de cima para baixo). <br>
+                <input type="checkbox"> II)  Uma visão alternativa, bottom-up (abstração de baixo para cima), sustenta que o sistema operacional está ali para gerenciar todas as partes de um sistema complexo. <br>
+                <input type="checkbox"> III) Na visão bottom-up, a função do sistema operacional é fornecer uma alocação ordenada e controlada dos processadores, memórias e dispositivos de E/S entre os vários programas competindo por eles. <br>
+                <input type="checkbox"> IV)  O SO nunca abre mão do controle e precisa depender do processador para permitir que ele readquira o controle <br>
+                <input type="checkbox"> V)   O SO não funciona da mesma maneira que o software comum do computador; ou seja, ele não é um programa executado pelo processador.
+                <br>
+                <br>
+         
+    
+                <input type="radio" name="manager-resource" > I, IV, V<br>
+                <input type="radio" name="manager-resource" >IV, V<br>
+                <input type="radio" name="manager-resource" >III, IV, e V<br>
+                <input type="radio" name="manager-resource" >I, II<br>
+                <input type="radio" name="manager-resource" >I, II, III<br>
+    
+    
+                <h3> 8) Disserte sobre o conceito de multiplexação no tempo, dando exemplo da relação S.O e CPU</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+    
+                <h3> 9) Disserte sobre o conceito de multiplexação no espaço, dando exemplo da relação S.O e Memória</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+    
+                <h3> 10) Descreva como ocorre o processo de inicialização de um computador</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3> 11) Disserte sobre os computadores a válvula, os computadores de primeira geração</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3> 12) Disserte sobre os computadores de segunda geração</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3> 13) Disserte sobre os computadores de terceira geração</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3> 14) Disserte sobre os computadores de quarta geração</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3> 15) Disserte sobre os computadores de quinta geração</h3>
+                <textarea cols="100" rows="10" ></textarea>
+
+            </section>
+
+            <section id="sysfile">
+                <h2>Sistema de Arquivos</h2>
+                <h3>1) Sobre Sistemas de Arquive marque as alternativas corretas</h3>
+
+                <input type="checkbox"> I)    Conjunto de padrões usados para organizas os dados. <br>
+                <input type="checkbox"> II)   Diretórios não são dados. <br>
+                <input type="checkbox"> III)  Sistema de arquivos permitem gerenciar o espaço livre e o espaço ocupado <br>
+                <input type="checkbox"> IV)   Não mantem a integridade dos dados
+                <br>
+                <br>
+                <input type="radio" name="a" > a) I, II<br>
+                <input type="radio" name="a" > b) II, IV<br>
+                <input type="radio" name="a" > c) I, IV<br>
+                <input type="radio" name="a" > d) nenhuma das alternativas
+    
+    
+                <h3>2) Sobre a famíllia FAT, assina-le</h3>
+    
+                <input type="checkbox"> I) File Allocation Table (Tabela de alocação de arquivos) <br>
+                <input type="checkbox"> II) Padrões de sistema DOS e Windows antigo <br>
+                <input type="checkbox"> III) FAT 12 - Suporta arquivo de no máximo 32 MB Tamanho máximo de volume 32 MB<br>
+                <input type="checkbox"> IV) FAT 16 - Suporta arquivo de no máximo 32 MB Tamanho máximo de volume 32 MB<br>
+                <input type="checkbox"> V) FAT 32 - Suporta arquivo de no máximo 2/4 GB (com LFS - Large File Support) Tamanho máximo de volume 1 TB
+                <br>            
+                <br>
+                <input type="radio" name="b" > a) I, II<br>
+                <input type="radio" name="b" > b) I, V<br>
+                <input type="radio" name="b" > c) I, IV<br>
+                <input type="radio" name="b" > d) I, II, V 
+    
+    
+    
+                <h3>3) Sobre a família NTFS, assina-le</h3>
+    
+                <input type="checkbox"> I) Criado em 1995 <br>
+                <input type="checkbox"> II) Não suporta criptografia<br>
+                <input type="checkbox"> III) Trabalha com Journaling <br>
+                <input type="checkbox"> IV) Compatível apenas com Windows e Linux kernel > 2.2<br>
+                <input type="checkbox"> V) Compatível com todos os sistemas de kernel Linux
+                <br>            
+                <br>
+                <input type="radio" name="c" > a) I, II<br>
+                <input type="radio" name="c" > b) III<br>
+                <input type="radio" name="c" > c) I, IV<br>
+                <input type="radio" name="c" > d) I, II, IV, V
+    
+    
+                <h3>4) Sobre a família exFAT, assina-le</h3>
+    
+                <input type="checkbox"> I) Sistema proprietário, criado em 2006 pela Microsoft. <br>
+                <input type="checkbox"> II) Max arq e volume 12PB <br>
+                <input type="checkbox"> III) Para além dos sistemas Microsfot, possui suporte apenas para o(s) S.Os Android<br>
+                <br>            
+                <br>
+                <input type="radio" name="d" > a) I, II<br>
+                <input type="radio" name="d" > b) I<br>
+                <input type="radio" name="d" > c) I, IV<br>
+                <input type="radio" name="d" > d) I, II, III<br>
+                <input type="radio" name="d" > e) III<br>
+    
+    
+                <h3>5) Sobre a família ext, marque a correta</h3>
+    
+                <input type="radio" name="e" > a) Sitema de arquivos para Windows <br>
+                <input type="radio" name="e" > b) Advento do Journaling começa no ext2<br>
+                <input type="radio" name="e" > c) Tem suporte a Windows, nem OS X <br>
+                <input type="radio" name="e" > d) Arquivos de até 16 TB/ 1 EB max storage <br>
+                <input type="radio" name="e" > b) <br>
+    
+                <h3>6) O que é e onde é usado os Sistemas de Arquivos HFS, HFS+ e APFS</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3>7) O que é e onde é usado os Sistemas de Arquivos ISO 9660</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+    
+                <h3>8) Como consultor técnico de uma grande multinacional você precisa decidir em quais cenários os sistemas de arquivo NFTS, ext4, FAT32 e exFat devem ser usados. Apresente sua conclusão argumentando os motivos de cada escolha</h3>
+                <textarea cols="100" rows="10" ></textarea>
+            </section>
+
+            <section id="process-thread">
+                <h2>Processos e Threads</h2>
+                <h3>1) Assine as alternativas verdadeiras sobre processos</h3>
+
+                <input type="checkbox">  I   É um programa em execução <br>
+                <input type="checkbox">  II  A CPU consegue executar vários processos ao mesmo tempo <br>
+                <input type="checkbox">  III Um determinado processo pode ser iniciado apenas uma vez<br>
+                <input type="checkbox">  IV  Em um sistema de multiprogramação a CPU muda de um processo para outro muito rapidamente (em ms).
+                <br>
+                <br>
+                <input type="radio" name="radio1" > a) IV <br>
+                <input type="radio" name="radio1" > b) I, II, IV<br>
+                <input type="radio" name="radio1" > c) I, II<br>
+                <input type="radio" name="radio1" > d) I e IV       
+    
+                <h3>2) Sobre multiprogramação, marque a verdadeira</h3>
+    
+                <input type="radio" name="radio2" > a) É o ato do processador executar vários processos ao mesmo tempo <br>
+                <input type="radio" name="radio2" > b) Multiprogramação não é um termo utilizado dentro do contexto da computação<br>
+                <input type="radio" name="radio2" > c) Em um sistema de multiprogramação a CPU muda de um processo para outro muito rapidamente (em ms).<br>
+                <input type="radio" name="radio2" > d) Em um sistema de multiprogramação a CPU muda de um processo para outro na ordem de s.
+    
+    
+                <h3>3) Sobre Endereçamento de memória, marque a falsa</h3>
+    
+                <input type="radio" name="radio3" > a) Cada processo é associado a um dado espaço de endereçamento. Isso consiste em uma lista de posições de memória que vão de 0 a algum máximo onde o processo pode ler e escrever.<br>
+                <input type="radio" name="radio3" > b) O espaço de endereçamento consiste no no tempo alocado pela cpu para executar determinado procedimento<br>
+                <input type="radio" name="radio3" > c) A pilha contém uma estrutura para cada rotina (conjuntos e instruções), que foi chamada mas ainda não encerrada.<br>
+                <input type="radio" name="radio3" > d) Um processo é na essência um contêiner que armazena todas as informações necessárias para executar um programa
+    
+    
+                <h3>4)  Sobre Endereçamento de memória, marque a falsa</h3>
+    
+                <input type="radio" name="radio4" > a) Cada processo é associado a um dado espaço de endereçamento. Isso consiste em uma lista de posições de memória que vão de 0 a algum máximo onde o processo pode ler e escrever.<br>
+                <input type="radio" name="radio4" > b) O espaço de endereçamento consiste no no tempo alocado pela cpu para executar determinado procedimento<br>
+                <input type="radio" name="radio4" > c) A pilha contém uma estrutura para cada rotina (conjuntos e instruções), que foi chamada mas ainda não encerrada.<br>
+                <input type="radio" name="radio4" > d) Um processo é na essência um contêiner que armazena todas as informações necessárias para executar um programa
+    
+                <h3>5) Dentro do contexto de processos e de programação marque a alternativa falsa</h3>
+    
+                <input type="radio" name="radio5" > a) O usuário pode ter inicializado um programa de edição de vídeo e mandou converter um vídeo de uma hora para um formato MP4 (algo que pode levar horas) e então foi navegar na web enquanto convertia.<br>
+                <input type="radio" name="radio5" > b) Periodicamente, o sistema operacional decide parar de executar um processo e começa a executar outro, talvez porque o primeiro utilizou mais do que sua parcela de tempo da CPU no último segundo ou dois<br>
+                <input type="radio" name="radio5" > c) Um processo que é suspenso temporiamente pela cpu não é retomando no exato estado da suspensão, mas sim de seu início.<br>
+                <input type="radio" name="radio5" > d) Um processo é na essência um contêiner que armazena todas as informações necessárias para executar um programa
+    
+                <h3>6) Quais são as principais chamadas do sistema de gerenciamento de processos?</h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3>7) Quais são os três estados de um processo? Apresente uma descrição de cada estado </h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3>8) Ainda no contexto da questão 7 apresente as 4 transições de estado possíveis, forneça uma descrição de cada estado  </h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3>9) Quais são as possibilidades de término de processos?  </h3>
+                <textarea cols="100" rows="10" ></textarea>
+    
+                <h3>10) O que são Threads?  </h3>
+                <textarea cols="100" rows="10" ></textarea>
+            </section>
+
+            <section id="memory">
+                <h3>Em desenvolvimento</h3>
+            </section>
+        </main>
+
+        <footer>
+            <span>
+                Desenvolvido por Jonathan Morris Samara
+            </span>
+            <span>
+                https://github.com/joneng2016
+            </span>
+            <span>
+                https://www.linkedin.com/in/jonathan-morris-samara-3a45356a/
+            </span>
+        </footer>
+        <script>
+            let allIds = [
+                'ossys', 
+                'sysfile', 
+                'process-thread',
+                'memory',
+                'show-first'
+            ]
+
+            mainProcess()
+
+            function mainProcess() {
+                const inputVars = window.location.href.split('?')
+                let idString = ''
+
+                if (inputVars[1]) {
+                    const variableSelected = inputVars[1].split('=')
+
+                    if (variableSelected[0] == 'name') {
+                        idString = variableSelected[1]
+                    }
+
+                    showById(idString)
+                }
+            }
+
+            function showById(idString) {
+                _defineAllLikeNone()
+                document.getElementById(idString).style.display = 'block'
+            }
+
+            function showGabInf() {
+                const stringIdOs = allIds.find((e) => {
+                    return document.getElementById(e).style.display === 'block'
+                })
+
+                document.getElementById("modal").style.display = 'block'
+            }
+
+            function closeTime() {
+                document.getElementById("modal").style.display = 'none'
+            }
+
+            function _defineAllLikeNone() {
+                allIds.forEach(e => document.getElementById(e).style.display = 'none')
+            }
+
+        </script>
+    </body>
+</html>
