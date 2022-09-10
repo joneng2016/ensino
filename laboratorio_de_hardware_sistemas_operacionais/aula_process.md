@@ -183,3 +183,8 @@ trabalho para eles.
 * Um segundo argumento para a existência dos threads é que como eles são mais leves do que os processos, eles são mais fáceis (mais rápidos) para criar e destruir do que os processos (criar um thread pode ser algo de 10 a 100 vezes mais rápido do que criar um processo).
 * Os processadores de texto (Word) precisam lidar com comandos de usuário  (inserção de texto pelo teclado, cliques de mouse), precisa dar a resposta correta para o comando, dentre outras funções, como o salvamento automático
 * Threads para um processo do Word poderiam, cada uma, cuidar de uma função: - de escutar a entrada do usuário (cliques e teclado) - prover a resposta - salvar automaticamente
+
+
+## Exercícios para prática
+
+https://proffjonathansamara.000webhostapp.com?name=process-thread
