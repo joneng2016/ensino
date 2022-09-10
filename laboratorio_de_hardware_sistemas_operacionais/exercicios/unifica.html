@@ -139,8 +139,9 @@
             <section id="modal">
                 <div id="modal-content">
                     <span id="close" onclick="closeTime()">&times;</span>
-                    <p>Some text in the Modal..</p>
-                  </div>
+                    <div id="modal-html-content">
+                    </div>
+                </div>
             </section>
 
 
@@ -170,7 +171,7 @@
                 <input type="checkbox"> II)  torna o computador mais eficiente porque o processamento ocorrerá de forma mais rápida <br>
                 <input type="checkbox"> III) torna o computador mais eficiente porque sua ação diminui o uso da memória em tempo de execução <br>
                 <input type="checkbox"> IV)  possibilita que os recursos do sistema sejam usados de uma maneira mais eficiente <br>
-                <input type="checkbox"> V)   O conceito de um sistema operacional como fundamentalmente fornecendo abstrações para programas aplicativos é uma visão top-down
+                <input type="checkbox"> V)   O conceito de um sistema operacional como uma abstrações para programas aplicativos pode ser considerada uma visão visão top-down
                 <br>
                 <br>
                 <input type="radio" name="true-sistem-operation" > a) Apenas I, II e III    <br>
@@ -187,33 +188,34 @@
                 <input type="radio" name="utility-so-using" > d) O sistema operacional não atua em questões vinculadas a entrada e saída de dados<br>
                 
                 <h3> 4) No que tange a Execução de Programas do S.O</h3>
-                <input type="radio" name="finality-so" > O sistema operacional não tem responsabilidade nenhuma nisso<br>
-                <input type="radio" name="finality-so" > Antes do programa ser executado, o S.O o carrega em um memória de rápido acesso conhecida como ROM, hoje em dia disponibilizada fisicamente em discos rígidos<br>
-                <input type="radio" name="finality-so" > É impossível fazer algum tipo de execução de programas sem a disponibilidade de um sistema operacional<br>
-                <input type="radio" name="finality-so" > Diversas tarefas precisam ser realizadas para executar um programa. As instruções/dados precisam ser carregados para a memória, dispositivos de E/S precisam ser inicializados, etc. O SO trata de tudo isso para o usuário.<br>
+                <input type="radio" name="finality-so" > a) O sistema operacional não tem responsabilidade nenhuma nisso<br>
+                <input type="radio" name="finality-so" > b) Antes do programa ser executado, o S.O o carrega em um memória de rápido acesso conhecida como ROM, hoje em dia disponibilizada fisicamente em discos rígidos<br>
+                <input type="radio" name="finality-so" > c) É impossível fazer algum tipo de execução de programas sem a disponibilidade de um sistema operacional<br>
+                <input type="radio" name="finality-so" > d) Diversas tarefas precisam ser realizadas para executar um programa. As instruções/dados precisam ser carregados para a memória, dispositivos de E/S precisam ser inicializados, etc. O SO trata de tudo isso para o usuário.<br>
     
     
                 <h3> 5) No que tange a Entrada e Saída</h3>
-                <input type="radio" name="finality-so-inputoutput" > O sistema operacional gerencia apenas os dispositivos de entrada<br>
-                <input type="radio" name="finality-so-inputoutput" > Teclado é o exemplo de um dispositivo de saída<br>
-                <input type="radio" name="finality-so-inputoutput" > Nenhuma alternativa aqui presente é a correta<br>
-                <input type="radio" name="finality-so-inputoutput" > Monitor é o exemplo de um dispositivo de entrada<br>
+                <input type="radio" name="finality-so-inputoutput" > a) O sistema operacional gerencia apenas os dispositivos de entrada<br>
+                <input type="radio" name="finality-so-inputoutput" > b) Teclado é o exemplo de um dispositivo de saída<br>
+                <input type="radio" name="finality-so-inputoutput" > c) Nenhuma alternativa aqui presente é a correta<br>
+                <input type="radio" name="finality-so-inputoutput" > d) Monitor é o exemplo de um dispositivo de entrada<br>
     
                 <h3> 6) Sobre drivers assina-le a única errada</h3>
-                <input type="radio" name="drivers-only-wrong" > Sistemas operacionais contêm muitos drivers para controlar dispositivos de E/S. <br>
-                <input type="radio" name="drivers-only-wrong" > Como cada tipo de controlador (controlador de memória, de E/S etc.) é diferente, diversos softwares são necessários para controlar cada um. <br>
-                <input type="radio" name="drivers-only-wrong" > Drivers são programas usados para fazer a edição de códigos cuja finalidade é executar algum tipo de operação no kernel do sistema operacional<br>
-                <input type="radio" name="drivers-only-wrong" > O software que conversa com um controlador, dando a ele comandos e aceitando respostas, é chamado de driver de dispositivo. <br>
+                <input type="radio" name="drivers-only-wrong" > a) Sistemas operacionais contêm muitos drivers para controlar dispositivos de E/S. <br>
+                <input type="radio" name="drivers-only-wrong" > b) Como cada tipo de controlador (controlador de memória, de E/S etc.) é diferente, diversos softwares são necessários para controlar cada um. <br>
+                <input type="radio" name="drivers-only-wrong" > c) Drivers são programas usados para fazer a edição de códigos cuja finalidade é executar algum tipo de operação no kernel do sistema operacional<br>
+                <input type="radio" name="drivers-only-wrong" > d) O software que conversa com um controlador, dando a ele comandos e aceitando respostas, é chamado de driver de dispositivo. <br>
     
-                <h3> 6) No que tange a relação de um sistema operacional e acessos ao sistema, marque a única errada</h3>
-                <input type="radio" name="access-only-wrong" > No caso de um sistema compartilhado ou público, o SO controla o acesso ao sistema e a seus recursos.<br>
-                <input type="radio" name="access-only-wrong" > No caso de um sistema compartilhado ou público, o SO oferece proteção de recursos e dados de usuários não autorizados, e resolver conflitos para disputa de recurso<br>
-                <input type="radio" name="access-only-wrong" > A adminsitração de tipos de acessos a um dado arquivo não é de responsabilidade do sistema operacional<br>
-                <input type="radio" name="access-only-wrong" > O SO precisa tomar uma medida que encerre a condição de erro com o mínimo de impacto sobre as aplicações em execução, no caso deles ocorrem tem tempo de execução<br>
+                <h3> 7) No que tange a relação de um sistema operacional e acessos ao sistema, marque a única errada</h3>
+                <input type="radio" name="access-only-wrong" > a) No caso de um sistema compartilhado ou público, o SO controla o acesso ao sistema e a seus recursos.<br>
+                <input type="radio" name="access-only-wrong" > b) No caso de um sistema compartilhado ou público, o SO oferece proteção de recursos e dados de usuários não autorizados, e resolve conflitos para disputa de recurso<br>
+                <input type="radio" name="access-only-wrong" > c) A adminsitração de tipos de acessos a um dado arquivo não é de responsabilidade do sistema operacional<br>
+                <input type="radio" name="access-only-wrong" > d) O SO precisa tomar uma medida que encerre a condição de erro com o mínimo de impacto sobre as aplicações em execução, no caso deles ocorrem tem tempo de execução<br>
     
-                <h3> 7) No que tange ao Gerenciamento de Recursos</h3>
+                <h3> 8) No que tange ao Gerenciamento de Recursos</h3>
     
-                <input type="checkbox"> I)   O conceito de um sistema operacional como fundamentalmente fornecendo abstrações para programas aplicativos é uma visão top-down (abstração de cima para baixo). <br>
+                <input type="checkbox"> I)   O conceito de um sistema operacional como uma abstrações para programas aplicativos pode ser considerada uma visão visão top-down
+                <br>
                 <input type="checkbox"> II)  Uma visão alternativa, bottom-up (abstração de baixo para cima), sustenta que o sistema operacional está ali para gerenciar todas as partes de um sistema complexo. <br>
                 <input type="checkbox"> III) Na visão bottom-up, a função do sistema operacional é fornecer uma alocação ordenada e controlada dos processadores, memórias e dispositivos de E/S entre os vários programas competindo por eles. <br>
                 <input type="checkbox"> IV)  O SO nunca abre mão do controle e precisa depender do processador para permitir que ele readquira o controle <br>
@@ -222,37 +224,37 @@
                 <br>
          
     
-                <input type="radio" name="manager-resource" > I, IV, V<br>
-                <input type="radio" name="manager-resource" >IV, V<br>
-                <input type="radio" name="manager-resource" >III, IV, e V<br>
-                <input type="radio" name="manager-resource" >I, II<br>
-                <input type="radio" name="manager-resource" >I, II, III<br>
+                <input type="radio" name="manager-resource" >a)I, IV, V<br>
+                <input type="radio" name="manager-resource" >b)IV, V<br>
+                <input type="radio" name="manager-resource" >c)III, IV, e V<br>
+                <input type="radio" name="manager-resource" >d)I, II<br>
+                <input type="radio" name="manager-resource" >e)I, II, III<br>
     
     
-                <h3> 8) Disserte sobre o conceito de multiplexação no tempo, dando exemplo da relação S.O e CPU</h3>
+                <h3> 9) Disserte sobre o conceito de multiplexação no tempo, dando exemplo da relação S.O e CPU</h3>
                 <textarea cols="100" rows="10" ></textarea>
     
     
-                <h3> 9) Disserte sobre o conceito de multiplexação no espaço, dando exemplo da relação S.O e Memória</h3>
+                <h3> 10) Disserte sobre o conceito de multiplexação no espaço, dando exemplo da relação S.O e Memória</h3>
                 <textarea cols="100" rows="10" ></textarea>
     
     
-                <h3> 10) Descreva como ocorre o processo de inicialização de um computador</h3>
+                <h3> 11) Descreva como ocorre o processo de inicialização de um computador</h3>
                 <textarea cols="100" rows="10" ></textarea>
     
-                <h3> 11) Disserte sobre os computadores a válvula, os computadores de primeira geração</h3>
+                <h3> 12) Disserte sobre os computadores a válvula, os computadores de primeira geração</h3>
                 <textarea cols="100" rows="10" ></textarea>
     
-                <h3> 12) Disserte sobre os computadores de segunda geração</h3>
+                <h3> 13) Disserte sobre os computadores de segunda geração</h3>
                 <textarea cols="100" rows="10" ></textarea>
     
-                <h3> 13) Disserte sobre os computadores de terceira geração</h3>
+                <h3> 14) Disserte sobre os computadores de terceira geração</h3>
                 <textarea cols="100" rows="10" ></textarea>
     
-                <h3> 14) Disserte sobre os computadores de quarta geração</h3>
+                <h3> 15) Disserte sobre os computadores de quarta geração</h3>
                 <textarea cols="100" rows="10" ></textarea>
     
-                <h3> 15) Disserte sobre os computadores de quinta geração</h3>
+                <h3> 16) Disserte sobre os computadores de quinta geração</h3>
                 <textarea cols="100" rows="10" ></textarea>
 
             </section>
@@ -451,9 +453,43 @@
                 })
 
                 document.getElementById("modal").style.display = 'block'
+
+                const docStructure = [
+                    {
+                        nameId:'ossys',
+                        title:'Sistemas Operacionais',
+                        questions:[
+                            _questionResponseObject(1, 'a'),
+                            _questionResponseObject(2, 'b'),
+                            _questionResponseObject(3, 'c'),
+                            _questionResponseObject(4, 'd'),
+                            _questionResponseObject(5, 'c'),
+                            _questionResponseObject(6, 'd'),
+                            _questionResponseObject(7, 'c'),
+                            _questionResponseObject(8, 'e'),
+                            _questionResponseObject(9, '<p>O gerenciamento de recursos inclui a multiplexação (compartilhamento) de recursos de duas maneiras diferentes: no tempo e no espaço. Quando um recurso é multiplexado no tempo, diferentes programas ou usuários se revezam usando-o. Primeiro, um deles usa o recurso, então outro e assim por diante.  Por exemplo, com apenas uma CPU e múltiplos programas querendo ser executados nela, o sistema operacional primeiro aloca a CPU para um programa, então, após ele ter sido executado por tempo suficiente, outro programa passa a fazer uso da CPU, então outro, e finalmente o primeiro de novo. Determinar como o recurso é multiplexado no tempo — quem vai em seguida e por quanto tempo — é a tarefa do sistema operacional.</p>'),
+                            _questionResponseObject(10, '<p>O outro tipo é a multiplexação de espaço. Em vez de os clientes se revezarem, cada um tem direito a uma parte do recurso. Por exemplo, a memória principal é normalmente dividida entre vários programas sendo executados, de modo que cada um pode ser residente ao mesmo tempo</p>'),
+                            _questionResponseObject(11, '<ol><li>nas placas-mãe há um programa chamado de sistema BIOS (Basic Input Output System — sistema básico de entrada e saída).</li><li>O BIOS conta com rotinas de E/S de baixo nível, incluindo procedimentos para ler o teclado, escrever na tela e realizar a E/S no disco, entre outras coisas</li><li>Hoje, ele fica em um flash RAM, que é não volátil, mas que pode ser atualizado pelo sistema operacional quando erros são encontrados no BIOS.</li></ol>'),
+                            _questionResponseObject(12, '<p> Entre os computadores dessa época, alguns eram binários, outros usavam válvulas e ainda outros eram programáveis, mas todos eram muito primitivos e levavam segundos para realizar mesmo o cálculo mais simples. </p> <p> Um único grupo de pessoas (normalmente engenheiros) projetava, construía, programava, operava e mantinha cada máquina. Toda a programação era feita em código de máquina absoluto, ou, pior ainda, ligando circuitos elétricos através da conexão de milhares de cabos a painéis de ligações para controlar as funções básicas da máquina.  </p> <p> Linguagens de programação eram desconhecidas Ninguém tinha ouvido falar ainda de sistemas operacionais.  </p> <p> O modo usual de operação consistia na reserva pelo programador de um bloco de tempo na ficha de registro na parede, então ele descer até a sala de máquinas, inserir seu painel de programação no computador e passar as horas seguintes torcendo para que nenhuma das cerca de 20.000 válvulas queimasse durante a operação.  </p> <p>No início da década de 1950, a rotina havia melhorado de certa maneira com a introdução dos cartões perfurados. Era possível agora escrever programas em cartões e lê-los em vez de se usarem painéis de programação de resto, o procedimento era o mesmo.</p>'),
+                            _questionResponseObject(13, '<p>A introdução do transistor em meados dos anos 1950 mudou o quadro radicalmente. Os computadores tornaram-se de tal maneira confiáveis que podiam ser fabricados e vendidos para clientes dispostos a pagar por eles com a expectativa de que continuariam a funcionar por tempo suficiente para realizar algum trabalho útil. </p> <p> Pela primeira vez, havia uma clara separação entre projetistas, construtores, operadores, programadores e pessoal de manutenção. Essas máquinas — então chamadas de computadores de grande porte (mainframes) —, ficavam isoladas em salas grandes e climatizadas, especialmente designadas para esse fim, com equipes de operadores profissionais para operá-las. </p> <p> Para executar uma tarefa [isto é, um programa ou conjunto de programas], um programador primeiro escrevia o programa no papel [em FORTRAN ou em linguagem de montagem (assembly)], então o perfurava nos cartões. Ele levava então o maço de cartões até a sala de entradas e o passava a um dos operadores e ia tomar um café até que a saída estivesse pronta </p> <p> Quando o computador terminava qualquer tarefa que ele estivesse executando no momento, um operador ia até a impressora, pegava a sua saída e a levava até a sala de saídas a fim de que o programador pudesse buscá-la mais tarde. </p> <p> Dado o alto custo do equipamento, não causa surpresa que as pessoas logo procuraram maneiras de reduzir o tempo desperdiçado. A solução geralmente adotada era o sistema em lote (batch). Os sistemas puramente em lote são raros hoje.  </p> <p> A ideia por trás disso era reunir um lote de tarefas na sala de entradas e então passá-lo para uma fita magnética usando um computador pequeno e (relativamente) barato, como um IBM 1401, que era muito bom na leitura de cartões, cópia de fitas e impressão de saídas</p>'),
+                            _questionResponseObject(14, '<p> Com o desenvolvimento dos circuitos integrados em larga escala (Large Scale Integration — LSI) — que são chips contendo milhares de transistores em um centímetro quadrado, surgiu a era do computador moderno. </p> <p> No início da década de 1980, a IBM projetou o IBM PC e saiu à procura de um software para ser executado nele. O pessoal na IBM contatou Bill Gates para licenciar o seu interpretador BASIC. Eles também perguntaram se ele tinha conhecimento de um sistema operacional para ser executado no PC. </p> <p> Gates se deu conta de que uma fabricante de computadores local, Seattle Computer Products, tinha um sistema operacional adequado, DOS (Disk Operating System — sistema operacional de disco). Ele os procurou e pediu para comprá-lo (supostamente por US$ 75.000), oferta que eles de pronto aceitaram. </p> <p> Gates ofereceu então à IBM um pacote DOS/BASIC, que a empresa aceitou. Gates se deu conta de que uma fabricante de computadores local, Seattle Computer Products, tinha um sistema operacional adequado, DOS (Disk Operating System — sistema operacional de disco). Ele os procurou e pediu para comprá-lo (supostamente por US$ 75.000), oferta que eles de pronto aceitaram. </p> <p> Gates ofereceu então à IBM um pacote DOS/BASIC, que a empresa aceitou. A IBM queria fazer modificações, então Gates contratou para a Microsoft a pessoa que havia escrito o DOS, Tim Paterson para fazê-las. O sistema revisado foi renomeado MS-DOS (MicroSoft Disk Operating System) e logo passou a dominar o mercado do IBM PC. MS-DOS e outros SOs para os primeiros microcomputadores eram todos baseados na digitação de comandos no teclado pelos usuários.  Isto finalmente mudou por conta da pesquisa realizada por Doug Engelbert no Instituto de Pesquisa de Stanford na década de 1960. Engelbart inventou a Graphical User Interface (GUI — Interface Gráfica do Usuário), completa com janelas, ícones, menus e mouse. Essas ideias foram adotadas por pesquisadores na Xerox PARC e incorporadas nas máquinas que eles produziram </p> <p> Um dia, Steve Jobs, que coinventou o computador Apple em sua garagem, visitou a PARC, viu uma GUI e no mesmo instante percebeu o seu valor potencial Jobs partiu foi produzir um Apple com o GUI. O projeto levou ao Lisa, que era caro demais e fracassou. A 2ª tentativa, o Apple Macintosh, foi um sucesso, por ser amigável ao usuário, significando que era dirigido a usuários que não apenas não sabiam nada sobre computadores como não tinham intenção alguma de aprender sobre eles. </p> <p> Quando decidiu produzir um sucessor para o MS- -DOS, a Microsoft foi fortemente influenciada pelo sucesso do Macintosh. Ela produziu um sistema baseado em GUI chamado Windows, que originalmente era executado em cima do MS-DOS </p> <p> Por cerca de dez anos, de 1985 a 1995, o Windows era apenas um ambiente gráfico sobre o MS-DOS. Entretanto, começando em 1995, uma versão independente, Windows 95, foi lançada incorporando muitos aspectos de sistemas operacionais Em 1998, uma versão ligeiramente modificada deste sistema, chamada Windows 98, foi lançada. </p>'),
+                            _questionResponseObject(15, 'c'),
+                            _questionResponseObject(16, 'c'),
+                        ]
+                    }
+                ]
+
+                const dataStructure = docStructure.find(e => e.nameId === stringIdOs)
+
+                const htmlContentFist = `<h2>${dataStructure.title}</h2>`
+
+                const htmlContentSecond = dataStructure.questions.map(e => `<span><strong>${e.question}</strong>: ${e.response}</span><br>`).join('')
+
+                document.getElementById("modal-html-content").innerHTML = [htmlContentFist, htmlContentSecond].join('')
             }
 
             function closeTime() {
+                document.getElementById("modal-html-content").innerHTML = ""
                 document.getElementById("modal").style.display = 'none'
             }
 
@@ -461,6 +497,9 @@
                 allIds.forEach(e => document.getElementById(e).style.display = 'none')
             }
 
+            function _questionResponseObject(question, response) {
+                return {question, response}
+            }
         </script>
     </body>
 </html>
