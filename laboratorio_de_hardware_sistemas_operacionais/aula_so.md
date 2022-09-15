@@ -3,4 +3,4 @@
 
 ## Exercícios para prática
 
-https://sites.google.com/view/soexecicioaula1
+https://proffjonathansamara.000webhostapp.com?name=ossys
