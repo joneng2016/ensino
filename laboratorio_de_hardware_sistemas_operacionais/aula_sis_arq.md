@@ -109,3 +109,8 @@ Tamanho máximo de volume 2 TB
 
 ## Qual usar?
 Windows NTFS, Linux ext4, .... Pendrive FAT32, exFat e para HDs mesma coisa que S.O
+
+
+## Exercícios para prática
+
+https://proffjonathansamara.000webhostapp.com?name=sysfile
