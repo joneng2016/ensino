@@ -45,6 +45,94 @@
                     echo $k . "<br>";
                 ?>
             </article>
+
+            <article>
+                <h3> For </h3>
+
+                <?php 
+                    $nomes = [
+                        'Fabiano',
+                        'Eduardo',
+                        'Monica',
+                        'Paulo',
+                        'Alessandra'
+                    ];
+
+                    // Tamanho de um array, com sizeof
+
+                    for ($i = 0; $i <= 4; $i++) {
+                        echo "<span>" . $nomes[$i] . "</span></br>"; 
+                    }
+
+                    // é mesma coisa que fazer o seguinte
+                    echo "<strong> utilizando sizeof </strong><br>";
+
+                    for ($i = 0; $i < sizeof($nomes); $i++) {
+                        echo "<span>" . $nomes[$i] . "</span></br>"; 
+                    }
+                ?>
+
+                <h3>Combinando for com if</h3>
+
+                <?php
+                    $countries = [
+                        'Brasil',
+                        'Holanda',
+                        'Reino Unido',
+                        'França',
+                        'Espanha'
+                    ];
+                ?>
+
+
+                <ul>
+                <?php
+                    for($i = 0; $i < sizeof($countries); $i++):
+                ?>
+                
+                    <?php
+                        $country = $countries[$i];
+
+                        $color = 'blue';
+                        if (strlen($country) < 10) {
+                            $color = 'red';
+                        }
+                    ?>
+                    
+                    
+                    <li><span style=<?= "\"color:".$color."\""  ?> ><?= $country ?></span></li>                    
+                <?php 
+                    endfor
+                ?>
+                </ul>
+
+                
+                <h3> foreach </h3>
+
+
+                <?php
+
+                    $motos = [
+                        'Twister',
+                        'cg160',
+                        'ninja',
+                        'xre300'
+                    ];
+
+                    echo "<ul>";
+
+                    foreach($motos as $moto){
+                        if (strlen($moto) <= 5) {
+                            echo "<li style=\"color:green\">" . $moto . "</li>";
+                        } else {
+                            echo "<li style=\"color:yellow\">" . $moto . "</li>";
+                        }
+
+                    }
+
+                    echo "</ul>";
+                ?>
+            </article>
         </main>
     </body>
 </html>
