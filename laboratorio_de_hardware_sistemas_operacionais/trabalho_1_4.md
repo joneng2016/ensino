@@ -1,5 +1,24 @@
 # Trabalho 1 do Quarto Bimestre
 
+## Estrutura do trabalho 
+Seguir regras ABNT para trabalhos acadêmicos conforme NBR 14724 - http://site.ufvjm.edu.br/revistamultidisciplinar/files/2011/09/NBR_14724_atualizada_abr_2011.pdf. 
+
+Segue template em word da Unesp (adaptar para o SENAC, no caso) - https://www.itapeva.unesp.br/Home/Biblioteca/modelo-tcc-unesp-itapeva.docx .
+
+O documento deve ser estruturado em:
+
+* Capa
+* Resumo
+* Sumário
+* Introdução
+* Desenvolvimento
+* Conclusão
+* Referências
+* Apêndice (se houver)
+* Anexo (se houver)
+
+
+
 Realizar, dentro das regras da ABNT e com mínimo de 10 páginas e máximo de 15, o tema que foi direcionado para o seu nome:
 
 
