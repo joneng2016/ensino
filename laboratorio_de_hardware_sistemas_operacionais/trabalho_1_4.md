@@ -17,7 +17,7 @@ O documento deve ser estruturado em:
 * Apêndice (se houver)
 * Anexo (se houver)
 
-
+__Independente dos capítulos apresentados no template, para este relatório é válido essa lista__
 
 Realizar, dentro das regras da ABNT e com mínimo de 10 páginas e máximo de 15, o tema que foi direcionado para o seu nome:
 
