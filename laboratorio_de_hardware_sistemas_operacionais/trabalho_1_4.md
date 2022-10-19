@@ -19,8 +19,7 @@ O documento deve ser estruturado em:
 
 __Independente dos capítulos apresentados no template, para este relatório é válido essa lista__
 
-Realizar, dentro das regras da ABNT e com mínimo de 10 páginas e máximo de 15, o tema que foi direcionado para o seu nome:
-
+Realizar, dentro das regras já especificadas e com mínimo de 10 páginas e máximo de 15, investiga e dissertar sobre o tema que foi direcionado para o seu nome:
 
 * 1 - LOURENÇO TENCHENA GONÇALVES - 'História da Computação (Da máquina de Turing até os dias atuais)',
 * 2 - PEDRO AUGUSTO DUPAS PEREIRA - 'História dos Sistemas Operacionais Windows (Descritivo histórico das versões do Windows)'
