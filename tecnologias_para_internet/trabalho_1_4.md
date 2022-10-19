@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Trabalho 1, Quarto Bimestre
 
 * Dentro do banco de dados, crie o seguinte banco: trabalho1quartobi.  
@@ -202,5 +201,5 @@ trait Post {
 
 Como a primeira rota é do tipo GET, o código que você deve executar nela consiste em trazer todos os dados da tabela petshop.
 
->>>>>>> c337ad79674f624239317089afec6a4b84e10f74
+
 Como a segunda rota é do tipo POST, o código que você deve executar nela consiste na seguinte funcionalidade: Realizer o insert de algum dado na tabela petshop
