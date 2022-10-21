@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body > main > div {
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid;
+    margin: auto;
+    height: 180px;
+}
+
+.container-input > label {
+    margin-top: 15px;
+    display: block;
+}
+
+.container-input > input {
+    display: block;
+    margin: auto;
+}
+
+.container-input > input[type='submit'] {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
