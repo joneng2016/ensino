@@ -6,28 +6,60 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <hgroup>
-                <h3>Entre com e-mail e senha para efetuar login</h3>
-            </hgroup>                
-        </header>
+        <?php
+            $email = $_POST['email'];
+            $password = $_POST['senha'];
+        ?>
         <main>
-            <div>
-                <form action="resultoflogin.php" method="POST">
-                    <div class="container-input">
-                        <label>Email</label>
-                        <input type="email" name="email" placeholder="entre com seu email" />
-                    </div>
-                    <div class="container-input">
-                        <label>Senha</label>
-                        <input type="password" name="senha" placeholder="entre com a sua senha" />
-                    </div>
+            <?php if (!$email || $email == ''):?>
+                <span> Por favor, informe o seu e-mail </span>
+                <?php return false; ?>
+            <?php endif ?>
+            <?php if (!$password || $password == ''):?>
+                <span> Por favor, informe a sua senha </span>
+                <?php return false; ?>
+            <?php endif ?>
+            <?php
+                $emailsAcceptables = [ 
+                    'email1@senac.com',
+                    'email2@senac.com',
+                    'email3@senac.com'
+                ];
 
-                    <div class="container-input">
-                        <input type="submit" value="login" />
-                    </div>                                        
-                </form>
-            </div>
+                $isEmailExist = in_array($email,$emailsAcceptables);
+
+            ?>
+
+            <?php if (!$isEmailExist): ?>
+                <span> Esse e-mail não existe na nossa base de dados </span>
+                <?php 
+                    return false;
+                ?>
+            <?php endif ?>
+            
+            <?php
+                $passwords = [ 
+                    'senha1',
+                    'senha2',
+                    'senha3'
+                ];
+
+                $passwordSelected = "";
+
+                foreach($emailsAcceptables as $keyEmail => $valueEmail) {
+                    if ($valueEmail === $email) {
+                        $passwordSelected = $passwords[$keyEmail];
+                    }
+                }       
+            ?>
+            <?php if ($password !== $passwordSelected): ?>
+                <span> Você inseriu a senha errada </span>
+                <?php 
+                    return false;
+                ?>                
+            <?php endif ?>
+
+            <span>Login executado com sucesso</span>
         </main>
     </body>
 </html>
