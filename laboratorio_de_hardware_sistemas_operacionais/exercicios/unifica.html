@@ -68,7 +68,16 @@
             }
 
             #memory {
-                display: none;                
+                display: none;
+            }
+
+            #soinstall {
+                display: none;
+            }
+
+            #textareasoinstall {
+                border-radius: 15px;
+                border: 2px solid;
             }
 
             #show-first {
@@ -127,6 +136,9 @@
                 <li onclick="showById('memory')">
                     Memória
                 </li>
+                <li onclick="showById('soinstall')">
+                    Instalação de um Sistema Operacional
+                </li>                
             </ul>
         </header>
         <main>
@@ -403,7 +415,102 @@
                     <button onclick="showGabInf()">Ver Gabarito</button>
                 </section>
 
-                <h3>Em desenvolvimento</h3>
+                <h3>1) Sobre o conceito de hierarquia de memória, assinal-e a falsa</h3>
+
+                <input type="radio" name="memory1" > a) A memória do computador é organizada em uma hierarquia.<br>
+                <input type="radio" name="memory1" > b) No nível mais alto é aquele que está mais próximo do disco rígido.<br>
+                <input type="radio" name="memory1" > c) Em seguida, vem a memória principal, que normalmente é uma memória dinâmica de acesso aleatório e dinâmico (DRAM).<br>
+                <input type="radio" name="memory1" > d) No nível mais alto (mais perto do processador), estão os registradores do processador.
+    
+                <h3>2) Ainda dentro do contexto de hierarquia de memória, assina-le a alternativa verdadeira</h3>
+
+                <input type="radio" name="memory2" > a) Memórias dentro do processor, memória de cache ao processador e a DRAM são consideraras memórias internas ao computador<br>
+                <input type="radio" name="memory2" > b) Disco rígido é uma memória interna ao computador<br>
+                <input type="radio" name="memory2" > c) A medida que descemos a hierarquia de memória o custo por bit se torna maior<br>
+                <input type="radio" name="memory2" > d) A memória interna possui um cust por bit maior do que as memórias externas
+                
+                <h3>3) Se a memória cache for construída corretamente, então:</h3>
+    
+                <input type="radio" name="memory3" > a) O processador acessará a memória DRAM <br>
+                <input type="radio" name="memory3" > b) O processador solicitará palavras da memória que já estão na cache, e não precisará buscar na DRAM <br>
+                <input type="radio" name="memory3" > c) O processador acessador acessará a memória externa, necessariamente. <br>
+                <input type="radio" name="memory3" > d) O processador ficará inoperante
+    
+    
+                <h3>4) Quanto as questões que resumem a restrição de memória?</h3>
+           
+                <input type="radio" name="memory4" > a) A velocidade de acesso é apenas a única informação relevante<br>
+                <input type="radio" name="memory4" > b) Qual é o custo da memória? É apenas a únifca informação relevante<br>
+                <input type="radio" name="memory4" > c) Qual é o custo da memória? Essa é uma informação relevante.<br>
+                <input type="radio" name="memory4" > d) A capacidade de armanamento é totalmente irrelevante.<br>
+                
+                <h3>5) A dinâmica dos sistemas de memória se dão da seguinte maneira:</h3>
+    
+                <input type="radio" name="memory5" > a) Tempo de acesso mais rápido, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais rápido.<br>
+                <input type="radio" name="memory5" > b) Tempo de acesso mais devagar, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais devagar.<br>
+                <input type="radio" name="memory5" > c) Tempo de acesso mais rápido, menor custo por bit. Maior capacidade, maior custo por bit. Maior capacidade, tempo de acesso mais lento.<br>
+                <input type="radio" name="memory5" > d) Tempo de acesso mais rápido, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais lento.<br>
+    
+                <h3>6) Sobre método de acesso de memória</h3>
+    
+                <input type="radio" name="memory6" > a) Acesso sequencial: a memória é organizada em unidades de dados chamadas registros. O acesso é feito em uma sequência linear específica. O tempo para acessar um registro qualquer é altamente variável. As unidades de fita não são de acesso sequencial. <br>
+                <input type="radio" name="memory6" > b) Acesso direto: os blocos ou registros individuais têm um endereço exclusivo, baseado no local físico. O tempo de acesso é fixo.<br>
+                <input type="radio" name="memory6" > c) Acesso aleatório: cada local endereçável na memória tem um mecanismo de endereçamento exclusivo, fisicamente interligado. O tempo para acessar determinado local é independente da sequência de acessos anteriores, e é constante. Assim, qualquer local pode ser selecionado aleatoriamente, e endereçado e acessado diretamente. A memória principal e alguns sistemas de cache são de acesso aleatório.<br>
+                <input type="radio" name="memory6" > d) Associativo: tipo de memória de acesso aleatório que permite fazer uma comparação de um certo número de bit desejados dentro de uma palavra para uma combinação especificada, e faz isso para todas as palavras simultaneamente. Assim, uma palavra é recuperada com base em uma parte de seu conteúdo, em vez do seu endereço. o tempo de recuperação é constante, independentemente do local ou padrões de acesso anteriores. As memórias cache podem empregar o acesso não associativo.<br>
+    
+    
+                <h3>7) Sobre o desempenho </h3>
+                
+                <input type="radio" name="memory7" > a) Tempo de acesso (latência): para a memória de acesso constante, esse é o tempo gasto para realizar uma operação de leitura ou escrita, ou seja, o tempo desde o instante em que um endereço é apresentado à memória até o instante em que os dados foram armazenados ou se tornaram disponíveis para uso.<br>
+                <input type="radio" name="memory7" > b) Para a memória de acesso não aleatório, o tempo de acesso é o tempo gasto para posicionar o mecanismo de leitura no local desejado.<br>
+                <input type="radio" name="memory7" > c) Para memória de acesso não aleatório, a taxa de transferência é de 1/(tempo de ciclo)<br>
+                <input type="radio" name="memory7" > d) Para a memória de acesso não aleatório, a taxa de transferência é dada por <e>Tn = Ta + (n/R)</e><br>
+    
+    
+                <h3>8) Sobre a equação <e>Tn = Ta + (n/R)</e> </h3>
+                
+                <input type="radio" name="memory7" > a) Tn tempo médio para ler ou escrever N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência em bits por segundo<br>
+                <input type="radio" name="memory7" > b) Tn tempo médio apenas para ler N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência em bits por segundo<br>
+                <input type="radio" name="memory7" > c) Tn tempo médio apenas para ler N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência de acesso do bit<br>
+                <input type="radio" name="memory7" > d) Tn tempo médio apenas para ler N bits, Ta tempo absoluto de acesso, n número de bits, R taxa de transferência de acesso do bit<br>
+    
+    
+                <h3>9) O conceito de memória volátil é: </h3>
+                
+                <input type="radio" name="memory8" > a) A informação não se deteriora naturalmente<br>
+                <input type="radio" name="memory8" > b) Memórias com superfície magnética (disco rígido) são voláteis <br>
+                <input type="radio" name="memory8" > c) Memória semicondutora não pode ser volátil ou não (registradores, caches)<br>
+                <input type="radio" name="memory8" > d) A informação se deteriora naturalmente ou se perde quando a energia elétrica é desligada.<br>
+
+                
+            </section>
+
+            <section id="soinstall">
+                <section class="show-gab">
+                    <button onclick="showGabInf()">Ver Gabarito</button>
+                </section>
+
+
+                <h3>1) Defina as etapas de instalação de um S.O (Windows, Linux)</h3>
+
+                <ol>
+                    <li> <input type="checkbox"> Adicionar dispositivo de mídia de instalação (Pendrive ao USB, DVD ao dispositivo de mídia)</li>
+                    <li> <input type="checkbox"> Cópia dos arquivos de instalação para a mídia onde s.o está sendo instalado</li>
+                    <li> <input type="checkbox"> Formatar o Disco Rígido</li>
+                    <li> <input type="checkbox"> Configurações pré-instalação</li>
+                    <li> <input type="checkbox"> Ligar o computador</li>
+                    <li> <input type="checkbox"> Pressionar F10 e reiniciar o computador</li>
+                    <li> <input type="checkbox"> Acessar a BIOS, em algums computadores é com F2 já em outros é com DEL</li>
+                    <li> <input type="checkbox"> Configurações pós-instalação</li>
+                    <li> <input type="checkbox"> Mudar a configuração de boot para a mídia onde os arquivos de instalação s.o está instalado</li>
+                    <li> <input type="checkbox"> Iniciar o programa de instalação</li>
+                    <li> <input type="checkbox"> Remover partiçoes e/ou criar partições novas</li>
+                    <li> <input type="checkbox"> Execução da instalação propriamente dita</li>            
+                </ol>
+        
+                <textarea id="textareasoinstall" cols="100" rows="2" >
+                </textarea>
+
             </section>
         </main>
 
@@ -424,7 +531,8 @@
                 'sysfile', 
                 'process-thread',
                 'memory',
-                'show-first'
+                'show-first',
+                'soinstall'
             ]
 
             mainProcess()
@@ -455,7 +563,7 @@
                 })
 
                 document.getElementById("modal").style.display = 'block'
-sysfile
+
                 const docStructure = [
                     {
                         nameId:'ossys',
@@ -506,6 +614,28 @@ sysfile
                             _questionResponseObject(7, '<ul><li>A transição 1 ocorre quando o sistema operacional descobre que um processo não pode continuar agora. Em alguns sistemas o processo pode executar uma chamada de sistema, como em pause, para entrar em um estado bloqueado.</li><li>As transições 2 e 3 são causadas pelo escalonador de processos, uma parte do sistema operacional, sem o processo nem saber a respeito delas. Escalonamento: decidir qual processo deve ser executado, quando e por quanto tempo</li><li>A transição 2 ocorre quando o escalonador decide que o processo em andamento foi executado por tempo suficiente, e é o momento de outro ter algum tempo de CPU.</li><li>A transição 3 ocorre quando todos os outros processos tiveram sua parcela justa e está na hora de o primeiro processo chegar à CPU para ser executado novamente.</li><li>A transição 4 se verifica quando o evento externo pelo qual um processo estava esperando (como a chegada de alguma entrada) acontece.</li><li>As informações são salvas quando um processo é trocado do estado em execução para pronto ou bloqueado, são de maneira que ele possa ser reiniciado mais tarde como se nunca tivesse sido parado.</li></ul>'),
                             _questionResponseObject(8, '<ul><li>A maioria dos processos termina por terem realizado o seu trabalho. Quando um compilador termina de traduzir o programa dado a ele, o compilador executa uma chamada para dizer ao sistema operacional que ele terminou.</li><li>Essa chamada é exit em UNIX e ExitProcess no Windows.<li>Saída normal (voluntária)</li><li>Erro fatal (involuntário)</li><li>Saída por erro (voluntária)</li><li>Morto por outro processo (involuntário)</li><li>Exemplos de erro de programa: executar uma instrução</li></ul>'),
                             _questionResponseObject(9, '<ul><li>São processos com espaço de endereçamento compartilhado (*processos leves*)</li><li>Os threads acrescentam a capacidade para entidades em paralelo compartilharem um espaço de endereçamento e todos os seus dados entre si.</li><li>Um segundo argumento para a existência dos threads é que como eles são mais leves do que os processos, eles são mais fáceis (mais rápidos) para criar e destruir do que os processos (criar um thread pode ser algo de 10 a 100 vezes mais rápido do que criar um processo).</li></ul>')
+                        ]
+                    },
+                    {
+                        nameId:"memory",
+                        title:"Memória",
+                        questions:[
+                            _questionResponseObject(1, 'b'),
+                            _questionResponseObject(2, 'a'),
+                            _questionResponseObject(3, 'b'),
+                            _questionResponseObject(4, 'c'),
+                            _questionResponseObject(5, 'd'),
+                            _questionResponseObject(6, 'd'),
+                            _questionResponseObject(7, 'd'),
+                            _questionResponseObject(8, 'c'),
+                            _questionResponseObject(9, 'd')                                                        
+                        ]
+                    },
+                    {
+                        nameId:"soinstall",
+                        title:"Instalação de Sistema Operacional",
+                        questions:[
+                            _questionResponseObject(1, "1,5,7,9,6,10,11,3,4,2,12,8")                                                        
                         ]
                     }
                 ]
