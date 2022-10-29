@@ -7,7 +7,6 @@ CPU é buscar a primeira instrução da memória, decodificá-la para determinar
 subsequentes.
 * O ciclo é repetido até o programa terminar
 
-
 * Cada CPU tem um conjunto específico de instruções
 que ela consegue executar
 * Desse modo, um processador x86 não pode executar programas ARM e um processador ARM não consegue executar programas x86.
@@ -20,15 +19,12 @@ que ela consegue executar
 * Outro registrador ainda é o PSW (Program Status
 Word — palavra de estado do programa). Esse registrador contém os bits do código de condições, que são estabelecidos por instruções de comparação, a prioridade da CPU, o modo de execução (usuário ou núcleo) e vários outros bits de controle.
 
-
-
 * Para melhorar o desempenho, os projetistas de CPU há muito tempo abandonaram o modelo simples de buscar, decodificar e executar uma instrução de cada vez.
 * Muitas CPUs modernas têm recursos para executar mais de uma instrução ao mesmo tempo. 
 * Por exemplo, uma CPU pode ter unidades de busca, decodificação e execução separadas,  assim enquanto ela está executando a instrução n, poderia também estar decodificando a instrução n + 1 e buscando a instrução n + 2.
 * Uma organização com essas características é chamada de pipeline
 
 <img src="imgs/execprocess.png">
-
 
 * A maioria das CPUs — exceto aquelas muito simples usadas em sistemas embarcados, tem dois modos, núcleo e usuário, como mencionado anteriormente
 * Em geral, um bit no PSW controla o modo.

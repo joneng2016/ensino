@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > header > ul {
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+body > header > ul > li {
+    color: rgb(198, 193, 193);
+    list-style: none;
+    display: inline;
+    margin-left: 15px;
+    cursor:pointer;
+}
+
+body > header > ul > li:hover {
+    color: #fff;
+}
+
+body > main > section {
+    margin-bottom: 15px;
+} 
+
+body > main {
+    min-height: 800px;
+}
+
+body > footer {
+    color: #fff;
+    background-color: black;
+    height: 200px;
+    text-align: center;
+}
+
+body > footer > span {
+    display: block;
+    position: relative;
+    top: 40px;
+    font-weight: 600;
+}
+
+body > main > section > button {
+    font-size: 18px;
+    text-align: center;
+}
+
+#ossys {
+    display: none;
+}
+
+#sysfile {
+    display: none;
+    margin-bottom: 15px;                          
+}
+
+#process-thread {
+    display: none;
+
+}
+
+#memory {
+    display: none;
+}
+
+#processors {
+    display: none;
+}
+
+#soinstall {
+    display: none;
+}
+
+#textareasoinstall {
+    border-radius: 15px;
+    border: 2px solid;
+}
+
+#show-first {
+    position: relative;
+    top: 300px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.show-gab {
+    text-align: center;                
+}
+
+#modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal-content {
+    border-radius: 15px;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+#modal > #modal-content > #close {
+    float: right;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
