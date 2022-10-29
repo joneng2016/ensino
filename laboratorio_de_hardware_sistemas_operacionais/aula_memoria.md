@@ -147,3 +147,7 @@ As linhas de dados e endereços também se conectam a buffers de dados e endere�
 <img src="imgs/cache6.png" style="width:400px;">
 
 Quando ocorre uma falha de cache (cache miss), o endereço desejado é carregado no barramento do sistema e os dados são transferidos através do buffer de dados para a cache e para o processador.
+
+## Exercícios para prática
+
+https://proffjonathansamara.000webhostapp.com?name=memory
