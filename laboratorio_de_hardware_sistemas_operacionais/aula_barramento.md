@@ -26,3 +26,23 @@
 
 * Ainda temos muitos dispositivos de legado do padrão PCI mais antigo.
 * No futuro, quando virmos o PCI não mais como meramente velho, mas ancestral, é possível que todos os dispositivos PCI vão se ligar a mais um centro ainda que, por sua vez, vai conectá-los ao centro principal, criando uma árvore de barramentos.
+
+## Arquitetura atual dos Dispositivos
+
+* CPU se comunica com a memória por meio de um barramento DDR3 rápido, com um dispositivo gráfico externo através do PCIe e com todos os outros dispositivos via um centro controlador usando um barramento DMI (Direct Media Interface — interface de mídia direta).
+* O centro por sua vez conecta-se com todos os outros dispositivos, usando o Barramento Serial Universal para conversar com os dispositivos USB
+* O barramento SATA para interagir com discos rígidos e acionadores de DVD
+* O PCIe para transferir quadros (frames) Ethernet.
+
+# USB
+
+* O USB (Universal Serial Bus — barramento serial universal) foi inventado para conectar todos os dispositivos de E/S lentos, como o teclado e o mouse, ao computador.
+* No entanto, chamar um dispositivo USB 3.0 zunindo a 5 Gbps de “lento” pode não soar natural para a geração que cresceu com o ISA de 8 Mbps como o barramento principal nos primeiros PCs da IBM.
+*  O USB usa um pequeno conector com quatro a onze fios (dependendo da versão), alguns dos quais fornecem energia elétrica para os dispositivos USB ou conectam- -se com o terra.
+* O USB é um barramento centralizado no qual um dispositivo-raiz interroga todos os dispositivos de E/S a cada 1 ms para ver se eles têm algum tráfego.
+* O USB 1.0 pode lidar com uma carga agregada de 12 Mbps, o USB 2.0 aumentou a velocidade para 480 Mbps e o USB 3.0 chega a não menos que 5 Gbps.
+* Qualquer dispositivo USB pode ser conectado a um computador e ele funcionará imediatamente, sem exigir uma reinicialização, algo que os dispositivos pré-USB exigiam para a consternação de uma geração de usuário
+
+# Demais barramentos
+
+* O barramento SCSI (Small Computer System Interface — interface pequena de sistema computacional) é um barramento de alto desempenho voltado para  discos rápidos, digitalizadores de imagens e outros dispositivos que precisam de uma considerável largura de banda.
