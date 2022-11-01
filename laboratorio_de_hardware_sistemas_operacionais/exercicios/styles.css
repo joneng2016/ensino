@@ -4,19 +4,25 @@ body {
 
 body > header > ul {
     background-color: black;
-    padding: 10px;
     border-radius: 15px;
 }
 
-body > header > ul > li {
-    color: rgb(198, 193, 193);
-    list-style: none;
-    display: inline;
-    margin-left: 15px;
-    cursor:pointer;
+#sidemenu {
+    vertical-align:top;
+    display: inline-block;
+    width: 25%;
+    background-color: black;
+    border-radius: 15px;
 }
 
-body > header > ul > li:hover {
+#sidemenu > ul > li {
+    color: rgb(198, 193, 193);
+    list-style: none;
+    cursor:pointer;
+    margin-top: 15px;
+}
+
+#sidemenu > ul > li:hover {
     color: #fff;
 }
 
@@ -116,4 +122,13 @@ body > main > section > button {
     font-size: 30px;
     font-weight: 600;
     cursor: pointer;
+}
+
+#barramento {
+    display: none;
+}
+
+#questions {
+    display: inline-block;
+    width: 69%;
 }

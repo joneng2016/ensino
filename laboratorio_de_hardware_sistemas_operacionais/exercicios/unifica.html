@@ -8,460 +8,510 @@
     </head>
     <body>
         <header>
-            <ul>
-                <li onclick="showById('ossys')">
-                    Sistemas Operacionais
-                </li>
-                <li onclick="showById('sysfile')">
-                    Sistemas de Arquivos
-                </li>
-                <li onclick="showById('process-thread')">
-                    Processos e Threads
-                </li>
-                <li onclick="showById('memory')">
-                    Memória
-                </li>
-                <li onclick="showById('soinstall')">
-                    Instalação de um Sistema Operacional
-                </li>
-                <li onclick="showById('processors')">
-                    Processadores
-                </li>                
-                
-            </ul>
         </header>
         <main>
-            <section id="show-first">
-                <h1>
-                    Lista de Exercícios de Laboratório de Hardware
-                </h1>
-            </section>
-
-            <section id="modal">
-                <div id="modal-content">
-                    <span id="close" onclick="closeTime()">&times;</span>
-                    <div id="modal-html-content">
-                    </div>
-                </div>
-            </section>
-
-            <section id="ossys">
-                <section class="show-gab">
-                    <button onclick="showGabInf()">Ver Gabarito</button>
+            <article>
+                <section id="sidemenu">
+                    <ul>
+                        <li onclick="showById('ossys')">
+                            Sistemas Operacionais
+                        </li>
+                        <li onclick="showById('sysfile')">
+                            Sistemas de Arquivos
+                        </li>
+                        <li onclick="showById('process-thread')">
+                            Processos e Threads
+                        </li>
+                        <li onclick="showById('memory')">
+                            Memória
+                        </li>
+                        <li onclick="showById('soinstall')">
+                            Instalação de um Sistema Operacional
+                        </li>
+                        <li onclick="showById('processors')">
+                            Processadores
+                        </li>
+                        <li onclick="showById('barramento')">
+                            Barramentos
+                        </li>
+                    </ul>
                 </section>
-
-                <h2>
-                    Sistemas Operacionais
-                </h2>
-
-                <h3>1) Qual é a finalidade de um sistema operacional</h3>
-    
-                <input type="radio" name="finality-exec" > a) Organizar a disposição dos dados em um dado elemento de memória </br>
-                <input type="radio" name="finality-exec" > b) Compilar linguagem de programação para linguagem de máquina </br>    
-                <input type="radio" name="finality-exec" > c) Gerencia recursos do computador, oferece serviços para os programadores e distribui execução de outros programas. </br>
-                <input type="radio" name="finality-exec" > d) Operacionalizar estruturas necessárias para que o usuário tenha acesso a internet
-    
-                
-    
-                <h3>2) Sobre sistemas operacionais assinale as alternativas Verdadeiras</h3>
-    
-                <input type="checkbox"> I)   torna o computador mais conveniente para o uso <br>
-                <input type="checkbox"> II)  torna o computador mais eficiente porque o processamento ocorrerá de forma mais rápida <br>
-                <input type="checkbox"> III) torna o computador mais eficiente porque sua ação diminui o uso da memória em tempo de execução <br>
-                <input type="checkbox"> IV)  possibilita que os recursos do sistema sejam usados de uma maneira mais eficiente <br>
-                <input type="checkbox"> V)   O conceito de um sistema operacional como uma abstrações para programas aplicativos pode ser considerada uma visão visão top-down
-                <br>
-                <br>
-                <input type="radio" name="true-sistem-operation" > a) Apenas I, II e III    <br>
-                <input type="radio" name="true-sistem-operation" > b) Apenas I, IV e V      <br>
-                <input type="radio" name="true-sistem-operation" > c) Pelo menos IV e V     <br>
-                <input type="radio" name="true-sistem-operation" > d) Apenas I, III,       
-                
-    
-                <h3>3) Sobre utilidade do sistema operacional, marque a verdadeira</h3>
-    
-                <input type="radio" name="utility-so-using" > a) Apesar do desenvolvimento de software ser algo complexo, o s.o não contribui em nada para facilidade dessa atividade<br>
-                <input type="radio" name="utility-so-using" > b) Não é papel do S.O esconder detalhes de hardware para o Programdor, logo essas questões devem ser pensadas por ele no momento de desenvolvimento do <i>software</i><br>
-                <input type="radio" name="utility-so-using" > c) O SO oferece facilidades e serviços, como editores e depuradores, para auxiliar o programador na criação de programas.<br>
-                <input type="radio" name="utility-so-using" > d) O sistema operacional não atua em questões vinculadas a entrada e saída de dados<br>
-                
-                <h3> 4) No que tange a Execução de Programas do S.O</h3>
-                <input type="radio" name="finality-so" > a) O sistema operacional não tem responsabilidade nenhuma nisso<br>
-                <input type="radio" name="finality-so" > b) Antes do programa ser executado, o S.O o carrega em um memória de rápido acesso conhecida como ROM, hoje em dia disponibilizada fisicamente em discos rígidos<br>
-                <input type="radio" name="finality-so" > c) É impossível fazer algum tipo de execução de programas sem a disponibilidade de um sistema operacional<br>
-                <input type="radio" name="finality-so" > d) Diversas tarefas precisam ser realizadas para executar um programa. As instruções/dados precisam ser carregados para a memória, dispositivos de E/S precisam ser inicializados, etc. O SO trata de tudo isso para o usuário.<br>
-    
-    
-                <h3> 5) No que tange a Entrada e Saída</h3>
-                <input type="radio" name="finality-so-inputoutput" > a) O sistema operacional gerencia apenas os dispositivos de entrada<br>
-                <input type="radio" name="finality-so-inputoutput" > b) Teclado é o exemplo de um dispositivo de saída<br>
-                <input type="radio" name="finality-so-inputoutput" > c) Nenhuma alternativa aqui presente é a correta<br>
-                <input type="radio" name="finality-so-inputoutput" > d) Monitor é o exemplo de um dispositivo de entrada<br>
-    
-                <h3> 6) Sobre drivers assina-le a única errada</h3>
-                <input type="radio" name="drivers-only-wrong" > a) Sistemas operacionais contêm muitos drivers para controlar dispositivos de E/S. <br>
-                <input type="radio" name="drivers-only-wrong" > b) Como cada tipo de controlador (controlador de memória, de E/S etc.) é diferente, diversos softwares são necessários para controlar cada um. <br>
-                <input type="radio" name="drivers-only-wrong" > c) Drivers são programas usados para fazer a edição de códigos cuja finalidade é executar algum tipo de operação no kernel do sistema operacional<br>
-                <input type="radio" name="drivers-only-wrong" > d) O software que conversa com um controlador, dando a ele comandos e aceitando respostas, é chamado de driver de dispositivo. <br>
-    
-                <h3> 7) No que tange a relação de um sistema operacional e acessos ao sistema, marque a única errada</h3>
-                <input type="radio" name="access-only-wrong" > a) No caso de um sistema compartilhado ou público, o SO controla o acesso ao sistema e a seus recursos.<br>
-                <input type="radio" name="access-only-wrong" > b) No caso de um sistema compartilhado ou público, o SO oferece proteção de recursos e dados de usuários não autorizados, e resolve conflitos para disputa de recurso<br>
-                <input type="radio" name="access-only-wrong" > c) A adminsitração de tipos de acessos a um dado arquivo não é de responsabilidade do sistema operacional<br>
-                <input type="radio" name="access-only-wrong" > d) O SO precisa tomar uma medida que encerre a condição de erro com o mínimo de impacto sobre as aplicações em execução, no caso deles ocorrem tem tempo de execução<br>
-    
-                <h3> 8) No que tange ao Gerenciamento de Recursos</h3>
-    
-                <input type="checkbox"> I)   O conceito de um sistema operacional como uma abstrações para programas aplicativos pode ser considerada uma visão visão top-down
-                <br>
-                <input type="checkbox"> II)  Uma visão alternativa, bottom-up (abstração de baixo para cima), sustenta que o sistema operacional está ali para gerenciar todas as partes de um sistema complexo. <br>
-                <input type="checkbox"> III) Na visão bottom-up, a função do sistema operacional é fornecer uma alocação ordenada e controlada dos processadores, memórias e dispositivos de E/S entre os vários programas competindo por eles. <br>
-                <input type="checkbox"> IV)  O SO nunca abre mão do controle e precisa depender do processador para permitir que ele readquira o controle <br>
-                <input type="checkbox"> V)   O SO não funciona da mesma maneira que o software comum do computador; ou seja, ele não é um programa executado pelo processador.
-                <br>
-                <br>
-         
-    
-                <input type="radio" name="manager-resource" >a)I, IV, V<br>
-                <input type="radio" name="manager-resource" >b)IV, V<br>
-                <input type="radio" name="manager-resource" >c)III, IV, e V<br>
-                <input type="radio" name="manager-resource" >d)I, II<br>
-                <input type="radio" name="manager-resource" >e)I, II, III<br>
-    
-    
-                <h3> 9) Disserte sobre o conceito de multiplexação no tempo, dando exemplo da relação S.O e CPU</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-    
-                <h3> 10) Disserte sobre o conceito de multiplexação no espaço, dando exemplo da relação S.O e Memória</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-    
-                <h3> 11) Descreva como ocorre o processo de inicialização de um computador</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3> 12) Disserte sobre os computadores a válvula, os computadores de primeira geração</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3> 13) Disserte sobre os computadores de segunda geração</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3> 14) Disserte sobre os computadores de terceira geração</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3> 15) Disserte sobre os computadores de quarta geração</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3> 16) Disserte sobre os computadores de quinta geração</h3>
-                <textarea cols="100" rows="10" ></textarea>
-
-            </section>
-
-            <section id="sysfile">
-                <section class="show-gab">
-                    <button onclick="showGabInf()">Ver Gabarito</button>
-                </section>
-
-                <h2>Sistema de Arquivos</h2>
-                <h3>1) Sobre Sistemas de Arquive marque as alternativas corretas</h3>
-
-                <input type="checkbox"> I)    Conjunto de padrões usados para organizas os dados. <br>
-                <input type="checkbox"> II)   Diretórios não são dados. <br>
-                <input type="checkbox"> III)  Sistema de arquivos permitem gerenciar o espaço livre e o espaço ocupado <br>
-                <input type="checkbox"> IV)   Não mantem a integridade dos dados
-                <br>
-                <br>
-                <input type="radio" name="a" > a) I, II<br>
-                <input type="radio" name="a" > b) II, IV<br>
-                <input type="radio" name="a" > c) I, IV<br>
-                <input type="radio" name="a" > d) nenhuma das alternativas
-    
-    
-                <h3>2) Sobre a famíllia FAT, assina-le</h3>
-    
-                <input type="checkbox"> I) File Allocation Table (Tabela de alocação de arquivos) <br>
-                <input type="checkbox"> II) Padrões de sistema DOS e Windows antigo <br>
-                <input type="checkbox"> III) FAT 12 - Suporta arquivo de no máximo 32 MB Tamanho máximo de volume 32 MB<br>
-                <input type="checkbox"> IV) FAT 16 - Suporta arquivo de no máximo 32 MB Tamanho máximo de volume 32 MB<br>
-                <input type="checkbox"> V) FAT 32 - Suporta arquivo de no máximo 2/4 GB (com LFS - Large File Support) Tamanho máximo de volume 1 TB
-                <br>            
-                <br>
-                <input type="radio" name="b" > a) I, II, III<br>
-                <input type="radio" name="b" > b) I, V<br>
-                <input type="radio" name="b" > c) I, IV<br>
-                <input type="radio" name="b" > d) I, II, V 
-    
-    
-    
-                <h3>3) Sobre a família NTFS, assina-le</h3>
-    
-                <input type="checkbox"> I) Criado em 1995 <br>
-                <input type="checkbox"> II) Não suporta criptografia<br>
-                <input type="checkbox"> III) Trabalha com Journaling <br>
-                <input type="checkbox"> IV) Compatível apenas com Windows e Linux kernel > 2.2<br>
-                <input type="checkbox"> V) Compatível com todos os sistemas de kernel Linux
-                <br>            
-                <br>
-                <input type="radio" name="c" > a) I, II<br>
-                <input type="radio" name="c" > b) III, IV<br>
-                <input type="radio" name="c" > c) I, IV<br>
-                <input type="radio" name="c" > d) I, II, IV, V
-    
-    
-                <h3>4) Sobre a família exFAT, assina-le</h3>
-    
-                <input type="checkbox"> I) Sistema proprietário, criado em 2006 pela Microsoft. <br>
-                <input type="checkbox"> II) Max arq e volume 12PB <br>
-                <input type="checkbox"> III) Para além dos sistemas Microsfot, possui suporte apenas para o(s) S.Os Android<br>
-                <br>            
-                <br>
-                <input type="radio" name="d" > a) I, II<br>
-                <input type="radio" name="d" > b) I<br>
-                <input type="radio" name="d" > c) I, IV<br>
-                <input type="radio" name="d" > d) I, II, III<br>
-                <input type="radio" name="d" > e) III<br>
-    
-    
-                <h3>5) Sobre a família ext, marque a correta</h3>
-    
-                <input type="radio" name="e" > a) Sitema de arquivos para Windows <br>
-                <input type="radio" name="e" > b) Advento do Journaling começa no ext2<br>
-                <input type="radio" name="e" > c) Tem suporte a Windows, nem OS X <br>
-                <input type="radio" name="e" > d) Arquivos de até 16 TB/ 1 EB max storage <br>
-
-    
-                <h3>6) O que é e onde é usado os Sistemas de Arquivos HFS, HFS+ e APFS</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3>7) O que é e onde é usado os Sistemas de Arquivos ISO 9660</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-    
-                <h3>8) Como consultor técnico de uma grande multinacional você precisa decidir em quais cenários os sistemas de arquivo NFTS, ext4, FAT32 e exFat devem ser usados. Apresente sua conclusão argumentando os motivos de cada escolha</h3>
-                <textarea cols="100" rows="10" ></textarea>
-            </section>
-
-            <section id="process-thread">
-                <section class="show-gab">
-                    <button onclick="showGabInf()">Ver Gabarito</button>
-                </section>
-
-                <h2>Processos e Threads</h2>
-                <h3>1) Assine as alternativas verdadeiras sobre processos</h3>
-
-                <input type="checkbox">  I   É um programa em execução <br>
-                <input type="checkbox">  II  A CPU consegue executar vários processos ao mesmo tempo <br>
-                <input type="checkbox">  III Um determinado processo pode ser iniciado apenas uma vez<br>
-                <input type="checkbox">  IV  Em um sistema de multiprogramação a CPU muda de um processo para outro muito rapidamente (em ms).
-                <br>
-                <br>
-                <input type="radio" name="radio1" > a) IV <br>
-                <input type="radio" name="radio1" > b) I, II, IV<br>
-                <input type="radio" name="radio1" > c) I, II<br>
-                <input type="radio" name="radio1" > d) I e IV       
-    
-                <h3>2) Sobre multiprogramação, marque a verdadeira</h3>
-    
-                <input type="radio" name="radio2" > a) É o ato do processador executar vários processos ao mesmo tempo <br>
-                <input type="radio" name="radio2" > b) Multiprogramação não é um termo utilizado dentro do contexto da computação<br>
-                <input type="radio" name="radio2" > c) Em um sistema de multiprogramação a CPU muda de um processo para outro muito rapidamente (em ms).<br>
-                <input type="radio" name="radio2" > d) Em um sistema de multiprogramação a CPU muda de um processo para outro na ordem de s.
-    
-    
-                <h3>3) Sobre Endereçamento de memória, marque a falsa</h3>
-    
-                <input type="radio" name="radio3" > a) Cada processo é associado a um dado espaço de endereçamento. Isso consiste em uma lista de posições de memória que vão de 0 a algum máximo onde o processo pode ler e escrever.<br>
-                <input type="radio" name="radio3" > b) O espaço de endereçamento consiste no no tempo alocado pela cpu para executar determinado procedimento<br>
-                <input type="radio" name="radio3" > c) A pilha contém uma estrutura para cada rotina (conjuntos e instruções), que foi chamada mas ainda não encerrada.<br>
-                <input type="radio" name="radio3" > d) Um processo é na essência um contêiner que armazena todas as informações necessárias para executar um programa
-    
-    
-                <h3>4) Dentro do contexto de processos e de programação marque a alternativa falsa</h3>
-    
-                <input type="radio" name="radio5" > a) O usuário pode ter inicializado um programa de edição de vídeo e mandou converter um vídeo de uma hora para um formato MP4 (algo que pode levar horas) e então foi navegar na web enquanto convertia.<br>
-                <input type="radio" name="radio5" > b) Periodicamente, o sistema operacional decide parar de executar um processo e começa a executar outro, talvez porque o primeiro utilizou mais do que sua parcela de tempo da CPU no último segundo ou dois<br>
-                <input type="radio" name="radio5" > c) Um processo que é suspenso temporiamente pela cpu não é retomando no exato estado da suspensão, mas sim de seu início.<br>
-                <input type="radio" name="radio5" > d) Um processo é na essência um contêiner que armazena todas as informações necessárias para executar um programa
-    
-                <h3>5) Quais são as principais chamadas do sistema de gerenciamento de processos?</h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3>6) Quais são os três estados de um processo? Apresente uma descrição de cada estado </h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3>7) Ainda no contexto da questão 7 apresente as 4 transições de estado possíveis, forneça uma descrição de cada estado  </h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3>8) Quais são as possibilidades de término de processos?  </h3>
-                <textarea cols="100" rows="10" ></textarea>
-    
-                <h3>9) O que são Threads?  </h3>
-                <textarea cols="100" rows="10" ></textarea>
-            </section>
-
-            <section id="memory">
-                <section class="show-gab">
-                    <button onclick="showGabInf()">Ver Gabarito</button>
-                </section>
-
-                <h3>1) Sobre o conceito de hierarquia de memória, assinal-e a falsa</h3>
-
-                <input type="radio" name="memory1" > a) A memória do computador é organizada em uma hierarquia.<br>
-                <input type="radio" name="memory1" > b) No nível mais alto é aquele que está mais próximo do disco rígido.<br>
-                <input type="radio" name="memory1" > c) Em seguida, vem a memória principal, que normalmente é uma memória dinâmica de acesso aleatório e dinâmico (DRAM).<br>
-                <input type="radio" name="memory1" > d) No nível mais alto (mais perto do processador), estão os registradores do processador.
-    
-                <h3>2) Ainda dentro do contexto de hierarquia de memória, assina-le a alternativa verdadeira</h3>
-
-                <input type="radio" name="memory2" > a) Memórias dentro do processor, memória de cache ao processador e a DRAM são consideraras memórias internas ao computador<br>
-                <input type="radio" name="memory2" > b) Disco rígido é uma memória interna ao computador<br>
-                <input type="radio" name="memory2" > c) A medida que descemos a hierarquia de memória o custo por bit se torna maior<br>
-                <input type="radio" name="memory2" > d) A memória interna possui um cust por bit maior do que as memórias externas
-                
-                <h3>3) Se a memória cache for construída corretamente, então:</h3>
-    
-                <input type="radio" name="memory3" > a) O processador acessará a memória DRAM <br>
-                <input type="radio" name="memory3" > b) O processador solicitará palavras da memória que já estão na cache, e não precisará buscar na DRAM <br>
-                <input type="radio" name="memory3" > c) O processador acessador acessará a memória externa, necessariamente. <br>
-                <input type="radio" name="memory3" > d) O processador ficará inoperante
-    
-    
-                <h3>4) Quanto as questões que resumem a restrição de memória?</h3>
-           
-                <input type="radio" name="memory4" > a) A velocidade de acesso é apenas a única informação relevante<br>
-                <input type="radio" name="memory4" > b) Qual é o custo da memória? É apenas a únifca informação relevante<br>
-                <input type="radio" name="memory4" > c) Qual é o custo da memória? Essa é uma informação relevante.<br>
-                <input type="radio" name="memory4" > d) A capacidade de armanamento é totalmente irrelevante.<br>
-                
-                <h3>5) A dinâmica dos sistemas de memória se dão da seguinte maneira:</h3>
-    
-                <input type="radio" name="memory5" > a) Tempo de acesso mais rápido, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais rápido.<br>
-                <input type="radio" name="memory5" > b) Tempo de acesso mais devagar, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais devagar.<br>
-                <input type="radio" name="memory5" > c) Tempo de acesso mais rápido, menor custo por bit. Maior capacidade, maior custo por bit. Maior capacidade, tempo de acesso mais lento.<br>
-                <input type="radio" name="memory5" > d) Tempo de acesso mais rápido, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais lento.<br>
-    
-                <h3>6) Sobre método de acesso de memória</h3>
-    
-                <input type="radio" name="memory6" > a) Acesso sequencial: a memória é organizada em unidades de dados chamadas registros. O acesso é feito em uma sequência linear específica. O tempo para acessar um registro qualquer é altamente variável. As unidades de fita não são de acesso sequencial. <br>
-                <input type="radio" name="memory6" > b) Acesso direto: os blocos ou registros individuais têm um endereço exclusivo, baseado no local físico. O tempo de acesso é fixo.<br>
-                <input type="radio" name="memory6" > c) Acesso aleatório: cada local endereçável na memória tem um mecanismo de endereçamento exclusivo, fisicamente interligado. O tempo para acessar determinado local é independente da sequência de acessos anteriores, e é constante. Assim, qualquer local pode ser selecionado aleatoriamente, e endereçado e acessado diretamente. A memória principal e alguns sistemas de cache são de acesso aleatório.<br>
-                <input type="radio" name="memory6" > d) Associativo: tipo de memória de acesso aleatório que permite fazer uma comparação de um certo número de bit desejados dentro de uma palavra para uma combinação especificada, e faz isso para todas as palavras simultaneamente. Assim, uma palavra é recuperada com base em uma parte de seu conteúdo, em vez do seu endereço. o tempo de recuperação é constante, independentemente do local ou padrões de acesso anteriores. As memórias cache podem empregar o acesso não associativo.<br>
-    
-    
-                <h3>7) Sobre o desempenho </h3>
-                
-                <input type="radio" name="memory7" > a) Tempo de acesso (latência): para a memória de acesso constante, esse é o tempo gasto para realizar uma operação de leitura ou escrita, ou seja, o tempo desde o instante em que um endereço é apresentado à memória até o instante em que os dados foram armazenados ou se tornaram disponíveis para uso.<br>
-                <input type="radio" name="memory7" > b) Para a memória de acesso não aleatório, o tempo de acesso é o tempo gasto para posicionar o mecanismo de leitura no local desejado.<br>
-                <input type="radio" name="memory7" > c) Para memória de acesso não aleatório, a taxa de transferência é de 1/(tempo de ciclo)<br>
-                <input type="radio" name="memory7" > d) Para a memória de acesso não aleatório, a taxa de transferência é dada por <e>Tn = Ta + (n/R)</e><br>
-    
-    
-                <h3>8) Sobre a equação <e>Tn = Ta + (n/R)</e> </h3>
-                
-                <input type="radio" name="memory7" > a) Tn tempo médio para ler ou escrever N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência em bits por segundo<br>
-                <input type="radio" name="memory7" > b) Tn tempo médio apenas para ler N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência em bits por segundo<br>
-                <input type="radio" name="memory7" > c) Tn tempo médio apenas para ler N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência de acesso do bit<br>
-                <input type="radio" name="memory7" > d) Tn tempo médio apenas para ler N bits, Ta tempo absoluto de acesso, n número de bits, R taxa de transferência de acesso do bit<br>
-    
-    
-                <h3>9) O conceito de memória volátil é: </h3>
-                
-                <input type="radio" name="memory8" > a) A informação não se deteriora naturalmente<br>
-                <input type="radio" name="memory8" > b) Memórias com superfície magnética (disco rígido) são voláteis <br>
-                <input type="radio" name="memory8" > c) Memória semicondutora não pode ser volátil ou não (registradores, caches)<br>
-                <input type="radio" name="memory8" > d) A informação se deteriora naturalmente ou se perde quando a energia elétrica é desligada.<br>
-
-                
-            </section>
-
-            <section id="soinstall">
-                <section class="show-gab">
-                    <button onclick="showGabInf()">Ver Gabarito</button>
-                </section>
-
-
-                <h3>1) Defina as etapas de instalação de um S.O (Windows, Linux)</h3>
-
-                <ol>
-                    <li> <input type="checkbox"> Adicionar dispositivo de mídia de instalação (Pendrive ao USB, DVD ao dispositivo de mídia)</li>
-                    <li> <input type="checkbox"> Cópia dos arquivos de instalação para a mídia onde s.o está sendo instalado</li>
-                    <li> <input type="checkbox"> Formatar o Disco Rígido</li>
-                    <li> <input type="checkbox"> Configurações pré-instalação</li>
-                    <li> <input type="checkbox"> Ligar o computador</li>
-                    <li> <input type="checkbox"> Pressionar F10 e reiniciar o computador</li>
-                    <li> <input type="checkbox"> Acessar a BIOS, em algums computadores é com F2 já em outros é com DEL</li>
-                    <li> <input type="checkbox"> Configurações pós-instalação</li>
-                    <li> <input type="checkbox"> Mudar a configuração de boot para a mídia onde os arquivos de instalação s.o está instalado</li>
-                    <li> <input type="checkbox"> Iniciar o programa de instalação</li>
-                    <li> <input type="checkbox"> Remover partiçoes e/ou criar partições novas</li>
-                    <li> <input type="checkbox"> Execução da instalação propriamente dita</li>            
-                </ol>
+                <section id="questions">
+                    <section id="show-first">
+                        <h1>
+                            Lista de Exercícios de Laboratório de Hardware
+                        </h1>
+                    </section>
         
-                <textarea id="textareasoinstall" cols="100" rows="2" >
-                </textarea>
-
-            </section>
-
-            <section id="processors">
-                <section class="show-gab">
-                    <button onclick="showGabInf()">Ver Gabarito</button>
-                </section>
-
-                <h3>1) Os processadores podem ser entendidos como sendo:</h3>
-
-                <input type="radio" name="processadores1" > a) Memória interna do computador<br>
-                <input type="radio" name="processadores1" > b) Memória externa do computador<br>
-                <input type="radio" name="processadores1" > c) Cérebro do computador<br>
-                <input type="radio" name="processadores1" > d) nenhuma das alternativas<br>
-    
-                <h3>2) Sobre os processadores, marque a alternativa errada</h3>
-    
-                <input type="radio" name="processadores2" > a) O ciclo é repetido até o programa terminar<br>
-                <input type="radio" name="processadores2" > b) um processador x86  pode executar programas ARM, mas um processador ARM não consegue executar programas x86.            <br>
-                <input type="radio" name="processadores2" > c) Cada CPU tem um conjunto específico de instruções que ela consegue executar<br>
-                <input type="radio" name="processadores2" > d) Processadores não possuem memórias próprias, usam sempre a memória DRAM<br>
-    
-                <h3>3) Sobre os processadores, marque a alternativa correta</h3>
-    
-                <input type="radio" name="processadores3" > a) Como o tempo para acessar a memória para buscar uma instrução ou palavra dos operandos não é muito maior do que o tempo para executar uma instrução, todas as CPUs têm alguns registradores internos para armazenamento de variáveis e resultados temporários.<br>
-                <input type="radio" name="processadores3" > b) O conjunto de instruções geralmente contém instruções para carregar uma palavra da memória para um registrador e apenas isso. <br>
-                <input type="radio" name="processadores3" > c) Além dos registradores gerais usados para armazenar variáveis e resultados temporários, a maioria dos computadores tem vários registradores especiais que são visíveis para o programador. <br>
-                <input type="radio" name="processadores3" > d) Nenhum registrador do processador é visível pelo programador<br>
-    
-                <h3>4) O que é o contador de programa?</h3>
-                <input type="radio" name="processadores4" > a) contém o endereço de memória da próxima instrução a ser buscada. Após essa instrução ter sido buscada, o contador de programa é atualizado para apontar a próxima instrução</br>
-                <input type="radio" name="processadores4" > b) PSW (Program Status Word — palavra de estado do programa). Esse registrador contém os bits do código de condições, que são estabelecidos por instruções de comparação, a prioridade da CPU, o modo de execução (usuário ou núcleo) e vários outros bits de controle.</br>
-                <input type="radio" name="processadores4" > c) aponta para o topo da pilha atual na memória. A pilha contém uma estrutura para cada rotina que foi chamada, mas ainda não encerrada. <br>
-                <input type="radio" name="processadores4" > d) um conjunto específico de instruções que ela consegue executar <br>
-    
-    
-                <h3>5) O que é o topo de pilha?</h3>
-                <input type="radio" name="processadores5" > a) contém o endereço de memória da próxima instrução a ser buscada. Após essa instrução ter sido buscada, o contador de programa é atualizado para apontar a próxima instrução</br>
-                <input type="radio" name="processadores5" > b) PSW (Program Status Word — palavra de estado do programa). Esse registrador contém os bits do código de condições, que são estabelecidos por instruções de comparação, a prioridade da CPU, o modo de execução (usuário ou núcleo) e vários outros bits de controle.</br>
-                <input type="radio" name="processadores5" > c) aponta para o topo da pilha atual na memória. A pilha contém uma estrutura para cada rotina que foi chamada, mas ainda não encerrada. <br>
-                <input type="radio" name="processadores5" > d) um conjunto específico de instruções que ela consegue executar <br>
-    
-    
-                <h3>6) Assine a alternativa errada no que tange ao conceito de pipeline</h3>
-                <input type="radio" name="processadores6" > a) Para melhorar o desempenho, os projetistas de CPU há muito tempo abandonaram o modelo simples de buscar, decodificar e executar uma instrução de cada vez.</br>
-                <input type="radio" name="processadores6" > b) Muitas CPUs modernas têm recursos para executar mais de uma instrução ao mesmo tempo. </br>
-                <input type="radio" name="processadores6" > c) Uma CPU pode ter unidades de busca, decodificação e execução juntas, assim enquanto ela está executando a instrução n, poderia também estar decodificando a instrução n + 1 e buscando a instrução n + 2.</br>
-                <input type="radio" name="processadores6" > d) Uma CPU pode ter unidades de busca, decodificação e execução separadas, assim enquanto ela está executando a instrução n, poderia também estar decodificando a instrução n + 1 e buscando a instrução n + 2.</br>
-    
-    
-                <h3>7) Sobre o modo núcleo, marque a correta</h3>
-                <input type="radio" name="processadores7" > a) A maioria das cpus possuem três modos, núclo, usuário e kernel</br>
-                <input type="radio" name="processadores7" > b) PSW não tem nada a ver com o modo núcleo </br>
-                <input type="radio" name="processadores7" > c) Em computadores de mesa e servidores, o sistema operacional normalmente opera em modo usuário, dando a ele acesso a todo o hardware.</br>
-                <input type="radio" name="processadores7" > d) Quando operando em modo núcleo, a CPU pode executar todas as instruções em seu conjunto de instruções e usar todos os recursos do hardware.</br>
-    
-                <h3>8) Sobre o modo usuário, marque a correta</h3>
-                <input type="radio" name="processadores8" > a) A maioria das cpus possuem três modos, núclo, usuário e kernel</br>
-                <input type="radio" name="processadores8" > b) PSW não tem nada a ver com o modo núcleo </br>
-                <input type="radio" name="processadores8" > c) Em computadores de mesa e servidores, o sistema operacional normalmente opera em modo usuário, dando a ele acesso a todo o hardware.</br>
-                <input type="radio" name="processadores8" > d) Geralmente, todas as instruções envolvendo E/S e proteção de memória são inacessíveis no modo usuário. Alterar o bit de modo PSW para modo núcleo também é proibido, claro.</br>
-       
-            </section>
+                    <section id="modal">
+                        <div id="modal-content">
+                            <span id="close" onclick="closeTime()">&times;</span>
+                            <div id="modal-html-content">
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section id="ossys">
+                        <section class="show-gab">
+                            <button onclick="showGabInf()">Ver Gabarito</button>
+                        </section>
+        
+                        <h2>
+                            Sistemas Operacionais
+                        </h2>
+        
+                        <h3>1) Qual é a finalidade de um sistema operacional</h3>
+            
+                        <input type="radio" name="finality-exec" > a) Organizar a disposição dos dados em um dado elemento de memória </br>
+                        <input type="radio" name="finality-exec" > b) Compilar linguagem de programação para linguagem de máquina </br>    
+                        <input type="radio" name="finality-exec" > c) Gerencia recursos do computador, oferece serviços para os programadores e distribui execução de outros programas. </br>
+                        <input type="radio" name="finality-exec" > d) Operacionalizar estruturas necessárias para que o usuário tenha acesso a internet
+            
+                        
+            
+                        <h3>2) Sobre sistemas operacionais assinale as alternativas Verdadeiras</h3>
+            
+                        <input type="checkbox"> I)   torna o computador mais conveniente para o uso <br>
+                        <input type="checkbox"> II)  torna o computador mais eficiente porque o processamento ocorrerá de forma mais rápida <br>
+                        <input type="checkbox"> III) torna o computador mais eficiente porque sua ação diminui o uso da memória em tempo de execução <br>
+                        <input type="checkbox"> IV)  possibilita que os recursos do sistema sejam usados de uma maneira mais eficiente <br>
+                        <input type="checkbox"> V)   O conceito de um sistema operacional como uma abstrações para programas aplicativos pode ser considerada uma visão visão top-down
+                        <br>
+                        <br>
+                        <input type="radio" name="true-sistem-operation" > a) Apenas I, II e III    <br>
+                        <input type="radio" name="true-sistem-operation" > b) Apenas I, IV e V      <br>
+                        <input type="radio" name="true-sistem-operation" > c) Pelo menos IV e V     <br>
+                        <input type="radio" name="true-sistem-operation" > d) Apenas I, III,       
+                        
+            
+                        <h3>3) Sobre utilidade do sistema operacional, marque a verdadeira</h3>
+            
+                        <input type="radio" name="utility-so-using" > a) Apesar do desenvolvimento de software ser algo complexo, o s.o não contribui em nada para facilidade dessa atividade<br>
+                        <input type="radio" name="utility-so-using" > b) Não é papel do S.O esconder detalhes de hardware para o Programdor, logo essas questões devem ser pensadas por ele no momento de desenvolvimento do <i>software</i><br>
+                        <input type="radio" name="utility-so-using" > c) O SO oferece facilidades e serviços, como editores e depuradores, para auxiliar o programador na criação de programas.<br>
+                        <input type="radio" name="utility-so-using" > d) O sistema operacional não atua em questões vinculadas a entrada e saída de dados<br>
+                        
+                        <h3> 4) No que tange a Execução de Programas do S.O</h3>
+                        <input type="radio" name="finality-so" > a) O sistema operacional não tem responsabilidade nenhuma nisso<br>
+                        <input type="radio" name="finality-so" > b) Antes do programa ser executado, o S.O o carrega em um memória de rápido acesso conhecida como ROM, hoje em dia disponibilizada fisicamente em discos rígidos<br>
+                        <input type="radio" name="finality-so" > c) É impossível fazer algum tipo de execução de programas sem a disponibilidade de um sistema operacional<br>
+                        <input type="radio" name="finality-so" > d) Diversas tarefas precisam ser realizadas para executar um programa. As instruções/dados precisam ser carregados para a memória, dispositivos de E/S precisam ser inicializados, etc. O SO trata de tudo isso para o usuário.<br>
+            
+            
+                        <h3> 5) No que tange a Entrada e Saída</h3>
+                        <input type="radio" name="finality-so-inputoutput" > a) O sistema operacional gerencia apenas os dispositivos de entrada<br>
+                        <input type="radio" name="finality-so-inputoutput" > b) Teclado é o exemplo de um dispositivo de saída<br>
+                        <input type="radio" name="finality-so-inputoutput" > c) Nenhuma alternativa aqui presente é a correta<br>
+                        <input type="radio" name="finality-so-inputoutput" > d) Monitor é o exemplo de um dispositivo de entrada<br>
+            
+                        <h3> 6) Sobre drivers assina-le a única errada</h3>
+                        <input type="radio" name="drivers-only-wrong" > a) Sistemas operacionais contêm muitos drivers para controlar dispositivos de E/S. <br>
+                        <input type="radio" name="drivers-only-wrong" > b) Como cada tipo de controlador (controlador de memória, de E/S etc.) é diferente, diversos softwares são necessários para controlar cada um. <br>
+                        <input type="radio" name="drivers-only-wrong" > c) Drivers são programas usados para fazer a edição de códigos cuja finalidade é executar algum tipo de operação no kernel do sistema operacional<br>
+                        <input type="radio" name="drivers-only-wrong" > d) O software que conversa com um controlador, dando a ele comandos e aceitando respostas, é chamado de driver de dispositivo. <br>
+            
+                        <h3> 7) No que tange a relação de um sistema operacional e acessos ao sistema, marque a única errada</h3>
+                        <input type="radio" name="access-only-wrong" > a) No caso de um sistema compartilhado ou público, o SO controla o acesso ao sistema e a seus recursos.<br>
+                        <input type="radio" name="access-only-wrong" > b) No caso de um sistema compartilhado ou público, o SO oferece proteção de recursos e dados de usuários não autorizados, e resolve conflitos para disputa de recurso<br>
+                        <input type="radio" name="access-only-wrong" > c) A adminsitração de tipos de acessos a um dado arquivo não é de responsabilidade do sistema operacional<br>
+                        <input type="radio" name="access-only-wrong" > d) O SO precisa tomar uma medida que encerre a condição de erro com o mínimo de impacto sobre as aplicações em execução, no caso deles ocorrem tem tempo de execução<br>
+            
+                        <h3> 8) No que tange ao Gerenciamento de Recursos</h3>
+            
+                        <input type="checkbox"> I)   O conceito de um sistema operacional como uma abstrações para programas aplicativos pode ser considerada uma visão visão top-down
+                        <br>
+                        <input type="checkbox"> II)  Uma visão alternativa, bottom-up (abstração de baixo para cima), sustenta que o sistema operacional está ali para gerenciar todas as partes de um sistema complexo. <br>
+                        <input type="checkbox"> III) Na visão bottom-up, a função do sistema operacional é fornecer uma alocação ordenada e controlada dos processadores, memórias e dispositivos de E/S entre os vários programas competindo por eles. <br>
+                        <input type="checkbox"> IV)  O SO nunca abre mão do controle e precisa depender do processador para permitir que ele readquira o controle <br>
+                        <input type="checkbox"> V)   O SO não funciona da mesma maneira que o software comum do computador; ou seja, ele não é um programa executado pelo processador.
+                        <br>
+                        <br>
+                 
+            
+                        <input type="radio" name="manager-resource" >a)I, IV, V<br>
+                        <input type="radio" name="manager-resource" >b)IV, V<br>
+                        <input type="radio" name="manager-resource" >c)III, IV, e V<br>
+                        <input type="radio" name="manager-resource" >d)I, II<br>
+                        <input type="radio" name="manager-resource" >e)I, II, III<br>
+            
+            
+                        <h3> 9) Disserte sobre o conceito de multiplexação no tempo, dando exemplo da relação S.O e CPU</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+            
+                        <h3> 10) Disserte sobre o conceito de multiplexação no espaço, dando exemplo da relação S.O e Memória</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+            
+                        <h3> 11) Descreva como ocorre o processo de inicialização de um computador</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3> 12) Disserte sobre os computadores a válvula, os computadores de primeira geração</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3> 13) Disserte sobre os computadores de segunda geração</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3> 14) Disserte sobre os computadores de terceira geração</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3> 15) Disserte sobre os computadores de quarta geração</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3> 16) Disserte sobre os computadores de quinta geração</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+        
+                    </section>
+        
+                    <section id="sysfile">
+                        <section class="show-gab">
+                            <button onclick="showGabInf()">Ver Gabarito</button>
+                        </section>
+        
+                        <h2>Sistema de Arquivos</h2>
+                        <h3>1) Sobre Sistemas de Arquive marque as alternativas corretas</h3>
+        
+                        <input type="checkbox"> I)    Conjunto de padrões usados para organizas os dados. <br>
+                        <input type="checkbox"> II)   Diretórios não são dados. <br>
+                        <input type="checkbox"> III)  Sistema de arquivos permitem gerenciar o espaço livre e o espaço ocupado <br>
+                        <input type="checkbox"> IV)   Não mantem a integridade dos dados
+                        <br>
+                        <br>
+                        <input type="radio" name="a" > a) I, II<br>
+                        <input type="radio" name="a" > b) II, IV<br>
+                        <input type="radio" name="a" > c) I, IV<br>
+                        <input type="radio" name="a" > d) nenhuma das alternativas
+            
+            
+                        <h3>2) Sobre a famíllia FAT, assina-le</h3>
+            
+                        <input type="checkbox"> I) File Allocation Table (Tabela de alocação de arquivos) <br>
+                        <input type="checkbox"> II) Padrões de sistema DOS e Windows antigo <br>
+                        <input type="checkbox"> III) FAT 12 - Suporta arquivo de no máximo 32 MB Tamanho máximo de volume 32 MB<br>
+                        <input type="checkbox"> IV) FAT 16 - Suporta arquivo de no máximo 32 MB Tamanho máximo de volume 32 MB<br>
+                        <input type="checkbox"> V) FAT 32 - Suporta arquivo de no máximo 2/4 GB (com LFS - Large File Support) Tamanho máximo de volume 1 TB
+                        <br>            
+                        <br>
+                        <input type="radio" name="b" > a) I, II, III<br>
+                        <input type="radio" name="b" > b) I, V<br>
+                        <input type="radio" name="b" > c) I, IV<br>
+                        <input type="radio" name="b" > d) I, II, V 
+            
+            
+            
+                        <h3>3) Sobre a família NTFS, assina-le</h3>
+            
+                        <input type="checkbox"> I) Criado em 1995 <br>
+                        <input type="checkbox"> II) Não suporta criptografia<br>
+                        <input type="checkbox"> III) Trabalha com Journaling <br>
+                        <input type="checkbox"> IV) Compatível apenas com Windows e Linux kernel > 2.2<br>
+                        <input type="checkbox"> V) Compatível com todos os sistemas de kernel Linux
+                        <br>            
+                        <br>
+                        <input type="radio" name="c" > a) I, II<br>
+                        <input type="radio" name="c" > b) III, IV<br>
+                        <input type="radio" name="c" > c) I, IV<br>
+                        <input type="radio" name="c" > d) I, II, IV, V
+            
+            
+                        <h3>4) Sobre a família exFAT, assina-le</h3>
+            
+                        <input type="checkbox"> I) Sistema proprietário, criado em 2006 pela Microsoft. <br>
+                        <input type="checkbox"> II) Max arq e volume 12PB <br>
+                        <input type="checkbox"> III) Para além dos sistemas Microsfot, possui suporte apenas para o(s) S.Os Android<br>
+                        <br>            
+                        <br>
+                        <input type="radio" name="d" > a) I, II<br>
+                        <input type="radio" name="d" > b) I<br>
+                        <input type="radio" name="d" > c) I, IV<br>
+                        <input type="radio" name="d" > d) I, II, III<br>
+                        <input type="radio" name="d" > e) III<br>
+            
+            
+                        <h3>5) Sobre a família ext, marque a correta</h3>
+            
+                        <input type="radio" name="e" > a) Sitema de arquivos para Windows <br>
+                        <input type="radio" name="e" > b) Advento do Journaling começa no ext2<br>
+                        <input type="radio" name="e" > c) Tem suporte a Windows, nem OS X <br>
+                        <input type="radio" name="e" > d) Arquivos de até 16 TB/ 1 EB max storage <br>
+        
+            
+                        <h3>6) O que é e onde é usado os Sistemas de Arquivos HFS, HFS+ e APFS</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3>7) O que é e onde é usado os Sistemas de Arquivos ISO 9660</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+            
+                        <h3>8) Como consultor técnico de uma grande multinacional você precisa decidir em quais cenários os sistemas de arquivo NFTS, ext4, FAT32 e exFat devem ser usados. Apresente sua conclusão argumentando os motivos de cada escolha</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+                    </section>
+        
+                    <section id="process-thread">
+                        <section class="show-gab">
+                            <button onclick="showGabInf()">Ver Gabarito</button>
+                        </section>
+        
+                        <h2>Processos e Threads</h2>
+                        <h3>1) Assine as alternativas verdadeiras sobre processos</h3>
+        
+                        <input type="checkbox">  I   É um programa em execução <br>
+                        <input type="checkbox">  II  A CPU consegue executar vários processos ao mesmo tempo <br>
+                        <input type="checkbox">  III Um determinado processo pode ser iniciado apenas uma vez<br>
+                        <input type="checkbox">  IV  Em um sistema de multiprogramação a CPU muda de um processo para outro muito rapidamente (em ms).
+                        <br>
+                        <br>
+                        <input type="radio" name="radio1" > a) IV <br>
+                        <input type="radio" name="radio1" > b) I, II, IV<br>
+                        <input type="radio" name="radio1" > c) I, II<br>
+                        <input type="radio" name="radio1" > d) I e IV       
+            
+                        <h3>2) Sobre multiprogramação, marque a verdadeira</h3>
+            
+                        <input type="radio" name="radio2" > a) É o ato do processador executar vários processos ao mesmo tempo <br>
+                        <input type="radio" name="radio2" > b) Multiprogramação não é um termo utilizado dentro do contexto da computação<br>
+                        <input type="radio" name="radio2" > c) Em um sistema de multiprogramação a CPU muda de um processo para outro muito rapidamente (em ms).<br>
+                        <input type="radio" name="radio2" > d) Em um sistema de multiprogramação a CPU muda de um processo para outro na ordem de s.
+            
+            
+                        <h3>3) Sobre Endereçamento de memória, marque a falsa</h3>
+            
+                        <input type="radio" name="radio3" > a) Cada processo é associado a um dado espaço de endereçamento. Isso consiste em uma lista de posições de memória que vão de 0 a algum máximo onde o processo pode ler e escrever.<br>
+                        <input type="radio" name="radio3" > b) O espaço de endereçamento consiste no no tempo alocado pela cpu para executar determinado procedimento<br>
+                        <input type="radio" name="radio3" > c) A pilha contém uma estrutura para cada rotina (conjuntos e instruções), que foi chamada mas ainda não encerrada.<br>
+                        <input type="radio" name="radio3" > d) Um processo é na essência um contêiner que armazena todas as informações necessárias para executar um programa
+            
+            
+                        <h3>4) Dentro do contexto de processos e de programação marque a alternativa falsa</h3>
+            
+                        <input type="radio" name="radio5" > a) O usuário pode ter inicializado um programa de edição de vídeo e mandou converter um vídeo de uma hora para um formato MP4 (algo que pode levar horas) e então foi navegar na web enquanto convertia.<br>
+                        <input type="radio" name="radio5" > b) Periodicamente, o sistema operacional decide parar de executar um processo e começa a executar outro, talvez porque o primeiro utilizou mais do que sua parcela de tempo da CPU no último segundo ou dois<br>
+                        <input type="radio" name="radio5" > c) Um processo que é suspenso temporiamente pela cpu não é retomando no exato estado da suspensão, mas sim de seu início.<br>
+                        <input type="radio" name="radio5" > d) Um processo é na essência um contêiner que armazena todas as informações necessárias para executar um programa
+            
+                        <h3>5) Quais são as principais chamadas do sistema de gerenciamento de processos?</h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3>6) Quais são os três estados de um processo? Apresente uma descrição de cada estado </h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3>7) Ainda no contexto da questão 7 apresente as 4 transições de estado possíveis, forneça uma descrição de cada estado  </h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3>8) Quais são as possibilidades de término de processos?  </h3>
+                        <textarea cols="100" rows="10" ></textarea>
+            
+                        <h3>9) O que são Threads?  </h3>
+                        <textarea cols="100" rows="10" ></textarea>
+                    </section>
+        
+                    <section id="memory">
+                        <section class="show-gab">
+                            <button onclick="showGabInf()">Ver Gabarito</button>
+                        </section>
+        
+                        <h3>1) Sobre o conceito de hierarquia de memória, assinal-e a falsa</h3>
+        
+                        <input type="radio" name="memory1" > a) A memória do computador é organizada em uma hierarquia.<br>
+                        <input type="radio" name="memory1" > b) No nível mais alto é aquele que está mais próximo do disco rígido.<br>
+                        <input type="radio" name="memory1" > c) Em seguida, vem a memória principal, que normalmente é uma memória dinâmica de acesso aleatório e dinâmico (DRAM).<br>
+                        <input type="radio" name="memory1" > d) No nível mais alto (mais perto do processador), estão os registradores do processador.
+            
+                        <h3>2) Ainda dentro do contexto de hierarquia de memória, assina-le a alternativa verdadeira</h3>
+        
+                        <input type="radio" name="memory2" > a) Memórias dentro do processor, memória de cache ao processador e a DRAM são consideraras memórias internas ao computador<br>
+                        <input type="radio" name="memory2" > b) Disco rígido é uma memória interna ao computador<br>
+                        <input type="radio" name="memory2" > c) A medida que descemos a hierarquia de memória o custo por bit se torna maior<br>
+                        <input type="radio" name="memory2" > d) A memória interna possui um cust por bit maior do que as memórias externas
+                        
+                        <h3>3) Se a memória cache for construída corretamente, então:</h3>
+            
+                        <input type="radio" name="memory3" > a) O processador acessará a memória DRAM <br>
+                        <input type="radio" name="memory3" > b) O processador solicitará palavras da memória que já estão na cache, e não precisará buscar na DRAM <br>
+                        <input type="radio" name="memory3" > c) O processador acessador acessará a memória externa, necessariamente. <br>
+                        <input type="radio" name="memory3" > d) O processador ficará inoperante
+            
+            
+                        <h3>4) Quanto as questões que resumem a restrição de memória?</h3>
+                   
+                        <input type="radio" name="memory4" > a) A velocidade de acesso é apenas a única informação relevante<br>
+                        <input type="radio" name="memory4" > b) Qual é o custo da memória? É apenas a únifca informação relevante<br>
+                        <input type="radio" name="memory4" > c) Qual é o custo da memória? Essa é uma informação relevante.<br>
+                        <input type="radio" name="memory4" > d) A capacidade de armanamento é totalmente irrelevante.<br>
+                        
+                        <h3>5) A dinâmica dos sistemas de memória se dão da seguinte maneira:</h3>
+            
+                        <input type="radio" name="memory5" > a) Tempo de acesso mais rápido, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais rápido.<br>
+                        <input type="radio" name="memory5" > b) Tempo de acesso mais devagar, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais devagar.<br>
+                        <input type="radio" name="memory5" > c) Tempo de acesso mais rápido, menor custo por bit. Maior capacidade, maior custo por bit. Maior capacidade, tempo de acesso mais lento.<br>
+                        <input type="radio" name="memory5" > d) Tempo de acesso mais rápido, maior custo por bit. Maior capacidade, menor custo por bit. Maior capacidade, tempo de acesso mais lento.<br>
+            
+                        <h3>6) Sobre método de acesso de memória</h3>
+            
+                        <input type="radio" name="memory6" > a) Acesso sequencial: a memória é organizada em unidades de dados chamadas registros. O acesso é feito em uma sequência linear específica. O tempo para acessar um registro qualquer é altamente variável. As unidades de fita não são de acesso sequencial. <br>
+                        <input type="radio" name="memory6" > b) Acesso direto: os blocos ou registros individuais têm um endereço exclusivo, baseado no local físico. O tempo de acesso é fixo.<br>
+                        <input type="radio" name="memory6" > c) Acesso aleatório: cada local endereçável na memória tem um mecanismo de endereçamento exclusivo, fisicamente interligado. O tempo para acessar determinado local é independente da sequência de acessos anteriores, e é constante. Assim, qualquer local pode ser selecionado aleatoriamente, e endereçado e acessado diretamente. A memória principal e alguns sistemas de cache são de acesso aleatório.<br>
+                        <input type="radio" name="memory6" > d) Associativo: tipo de memória de acesso aleatório que permite fazer uma comparação de um certo número de bit desejados dentro de uma palavra para uma combinação especificada, e faz isso para todas as palavras simultaneamente. Assim, uma palavra é recuperada com base em uma parte de seu conteúdo, em vez do seu endereço. o tempo de recuperação é constante, independentemente do local ou padrões de acesso anteriores. As memórias cache podem empregar o acesso não associativo.<br>
+            
+            
+                        <h3>7) Sobre o desempenho </h3>
+                        
+                        <input type="radio" name="memory7" > a) Tempo de acesso (latência): para a memória de acesso constante, esse é o tempo gasto para realizar uma operação de leitura ou escrita, ou seja, o tempo desde o instante em que um endereço é apresentado à memória até o instante em que os dados foram armazenados ou se tornaram disponíveis para uso.<br>
+                        <input type="radio" name="memory7" > b) Para a memória de acesso não aleatório, o tempo de acesso é o tempo gasto para posicionar o mecanismo de leitura no local desejado.<br>
+                        <input type="radio" name="memory7" > c) Para memória de acesso não aleatório, a taxa de transferência é de 1/(tempo de ciclo)<br>
+                        <input type="radio" name="memory7" > d) Para a memória de acesso não aleatório, a taxa de transferência é dada por <e>Tn = Ta + (n/R)</e><br>
+            
+            
+                        <h3>8) Sobre a equação <e>Tn = Ta + (n/R)</e> </h3>
+                        
+                        <input type="radio" name="memory7" > a) Tn tempo médio para ler ou escrever N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência em bits por segundo<br>
+                        <input type="radio" name="memory7" > b) Tn tempo médio apenas para ler N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência em bits por segundo<br>
+                        <input type="radio" name="memory7" > c) Tn tempo médio apenas para ler N bits, Ta tempo de acesso médio, n número de bits, R taxa de transferência de acesso do bit<br>
+                        <input type="radio" name="memory7" > d) Tn tempo médio apenas para ler N bits, Ta tempo absoluto de acesso, n número de bits, R taxa de transferência de acesso do bit<br>
+            
+            
+                        <h3>9) O conceito de memória volátil é: </h3>
+                        
+                        <input type="radio" name="memory8" > a) A informação não se deteriora naturalmente<br>
+                        <input type="radio" name="memory8" > b) Memórias com superfície magnética (disco rígido) são voláteis <br>
+                        <input type="radio" name="memory8" > c) Memória semicondutora não pode ser volátil ou não (registradores, caches)<br>
+                        <input type="radio" name="memory8" > d) A informação se deteriora naturalmente ou se perde quando a energia elétrica é desligada.<br>
+        
+                        
+                    </section>
+        
+                    <section id="soinstall">
+                        <section class="show-gab">
+                            <button onclick="showGabInf()">Ver Gabarito</button>
+                        </section>
+        
+        
+                        <h3>1) Defina as etapas de instalação de um S.O (Windows, Linux)</h3>
+        
+                        <ol>
+                            <li> <input type="checkbox"> Adicionar dispositivo de mídia de instalação (Pendrive ao USB, DVD ao dispositivo de mídia)</li>
+                            <li> <input type="checkbox"> Cópia dos arquivos de instalação para a mídia onde s.o está sendo instalado</li>
+                            <li> <input type="checkbox"> Formatar o Disco Rígido</li>
+                            <li> <input type="checkbox"> Configurações pré-instalação</li>
+                            <li> <input type="checkbox"> Ligar o computador</li>
+                            <li> <input type="checkbox"> Pressionar F10 e reiniciar o computador</li>
+                            <li> <input type="checkbox"> Acessar a BIOS, em algums computadores é com F2 já em outros é com DEL</li>
+                            <li> <input type="checkbox"> Configurações pós-instalação</li>
+                            <li> <input type="checkbox"> Mudar a configuração de boot para a mídia onde os arquivos de instalação s.o está instalado</li>
+                            <li> <input type="checkbox"> Iniciar o programa de instalação</li>
+                            <li> <input type="checkbox"> Remover partiçoes e/ou criar partições novas</li>
+                            <li> <input type="checkbox"> Execução da instalação propriamente dita</li>            
+                        </ol>
+                
+                        <textarea id="textareasoinstall" cols="100" rows="2" >
+                        </textarea>
+        
+                    </section>
+        
+                    <section id="processors">
+                        <section class="show-gab">
+                            <button onclick="showGabInf()">Ver Gabarito</button>
+                        </section>
+        
+                        <h3>1) Os processadores podem ser entendidos como sendo:</h3>
+        
+                        <input type="radio" name="processadores1" > a) Memória interna do computador<br>
+                        <input type="radio" name="processadores1" > b) Memória externa do computador<br>
+                        <input type="radio" name="processadores1" > c) Cérebro do computador<br>
+                        <input type="radio" name="processadores1" > d) nenhuma das alternativas<br>
+            
+                        <h3>2) Sobre os processadores, marque a alternativa errada</h3>
+            
+                        <input type="radio" name="processadores2" > a) O ciclo é repetido até o programa terminar<br>
+                        <input type="radio" name="processadores2" > b) um processador x86  pode executar programas ARM, mas um processador ARM não consegue executar programas x86.            <br>
+                        <input type="radio" name="processadores2" > c) Cada CPU tem um conjunto específico de instruções que ela consegue executar<br>
+                        <input type="radio" name="processadores2" > d) Processadores não possuem memórias próprias, usam sempre a memória DRAM<br>
+            
+                        <h3>3) Sobre os processadores, marque a alternativa correta</h3>
+            
+                        <input type="radio" name="processadores3" > a) Como o tempo para acessar a memória para buscar uma instrução ou palavra dos operandos não é muito maior do que o tempo para executar uma instrução, todas as CPUs têm alguns registradores internos para armazenamento de variáveis e resultados temporários.<br>
+                        <input type="radio" name="processadores3" > b) O conjunto de instruções geralmente contém instruções para carregar uma palavra da memória para um registrador e apenas isso. <br>
+                        <input type="radio" name="processadores3" > c) Além dos registradores gerais usados para armazenar variáveis e resultados temporários, a maioria dos computadores tem vários registradores especiais que são visíveis para o programador. <br>
+                        <input type="radio" name="processadores3" > d) Nenhum registrador do processador é visível pelo programador<br>
+            
+                        <h3>4) O que é o contador de programa?</h3>
+                        <input type="radio" name="processadores4" > a) contém o endereço de memória da próxima instrução a ser buscada. Após essa instrução ter sido buscada, o contador de programa é atualizado para apontar a próxima instrução</br>
+                        <input type="radio" name="processadores4" > b) PSW (Program Status Word — palavra de estado do programa). Esse registrador contém os bits do código de condições, que são estabelecidos por instruções de comparação, a prioridade da CPU, o modo de execução (usuário ou núcleo) e vários outros bits de controle.</br>
+                        <input type="radio" name="processadores4" > c) aponta para o topo da pilha atual na memória. A pilha contém uma estrutura para cada rotina que foi chamada, mas ainda não encerrada. <br>
+                        <input type="radio" name="processadores4" > d) um conjunto específico de instruções que ela consegue executar <br>
+            
+            
+                        <h3>5) O que é o topo de pilha?</h3>
+                        <input type="radio" name="processadores5" > a) contém o endereço de memória da próxima instrução a ser buscada. Após essa instrução ter sido buscada, o contador de programa é atualizado para apontar a próxima instrução</br>
+                        <input type="radio" name="processadores5" > b) PSW (Program Status Word — palavra de estado do programa). Esse registrador contém os bits do código de condições, que são estabelecidos por instruções de comparação, a prioridade da CPU, o modo de execução (usuário ou núcleo) e vários outros bits de controle.</br>
+                        <input type="radio" name="processadores5" > c) aponta para o topo da pilha atual na memória. A pilha contém uma estrutura para cada rotina que foi chamada, mas ainda não encerrada. <br>
+                        <input type="radio" name="processadores5" > d) um conjunto específico de instruções que ela consegue executar <br>
+            
+            
+                        <h3>6) Assine a alternativa errada no que tange ao conceito de pipeline</h3>
+                        <input type="radio" name="processadores6" > a) Para melhorar o desempenho, os projetistas de CPU há muito tempo abandonaram o modelo simples de buscar, decodificar e executar uma instrução de cada vez.</br>
+                        <input type="radio" name="processadores6" > b) Muitas CPUs modernas têm recursos para executar mais de uma instrução ao mesmo tempo. </br>
+                        <input type="radio" name="processadores6" > c) Uma CPU pode ter unidades de busca, decodificação e execução juntas, assim enquanto ela está executando a instrução n, poderia também estar decodificando a instrução n + 1 e buscando a instrução n + 2.</br>
+                        <input type="radio" name="processadores6" > d) Uma CPU pode ter unidades de busca, decodificação e execução separadas, assim enquanto ela está executando a instrução n, poderia também estar decodificando a instrução n + 1 e buscando a instrução n + 2.</br>
+            
+            
+                        <h3>7) Sobre o modo núcleo, marque a correta</h3>
+                        <input type="radio" name="processadores7" > a) A maioria das cpus possuem três modos, núclo, usuário e kernel</br>
+                        <input type="radio" name="processadores7" > b) PSW não tem nada a ver com o modo núcleo </br>
+                        <input type="radio" name="processadores7" > c) Em computadores de mesa e servidores, o sistema operacional normalmente opera em modo usuário, dando a ele acesso a todo o hardware.</br>
+                        <input type="radio" name="processadores7" > d) Quando operando em modo núcleo, a CPU pode executar todas as instruções em seu conjunto de instruções e usar todos os recursos do hardware.</br>
+            
+                        <h3>8) Sobre o modo usuário, marque a correta</h3>
+                        <input type="radio" name="processadores8" > a) A maioria das cpus possuem três modos, núclo, usuário e kernel</br>
+                        <input type="radio" name="processadores8" > b) PSW não tem nada a ver com o modo núcleo </br>
+                        <input type="radio" name="processadores8" > c) Em computadores de mesa e servidores, o sistema operacional normalmente opera em modo usuário, dando a ele acesso a todo o hardware.</br>
+                        <input type="radio" name="processadores8" > d) Geralmente, todas as instruções envolvendo E/S e proteção de memória são inacessíveis no modo usuário. Alterar o bit de modo PSW para modo núcleo também é proibido, claro.</br>
+               
+                    </section>
+        
+                    <section id="barramento">
+                        <section class="show-gab">
+                            <button onclick="showGabInf()">Ver Gabarito</button>
+                        </section>
+                        
+                        <h3>1) Sobre o sistema x86, avalie:</h3>
+        
+                        <input type="radio" name="barramento1" > a) O sistema operacional não precisa ter ciência de todos os barramentos<br>
+                        <input type="radio" name="barramento1" > b) Este sistema que possui apenas um barramento,  PCIe.<br>
+                        <input type="radio" name="barramento1" > c) Este sistema tem muitos barramentos (por exemplo, cache, memória e PCIe), cada um com uma taxa de transferência e função diferentes.<br>
+                        <input type="radio" name="barramento1" > d) Este sistema tem muitos barramentos (por exemplo, cache, memória, PCIe, PCI, USB, SATA e DMI), cada um com uma taxa de transferência e função diferentes.<br>
+                
+                        <h3>2) Marque as alternativas corretas sobre PCIe</h3>
+                
+                        <input type="radio" name="barramento2" > a) O barramento principal é o PCIe (Peripheral Component International Express — interconexão expressa de componentes periféricos).<br>
+                        <input type="radio" name="barramento2" > b) O PCIe foi inventado pela AMD como um sucessor para o barramento PCI mais antigo, que por sua vez foi uma substituição para o barramento ISA (Industry Standard Architecture — arquitetura padrão industrial).<br>
+                        <input type="radio" name="barramento2" > c) Capaz de transferir milhares de gigabits por segundo, o PCIe é muito mais rápido que os seus predecessores<br>
+                        <input type="radio" name="barramento2" > d) O barramento principal é o PCIe (Peripheral Component Interconnect Express — interconexão expressa de componentes periféricos).<br>
+                
+                        <h3>3) Marque as alternativas corretas sobre PCIe</h3>
+                
+                        <input type="radio" name="barramento3" > a) Em comparação com isso, o PCIe usa uma arquitetura de barramento serial e envia todos os bits em uma mensagem através de uma única conexão, chamada faixa, de maneira muito semelhante a um pacote de rede.<br>
+                        <input type="radio" name="barramento3" > b) Uma arquitetura de barramento paralela como usada no PCI tradicional significa que você pode enviar uma palavra de dados através de um único foi.<br>
+                        <input type="radio" name="barramento3" > c) Uma arquitetura de barramento paralela como usada no PCI tradicional significa que você pode enviar uma palavra de dados através de múltiplos fios. Por exemplo, em barramentos PCI regulares, um único número de 32 bits é enviado através de 16 fios paralelos<br>
+                        <input type="radio" name="barramento3" > d) No caso da PCIe, não há necessidade de que todos os 32 bits cheguem ao destino exatamente ao mesmo tempo.<br>
+                
+                        <h3>4) Sobre a arquitetura geral dos dispositivos, marque a errada</h3>
+                
+                        <input type="radio" name="barramento4" > a) O PCIe nunca é usado para transferir quadros (frames) Ethernet<br>
+                        <input type="radio" name="barramento4" > b) O PCIe é usado para transferir quadros (frames) Ethernet.<br>
+                        <input type="radio" name="barramento4" > c) O barramento SATA interagem com discos rígidos e acionadores de DVD<br>
+                        <input type="radio" name="barramento4" > d) CPU se comunica com a memória por meio de um barramento DDR3 rápido<br>
+                
+                        <h3>5) Marque a correta sobre USB</h3>
+                
+                        <input type="radio" name="barramento5" > a) O USB (Universal Serial Bus — barramento serial universal) foi inventado para conectar apenas alguns dos dispositivos de E/S lentos, como o teclado e o mouse, ao computador.<br>
+                        <input type="radio" name="barramento5" > b) Chamar um dispositivo USB 3.0 zunindo a 5 Gbps de “lento” pode não soar natural para a geração que cresceu com o ISA de 8 Mbps como o barramento principal nos primeiros PCs da IBM.<br>
+                        <input type="radio" name="barramento5" > c) O USB usa um pequeno conector com dois a onze fios (dependendo da versão), alguns dos quais fornecem energia elétrica para os dispositivos USB ou conectam- -se com o terra.<br>
+                        <input type="radio" name="barramento5" > d) O USB 1.0 pode lidar com uma carga agregada de 12 Mbps, o USB 2.0 aumentou a velocidade para 480 Mbps e o USB 3.0 chega a não menos que 4 Gbps.<br>
+                
+                    </section>
+                </section>    
+            </article>
         </main>
 
         <footer>

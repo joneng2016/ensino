@@ -5,7 +5,8 @@ let allIds = [
     'memory',
     'show-first',
     'soinstall',
-    'processors'
+    'processors',
+    'barramento'
 ]
 
 mainProcess()
