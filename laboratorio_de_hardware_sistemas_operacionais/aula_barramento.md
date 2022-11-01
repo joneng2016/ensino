@@ -21,8 +21,8 @@
 * Isso é muito mais simples, pois você não tem de assegurar que todos os 32 bits cheguem ao destino exatamente ao mesmo tempo.
 * O paralelismo ainda é usado, pois você pode ter múltiplas faixas em paralelo.
 * Por exemplo, podemos usar 32 faixas para carregar 32 mensagens em paralelo.
-* À medida que a velocidade de dispositivos periféricos como cartões de rede e adaptadores de gráficos aumenta rapidamente, o padrão PCIe é atualizado a cada 3-5 anos. 
-* Por exemplo, 16 faixas de PCIe 2.0 oferecem 64 gigabits por segundo. Atualizar para PCIe 3.0 dará a você duas vezesaquela velocidade e o PCIe 4.0 dobrará isso novamente.
+* À medida que a velocidade de dispositivos periféricos como cartões de rede e adaptadores de gráficos aumenta rapidamente, o padrão PCIe é atualizado a cada 3-5 anos.
+* Por exemplo, 16 faixas de PCIe 2.0 oferecem 64 gigabits por segundo. Atualizar para PCIe 3.0 dará a você duas vezes a velocidade e o PCIe 4.0 dobrará isso novamente.
 
 * Ainda temos muitos dispositivos de legado do padrão PCI mais antigo.
 * No futuro, quando virmos o PCI não mais como meramente velho, mas ancestral, é possível que todos os dispositivos PCI vão se ligar a mais um centro ainda que, por sua vez, vai conectá-los ao centro principal, criando uma árvore de barramentos.
@@ -31,7 +31,7 @@
 
 * CPU se comunica com a memória por meio de um barramento DDR3 rápido, com um dispositivo gráfico externo através do PCIe e com todos os outros dispositivos via um centro controlador usando um barramento DMI (Direct Media Interface — interface de mídia direta).
 * O centro por sua vez conecta-se com todos os outros dispositivos, usando o Barramento Serial Universal para conversar com os dispositivos USB
-* O barramento SATA para interagir com discos rígidos e acionadores de DVD
+* O barramento SATA interagem com discos rígidos e acionadores de DVD
 * O PCIe para transferir quadros (frames) Ethernet.
 
 # USB
