@@ -15,7 +15,6 @@ A primeira tabela deve ter um campo id_(nome da primeira tabela), deve ser prima
 
 A segunda tabela deve ter um campo id_(nome da segunda tabela), deve ser primary_key e auto_increment. Não apenas isso como essa tabela também deve ter o campo cpf (pode ser tipo string 255). Essa segunda tabela deve ter um id_(primeira tabela) que é foring key em relação a primeira tabela.
 
-
 Você deve fazer quatro registros na primeira tabela (podem ser todos artificiais). Você deve fazer quatro registros na segunda tabela (podem ser todos artificiais). Você decide como os registros da segunda tabela se relacionam com os registros da primeira tabela, contudo esse relacionamento deve ocorrer necessariamente.
 
 Faça a remoção de um registro da segunda tabela por meio de transaction.F

@@ -15,4 +15,6 @@ https://github.com/joneng2016/ensino/blob/master/introducao_ao_desenvolvimento_w
 
 https://github.com/joneng2016/ensino/blob/master/introducao_ao_desenvolvimento_web/codigo_feito_em_aula/php/executecreatefile.php
 
-Data de Entrega: 02/12/2022
+Data de Entrega: 02/12/2022 as 23:59
+
+Análise do código será feita, logo códigos identicos serão zerados
