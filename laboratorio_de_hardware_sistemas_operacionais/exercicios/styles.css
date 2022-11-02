@@ -8,9 +8,13 @@ body > header > ul {
 }
 
 #sidemenu {
+    border: 1px solid #fff;
+    top: 15px;
+    display: inline;
     vertical-align:top;
-    display: inline-block;
-    width: 25%;
+    position: fixed;
+    width: 20%;
+    height: 600px;
     background-color: black;
     border-radius: 15px;
 }
@@ -35,6 +39,7 @@ body > main {
 }
 
 body > footer {
+    margin-top: 15px;
     color: #fff;
     background-color: black;
     height: 200px;
@@ -129,6 +134,6 @@ body > main > section > button {
 }
 
 #questions {
-    display: inline-block;
+    margin-left: auto;
     width: 69%;
 }
