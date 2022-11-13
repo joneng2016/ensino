@@ -1,4 +1,5 @@
-Exercíci em Sala de Aula
+Exercício em Sala de Aula
+
 
 1 Escreva um programa em JavaScript que apresente uma caixa de alerta para o usuário com uma informação qualquer. Para resolver esse programa pesquise sobre a função alert()
 
