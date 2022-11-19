@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "node-addon-api": "^5.0.0",
+    "pkg": "^5.8.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^9.3.0"
+  }
+}
