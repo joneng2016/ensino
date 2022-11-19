@@ -7,6 +7,8 @@ body > header > ul {
     border-radius: 15px;
 }
 
+
+
 #sidemenu {
     border: 1px solid #fff;
     top: 15px;
@@ -14,10 +16,37 @@ body > header > ul {
     vertical-align:top;
     position: fixed;
     width: 20%;
-    height: 600px;
+    height: 400px;
     background-color: black;
     border-radius: 15px;
 }
+  
+
+@media screen and (max-width: 600px) {
+    #sidemenu {
+        position: absolute;
+        display: block;
+        width: 70%;
+        height: 50%;
+    }
+
+    #questions {
+        margin-right: auto;
+        margin-top: 400px;
+        display: block;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    input[type="radio"] {
+        transform: scale(2.5);
+    }
+
+    input[type="check"] {
+        transform: scale(2.5);
+    }
+}
+
 
 #sidemenu > ul > li {
     color: rgb(198, 193, 193);
@@ -39,6 +68,7 @@ body > main {
 }
 
 body > footer {
+    width: 100%;
     margin-top: 15px;
     color: #fff;
     background-color: black;
@@ -132,6 +162,11 @@ body > main > section > button {
 #barramento {
     display: none;
 }
+
+#language {
+    display: none;
+}
+
 
 #questions {
     margin-left: auto;
