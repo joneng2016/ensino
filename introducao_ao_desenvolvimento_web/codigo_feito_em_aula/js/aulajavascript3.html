@@ -1,0 +1,119 @@
+<!-- 
+    Aula 3 Javascript
+
+    * condicionais lógicas
+    * if, else
+    * try catch
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Aula 3 - javascript, if, else try catch</title>
+    </head>
+    <body>
+        <div>
+            <h2>Aprendendo if, else e try catch</h2>
+
+            <!--
+                input onde insere o sexo da pessoa
+            -->
+            <label>Sexo:</label>
+            <br>
+            <input
+                id="sexo" 
+                type="text"
+                placeholder="Insira masculino ou feminino"
+            >
+            <br>
+            <br>
+            <!-- 
+                No span response-job será 
+                exibido retorno do código js
+            -->
+            <span>Profissão</span>
+            <br>
+            <h2 id="response-job" ></h2>
+            <br>
+            <input
+                onclick="gerarProfissao()"
+                type="button"
+                value="processar"
+            >
+            <br>
+            <span> ------------------------------------------------------------------------ </span>
+            <!--
+                input onde insere o valor
+            -->
+            <br>
+            <br>
+            <br>
+            <!--
+                input de um número
+            -->
+            <label>Número:</label>
+            <br>
+            <input
+                id="numero" 
+                type="number"
+                placeholder="entre com um número"
+            >
+            <br>
+            <br>
+            <!--
+                onde o valor vai ser retornado
+            -->
+            <span>Resposta</span>
+            <br>
+            <h2 id="retorna-valor" >
+            </h2>
+            <br>
+            <br>
+            <!--
+                botão que calcula o valor
+            -->
+            <input 
+                type="button"
+                value="verifica se eh maior ou menor"
+                onclick="seEhMaiorOuMenorSete()"
+            >
+        </div>
+        <!-- 
+            o atributo type é usado para identificar o tipo de linguagem 
+            que será processada. No caso, javascript é o default (na realidade, hoje
+            em dia é a única linguagem comportada pela tag script)
+        -->
+        <script type="text/javascript">
+            function gerarProfissao() {
+                // Recebe o valor do input de id sexo
+                const inputGender = document.getElementById("sexo").value
+
+                // Variável que vai receber a responsta
+                let response = 'Por favor, adicione um valor válido'
+                // verifica se a variável é masculino
+                if (inputGender === 'masculino') {
+                    response = 'advogado'
+                } else if(inputGender === 'feminino') { // verifica se a variável é feminino
+                    response = 'advogada'
+                } 
+                
+                // popular o conteúdo de response na tag -> response-job 
+                document.getElementById("response-job").innerHTML = response
+            } 
+        
+            function seEhMaiorOuMenorSete() {
+                //cria a variavel
+                let response
+                //recebe o valor do input com id igual a numero
+                const numero = parseInt(document.getElementById('numero').value)
+
+                //se o numero é maior ou igual a sete
+                if (numero >= 7) {
+                    document.getElementById('retorna-valor').innerHTML = 'maior ou igual a sete' 
+                } else { // o que fazer se a condicao da linha 111 falhar
+                    document.getElementById('retorna-valor').innerHTML = 'menor que sete' 
+                }
+            }
+        </script>
+    </body>
+</html>
