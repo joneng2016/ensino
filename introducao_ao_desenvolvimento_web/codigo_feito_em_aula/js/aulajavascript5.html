@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laços de repetição</title>
+        <!-- 
+            Objectivo da aula
+
+            *Laços de repetição
+            *while em js
+        -->
+        
+        <!-- 
+            Criando tag style que contem o css
+            vinculado as demais tags
+        -->
+        <style>
+            .color-red {
+                background-color: red;
+            }
+
+            .color-blue {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="index-list">
+
+        </ul>
+        <script>
+            let textoQuePopulaUlIndexList = ''
+
+            //criando uma variável index 
+            //que deve ser inicializada com 0
+            let index = 0
+
+            // while -> enquanto, ou seja - enquanto uma dada condição
+            // for satisfeita, o laço se mantem. Quando essa condição
+            // deixar de ser satisfeita, sai do laço
+            while(index < 10) {
+                // cria e popula uma variavel classColor com string vazia
+                let classColor = ''
+
+                // verifica se index é menor do que cinco
+                if (index < 5) {
+                    classColor = 'color-red'
+                } else { 
+                // se index não for menor do que cinco, então entra nessa condicional
+                    classColor = 'color-blue'
+                }
+
+                // popula a variável textoQuePopulaUlIndexList com os elementos de uma lista
+                // += é equivalente: textoQuePopulaUlIndexList = textoQuePopulaUlIndexList + "<li class=\"" + classColor + "\">" + index + "</li>"
+                textoQuePopulaUlIndexList += "<li class=\"" + classColor + "\">" + index + "</li>"
+
+                index++ // é o equivalente a index = index + 1, 
+            }
+
+            // popula o conteúdo da variável textoQuePopulaUlIndexList na tag que é identificada pela tag
+            document.getElementById('index-list').innerHTML = textoQuePopulaUlIndexList 
+
+        </script>
+    </body>
+</html>
