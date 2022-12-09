@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        Aula de hoje: JSON
+    -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Utilização de JSON</title>
+    </head>
+    <body>
+        <h2>Como utilizar JSON em JS</h2>
+        <!-- Tag onde será publicado o resultado do algoritmo -->
+        <div id="resultado">
+            <span id="v1-objeto"></span> <br>
+            <span id="v2-objeto"></span> <br>
+            <span id="complete-name"></span> <br>
+            <span id="car-object"></span> <br>
+            <span id="color-car-1"></span> <br>
+            <span id="color-car-2"></span> <br>            
+        </div>
+        <script type="text/javascript">
+        // JSON significa JavaScript Object Notation
+            // É uma forma de criar uma notação de objetos comportada para JavaScript
+
+            // Primeira forma de declarar um objeto JSON
+
+            let obj1 = {}
+
+            // Forma 1 de adicionar um atributo ao objeto
+
+            obj1.name = 'Jonathan'
+            // A função stringify converte o objeto JSON em uma string, isso possibilita sua impressão
+            document.getElementById('v1-objeto').innerHTML = JSON.stringify(obj1)
+
+
+            // Forma 2 de adicionar um atributo ao objeto            
+            obj1['lastName'] = 'Morris Samara'
+
+            document.getElementById('v2-objeto').innerHTML = JSON.stringify(obj1)
+
+            // Acessando um atributo de um objeto
+
+            //Vamos criar uma constante chamada completeName que recebe o name do obj1
+            //e o lastName do obj1 e junta os dois em uma única estrutura
+
+            const completeName = obj1.name + ' ' +obj1.lastName
+
+            document.getElementById('complete-name').innerHTML = completeName
+
+            // Forma 3 de montar um objeto js
+
+            let car = {
+                color:'white',
+                power:'1.8',
+                dorNumber: 4,
+                carModel: 'Audi a3',
+                year: 2018
+            }
+
+            document.getElementById('car-object').innerHTML = JSON.stringify(car)            
+            // O valor de um atributo não é imutável, podemos alterar, por exemplo
+
+            // imprimindo a cor do carro
+            document.getElementById('color-car-1').innerHTML = car.color
+            
+            // mudando o valor da cor
+
+            car.color = 'black'
+
+            // imprimindo a cor do carro
+            document.getElementById('color-car-2').innerHTML = car.color
+
+            car.color = 'blue'
+            // essa é ua funçao nativa do JS que segura a execução do código por 
+            // um certo intervalo de tempo. Neste caso é de 1500 ms, o que dá um
+            // total de 1,5s
+            setTimeout(function() {
+                // imprimindo a cor do carro
+                document.getElementById('color-car-2').innerHTML = car.color
+            },1500)
+        </script>
+    </body>
+</html>
