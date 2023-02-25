@@ -9,3 +9,10 @@ Dicionário -> Cor de fundo rosa. Orientação do texto deve ser o centro.<br>
 Informação  -> Cor de fundo branco. Orientação do texto deve ser a direita.<br>
 
 Todas devem ter bordas sólidas (border: 1px, solid;) e arredondadas (veja bordar:radius). Elas devem ter distância de 5px uma da outra;
+
+
+```
+        <div style="margin-top:5px;background-color: blue;">
+            Almoço
+        </div>
+```
