@@ -4,7 +4,7 @@ Vamos iniciar essa aula com a seguinte prática: Usando a estrutura básica do h
 
 Almoço -> Cor de fundo azul. A orientação do texto da div deve ser a esquerda (veja text-align)<br>
 Caçada  -> Cor de fundo verde. Orientação do texto deve ser a direita.<br>
-Alacatrão  -> Cor de fundo amarelo. Orientação do texto deve ser o centro<br>
+Alcatrão  -> Cor de fundo amarelo. Orientação do texto deve ser o centro<br>
 Dicionário -> Cor de fundo rosa. Orientação do texto deve ser o centro.<br>
 Informação  -> Cor de fundo branco. Orientação do texto deve ser a direita.<br>
 
