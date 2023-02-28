@@ -1,13 +1,13 @@
 Na aula de hoje vamos praticar um pouco mais o conceito de Insert. Nós usamos insert para inserir informações em uma 
 tabela. A esturtura básica do comando 
 
-``
+```
 INSERT INTO
   tabela (coluna1, coluna2, coluna3)
 VALUES
   ("valor1", "valor2", "valor3");
 
-``
+```
 
 
 Para isso vamos realizar a seguinte prática. Em um .sql (fazendo execução via comando source) execute a sequência como se define:
