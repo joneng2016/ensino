@@ -1,4 +1,5 @@
-Na aula de hoje vamos praticar um pouco mais o conceito de Insert. Nós usamos insert para inserir informações em uma <br> tabela. A esturtura básica do comando 
+Na aula de hoje vamos praticar um pouco mais o conceito de Insert. Nós usamos insert para inserir informações em uma 
+tabela. A esturtura básica do comando 
 
 ``
 INSERT INTO
