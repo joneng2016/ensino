@@ -1,11 +1,11 @@
 Durante a prática 5 observamos como pode ser muito desgastante criar
 css. Existe uma forma mais simples, essa forma ocorre por meio de classes. Vejamos a seguinte
 situação
-
+```
 <div style="margin-top:5px;background-color: blue;text-align: left; border: 1px solid; border-radius: 4px;">
     Almoço
 </div>
-
+```
 Pode ser feito da seguinte forma
 
 ```
@@ -13,7 +13,7 @@ Pode ser feito da seguinte forma
     <head>
         ...
         <style>
-            .onomequeeuquiser {
+            .o_nome_que_eu_quiser {
                 margin-top:5px;
                 background-color: blue;
                 text-align: left; 
@@ -24,7 +24,8 @@ Pode ser feito da seguinte forma
         ...
     </head>
     <body>
-        <div class="onomequeeuquiser">
+        <div class="o_nome_que_eu_quiser">
+            Almoço
         </div>
     </body>    
 </html>
