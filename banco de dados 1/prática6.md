@@ -26,3 +26,30 @@ Username, adicone "root"
 Password, mantenha vazio
 Ao fazer isso, clique em "Teste Connection" 
 Uma solicitação de instalação do driver será aberta, execute a instalação. 
+
+
+Dentro da estrutura de pastas, clique na seta para baixo próximo ao nome do banco.
+Acesse o "diretório" chamado Database
+Você observará uma série de banco de dados. Naquele que você criou, clique com o botão direito do mouse e selecione a seguinte opção: 
+"SQLEditor"
+
+
+
+Agora você pode começar a escrever seus scripts. Vamos práticar o seguinte:
+
+
+Crie uma tabela com os seguinte nome; atividade_dia_da_semana;
+
+Nesta tabela crie as seguintes colunas:
+
+dia_semana -> varchar (mas você pode tentar usar enum se você quiser se desafiar).
+atividade -> text; 
+
+
+
+Depois faça quatro inserts de atividades que você fez ao longo da semana.
+
+
+
+
+
