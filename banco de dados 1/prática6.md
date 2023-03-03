@@ -51,5 +51,9 @@ Depois faça quatro inserts de atividades que você fez ao longo da semana.
 
 
 
+Vamos comparar o MySQL Workbench com o Dbeaver. Para isso, acesse o link: https://dev.mysql.com/downloads/file/?id=516912. Clique em "No thanks, just start my download". Realize a instalação da ide. Abra a ide "você pode escrever Workbeanch no menu inicial". Clique em iniciar uma nova conexão (o simbolo é um +). Não se esqueça de adicionar um nome para a conexão. Depois disso, remova a tabela que você fez (DROP TABLE ....) e repita o procedimento no Workbench
+
+Próximo passo consiste no seguinte: Acesse o link 
+
 
 
