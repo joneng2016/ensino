@@ -25,7 +25,7 @@ Deve ser um subtítulo. Deve ter um fundo verde e também dever ser centralizado
 
 
 
-O restante do texto deve ter um div apenas para ele (o fundo pode ser amarelo). A fonte deve ser na ordem de 14px e o fundo precisa ser amarelo, necessariamente. Como é um parágrafo, você deve adicionar esse parágrafo dentro da tag <p>, então segue um exemplo:
+O restante do texto deve ter uma div. A fonte deve ser na ordem de 14px e o fundo precisa ser amarelo, necessariamente. Como é um parágrafo, você pode adicionar a tag <p>, então segue um exemplo:
 
 
 ```
