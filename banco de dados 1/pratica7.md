@@ -9,7 +9,7 @@ comprador (varchar), data_registro (DateTime). Contudo, na criação dessa tabel
 contexto de create table - é:
 
 ```
-id_mercadoria AUTO INT NOT NULL PRIMARY KEY AUTO_INCREMENT
+id_mercadoria INT NOT NULL PRIMARY KEY AUTO_INCREMENT
 ```
 
 
