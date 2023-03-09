@@ -29,9 +29,9 @@ Você pode perceber todo o parágrafo, em sua primeira linha, possui um espaçam
   
  Finalizou? Então agora faça o seguinte -> adicione entre o segundo e o terceiro parágrafo uma lista com três itens: 
 
-psum is that it ha
-barrassing hidden in t
-rtor. Sed convallis venen
+psum is that it ha <br>
+barrassing hidden in t <br>
+rtor. Sed convallis venen <br>
   
 Você pode resolver isso da seguinte maneira: Para abrir a lista, use a tag <ul>. Cada item da lista deve estar contido dentro da tag <li>. Um exemplo de como usar as listas é:
 
