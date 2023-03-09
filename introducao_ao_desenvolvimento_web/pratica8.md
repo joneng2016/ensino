@@ -42,3 +42,6 @@ Você pode resolver isso da seguinte maneira: Para abrir a lista, use a tag <ul>
   <li> item 3 </li>    
 </ul>
 ```
+
+  
+Cada item <li> deve conter uma cor necessariamente. O primeiro item deve ser azul, o segundo rosa e o terceiro verde.
