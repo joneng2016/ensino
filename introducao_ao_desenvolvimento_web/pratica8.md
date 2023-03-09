@@ -15,3 +15,5 @@ Perceba que são dois parágrafos diferentes, logo cada um destes deverá ter um
 
 <p>  ...  amet, tincidunt commodo urna ... </p>
 
+Você pode perceber todo o parágrafo, em sua primeira linha, possui um espaçamento (conforme é regido pelas regras gramaticais dos idiomais ocidentais). A tag <p> fornece um espaçamento default. É possível alterar esse espaçamento utilizando css. O texto contem três parágrafos, adicione no primeiro um espaçamento inicial de 15 px, no seguindo de 50 px e no terceiro de 100 px. Para isso 
+
