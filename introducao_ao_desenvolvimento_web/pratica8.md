@@ -23,3 +23,22 @@ Você pode perceber todo o parágrafo, em sua primeira linha, possui um espaçam
   ```
       text-indent: 37px;
   ```
+  
+  
+ 
+  
+ Finalizou? Então agora faça o seguinte -> adicione entre o segundo e o terceiro parágrafo uma lista com três itens: 
+
+psum is that it ha
+barrassing hidden in t
+rtor. Sed convallis venen
+  
+Você pode resolver isso da seguinte maneira: Para abrir a lista, use a tag <ul>. Cada item da lista deve estar contido dentro da tag <li>. Um exemplo de como usar as listas é:
+
+```
+<ul>
+  <li> item 1 </li>  
+  <li> item 2 </li>
+  <li> item 3 </li>    
+</ul>
+```
