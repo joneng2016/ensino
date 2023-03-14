@@ -1,4 +1,4 @@
-# Prática 7
+# Prática 8
 
 Vamos aprender o conceito de valor único por coluna em uma tabela. Para isso vamos criar uma tabela chamada funcionarios (não se esqueça de criar e acessar
 um banco de dados ou, então, de acessar algum banco de dados presete em sua máquina). Essa tabela deve ter as seguintes colunas
