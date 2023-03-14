@@ -33,7 +33,11 @@ funcionou conforme o esperado, sua tabela possui uma "Restrição" de não permi
 
 
 
+## Segunda parte
 
+Faça um insert de um novo registro passando NULL em uma das colunas, tal como nivel ou como funcao
 
 
 [1] http://www.bosontreinamentos.com.br/mysql/tipos-de-dados-enum-mysql/
+
+
