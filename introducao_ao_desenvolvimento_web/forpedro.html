@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Meu sexto html</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div>            
+            <table>
+                <tr>
+                    <td id="value-1">Pendente</td>
+                </tr>
+                <tr>
+                    <td id="value-2">Aprovado</td>
+                </tr>
+                <tr>
+                    <td id="value-3">Reprovado</td>
+                </tr>                
+              </table>              
+        </div>
+        <div style="display: none;" id="idmax">3</div>
+    </body>
+    <script>
+        let idMax = parseInt(document.getElementById('idmax').innerHTML)
+
+        for(let index = 1; index <= idMax; index ++) {
+            const valueHtml = document.getElementById(`value-${index}`).innerHTML
+
+            if (valueHtml === 'Reprovado') {
+                document.getElementById(`value-${index}`).style.color = 'red';
+            }
+            
+            if (valueHtml === 'Aprovado') {
+                document.getElementById(`value-${index}`).style.color = 'green'; 
+            }
+
+            if (valueHtml === 'Pendente') {
+                document.getElementById(`value-${index}`).style.color = 'orange'; 
+            }
+        }
+    </script>
+</html>
