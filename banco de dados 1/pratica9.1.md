@@ -1,5 +1,5 @@
 1 Crie uma tabela chamada funcionários com as seguintes colunas: id_funcionario, nome, documento (não pode ser nula), tipo de documento (enum entre rg, cpf e cnh),
-idade (não pode ser null), cargo (não pode ser num e precisa de um valor default "Você precisa especifica"). 
+idade (não pode ser null), cargo (não pode ser null e precisa de um valor default "Você precisa especifica"). 
 
 2 Crie uma tabela de alunos que contem as seguintes colunas : id_aluno, nome ,idade, rg, cpf, nota_b1, nota_b2. Todos os campos devem ser obrigatórios (não 
 podem ser null). No campo nome, coloque como default "Nome não digitado"
