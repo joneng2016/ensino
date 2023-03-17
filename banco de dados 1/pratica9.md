@@ -19,7 +19,7 @@ CREATE TABLE comida (
   ...
   ...
   unidade_de_medida enum (qtd, kg, g, L, ou nenhum) DEFAULT "nenhum",
-  valor_da_medida FLOAT 0
+  valor_da_medida FLOAT DEFAULT 0
   
 );
 ```
