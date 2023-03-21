@@ -5,9 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Teste Caixa Preta 1</title>
     </head>
-    <body>
+    <body>        
         <?php
-            $dolarValue = ((float) $_POST['real_value']) * 5.20;
+            if ($_POST['user_name'] !== 'jonathan') :
+        ?>
+            <h2>"Usuário não habilitado"</h2>
+        <?php
+                return; 
+            endif;
+        ?>
+
+        <?php
+            $dolarValue = ((float) $_POST['real_value']) / 5.20;
 
             $conn = new \PDO('mysql:host=localhost;dbname=dolar_real','root', '');
             $sql = "INSERT INTO dolar (dolar_value) VALUES (?)";
