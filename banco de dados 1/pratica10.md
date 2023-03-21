@@ -1,4 +1,4 @@
-# Prática 12
+# Prática 10
 
 A alteração de coluna é dada pelos seguintes comandos
 
