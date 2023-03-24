@@ -1,4 +1,4 @@
-# Prática 10
+# Prática 11
 
 1 Crie uma tabela com o nome de clientes, essa tabela deve ter id_clientes, nome, sobrenome, tipo de documento (enum para cpf, rg, passaporte), valor_documento,
 produto_consumido, valor_pago, created_at (pode ser DateTime). A tipagem fica por sua definição, apenas lembrando id_clientes deve ser Primary Key auto_increment. 
