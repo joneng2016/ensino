@@ -5,7 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Teste Caixa Preta 1</title>
     </head>
-    <body>        
+    <body>
+        <?php
+            const NULL_VALUE = NULL;
+            const EMPTY_STRING = "";
+            const ZERO = 0;
+            const KEY_TEST_LESS_OF_ZERO = 2;
+
+            $possiblitsOfError = [NULL_VALUE,EMPTY_STRING];
+
+            $isEmptyCondition = $_POST['real_value'] === NULL_VALUE || $_POST['real_value'] === EMPTY_STRING;
+            $isLessOfZero = $_POST['real_value'] <= ZERO;
+
+            if ($isEmptyCondition || $isLessOfZero) :
+        ?>
+            <h3>Por favor, volte a tela inicial e entre com o valor válido para o real</h3>
+        <?php
+                return;
+            endif;
+        ?>
+        
         <?php
             if ($_POST['user_name'] !== 'jonathan') :
         ?>
@@ -18,7 +37,7 @@
         <?php
             $dolarValue = ((float) $_POST['real_value']) / 5.20;
 
-            $conn = new \PDO('mysql:host=localhost;dbname=dolar_real','root', '');
+            $conn = new \PDO('mysql:host=localhost;dbname=dolar_real;port=3307','root', '');
             $sql = "INSERT INTO dolar (dolar_value) VALUES (?)";
             $stmt= $conn->prepare($sql);
             $stmt->execute([$dolarValue]);
