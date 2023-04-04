@@ -13,5 +13,10 @@ Tendo em vista essa história, defina o seguinte:
 3 - inserts que condizem com a atualização dos dados.
 
 
+
+
+
 2 Dentro de uma escola, uma dada user-stories é estruturada da seguite forma: Como professor de uma turma eu devo fornecer a presença para eles. Ao visualizar a tela
-de presença devo visualizar dados como, nome_aluno, frequência, idade, numero_presenca. Para além disso, preciso também pensar 
+de presença devo visualizar dados como, nome_aluno, frequência, idade, numero_presenca. Para além disso, preciso também pensar verificar em qual classe eles estão. Informações minhas, como professor, devem fazer parte do sistema (tal como nome, sobrenonome, disciplina que leciona). 
+
+Vamos supor que você fará o banco dessa feature. Sua análise entende que é possível representar esse problema em quatro tabelas, talvez como classe, alunos, professores e disciplina (sugestão). Crie essa representação bem como também os respectivos inserts relacionados a cada uma (pelo menos um professor, pelo menos duas classes, pelo menos quatro alunos e umas três disciplinas).
