@@ -12,3 +12,10 @@ SET
 WHERE
   condition;
 ```
+
+
+Tendo em vista isso, segue a prática de hoje: 
+
+* Crie uma tabela com o nome "alunos", essa tabela deve ter nome, sobrenome, tipo_documento, valor_documento, data_nascimento e data_registro
+* Faça o insert de 5 registros (você define os valores).
+* Faça o update do terceiro registro (você define o novo valor).
