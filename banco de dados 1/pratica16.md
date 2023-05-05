@@ -52,7 +52,7 @@ SELECT
 FROM
   produto
 WHERE
-  nome_produto = "chocolate" || nome_produto = "nescau"
+  nome_produto = "chocolate" OR nome_produto = "nescau"
 ```
 
 
@@ -60,12 +60,12 @@ WHERE
 
 Todos dentro do sakila
 
-1 Monte um select que traga todas as informações possíveis de todas as cidades (city)
-2 Monte um select que traga apenas o nome das cidades (mas traga todas)
-3 Monte um select que traga todas as informações possíveis de todos os países (country)
-4 Monte um select que traga apenas o nome dos países (mas traga todas)
-5 Em film, traga a descrição dos filmes "BABY HALL", "BETRAYED REAR", "CASSIDY WYOMING" em uma única query
-6 Traga todos os atores que possuem o sobrenome "BALL", "GOODING" ou "TEMPLE"
+* 1 Monte um select que traga todas as informações possíveis de todas as cidades (city)
+* 2 Monte um select que traga apenas o nome das cidades (mas traga todas)
+* 3 Monte um select que traga todas as informações possíveis de todos os países (country)
+* 4 Monte um select que traga apenas o nome dos países (mas traga todas)
+* 5 Em film, traga a descrição dos filmes "BABY HALL", "BETRAYED REAR", "CASSIDY WYOMING" em uma única query
+* 6 Traga todos os atores que possuem o sobrenome "BALL", "GOODING" ou "TEMPLE"
 
 
 
