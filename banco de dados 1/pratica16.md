@@ -68,6 +68,9 @@ Todos dentro do sakila
 * 6 Traga todos os atores que possuem o sobrenome "BALL", "GOODING" ou "TEMPLE"
 
 
+Desafio
+
+Sem usar join, traga todas as categorias de filme que o ator NICK WAHLBERG e o ator JENNIFER DAVIS atuou
 
 
 
