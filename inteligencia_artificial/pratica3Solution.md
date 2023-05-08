@@ -1,3 +1,4 @@
+```
 const numberOfInteraction = 500
 const timeOfOneInteraction = 0.1
 
@@ -25,3 +26,4 @@ function main () {
         agent.plusFivePxX()
     }
 }
+```
