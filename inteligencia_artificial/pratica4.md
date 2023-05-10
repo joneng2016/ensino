@@ -28,6 +28,7 @@ artefact("artefact13", "250px", "500px")
 artefact("artefact14", "0px", "300px")
 artefact("artefact10", "650px", "300px")
 
+const art = new Agent("agentOne","0px", "600px")
 function main () {
 
 }
