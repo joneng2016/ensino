@@ -80,7 +80,7 @@ RIP
 
 ## Desafio
 
-Quero saber todos as cidades que locaram filmes dos seguintes atores que contem as seguintes letras nos nomes se sobrenomnes
+Quero saber todos as cidades que locaram filmes dos seguintes atores que contem as seguintes letras nos nomes e sobrenomnes
 
 NIFER DAV
 
