@@ -74,3 +74,21 @@ SANDRA
 CAMERON
 KEVIN  
 RIP    
+
+
+
+
+## Desafio
+
+Quero saber todos as cidades que locaram filmes dos seguintes atores que contem as seguintes letras nos nomes se sobrenomnes
+
+NIFER DAV
+NNY LLOBR
+TT HOLSON 
+ACE OST    
+THE OHANSSO 
+O SW  
+ISTIAN GAB
+EO CAG
+
+Usar LIKE, IN e Subselect
