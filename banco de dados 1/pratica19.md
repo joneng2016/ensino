@@ -8,9 +8,9 @@
 6) Busque por todas as Stores onde MARY  SMITH e PATRICIA JOHNSON não fizeram compra
 7) Tendo em vista os seguintes emails:
 
-ANGELA.HERNANDEZ@sakilacustomer.org
-MELISSA.KING@sakilacustomer.org
-BRENDA.WRIGHT@sakilacustomer.org   
+ANGELA.HERNANDEZ@sakilacustomer.org,
+MELISSA.KING@sakilacustomer.org,
+BRENDA.WRIGHT@sakilacustomer.org,   
 AMY.LOPEZ@sakilacustomer.org,  
 ANNA.HILL@sakilacustomer.org,       
 REBECCA.SCOTT@sakilacustomer.org,   
