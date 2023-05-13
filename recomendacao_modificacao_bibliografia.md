@@ -21,12 +21,7 @@ LACERDA, Ivan Max Freire de; OLIVEIRA, Ana Liz Souto. Programador web. São Paul
 LISBOA, Flávio Gomes da Silva; MELO, Alexandre Altair de. Programação Web avançada com PHP: construindo software com componentes. São Paulo: Casa do Código, [2020]
 
 
-
-
-
-
 # Banco de Dados 1
-
 
 
 ## Recomendo a Adição de (para Bibliografia  Básica):
@@ -46,13 +41,6 @@ SILBERSCHATZ, Abraham; KORTH, Henry F.; SUDARSHAN, S. Sistema de banco de dados.
 
 HEUSER, Carlos Alberto. Projeto de banco de dados. 6. ed. Porto Alegre: Bookman, 2009. (Livros Didáticos Informática UFRGS ; n. 4.).
 MANNINO, Michael V. Projeto, desenvolvimento de aplicações e administração de banco de dados. São Paulo: McGraw-Hill, 2008.
-
-
-
-
-
-
-
 
 
 # Banco de Dados II
@@ -77,15 +65,6 @@ HEUSER, Carlos Alberto. Projeto de banco de dados. 6. ed. Porto Alegre: Bookman,
 MANNINO, Michael V. Projeto, desenvolvimento de aplicações e administração de banco de dados. São Paulo: McGraw-Hill, 2008.
 
 
-
-
-
-
-
-
-
-
-
 # Tecnologias para Internet
 
 
@@ -106,3 +85,17 @@ ALVES, William Pereira. Java para Web: desenvolvimento de aplicações. 1. ed. S
 
 LISBOA, Flávio Gomes da Silva; MELO, Alexandre Altair de. Programação Web avançada com PHP: construindo software com componentes. São Paulo: Casa do Código, [2020]
 MAZZA, Lucas. HTML5 e CSS3: domine a web do futuro. São Paulo: Casa do Código, [2018]. 
+
+
+
+# Inteligência Artificial
+
+Sem sugestões
+
+
+# Testes e Qualidade de Software
+
+## Recomendo remoção
+
+MELLOR, J. Stephen, e.tal. MDA Destilada: Princípios de Arquitetura Orientada por Modelos. Rio de Janeiro: Ciência Moderna, 2005.
+
