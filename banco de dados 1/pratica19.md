@@ -9,11 +9,22 @@
 7) Tendo em vista os seguintes emails:
 
 ANGELA.HERNANDEZ@sakilacustomer.org,
+
 MELISSA.KING@sakilacustomer.org,
+
 BRENDA.WRIGHT@sakilacustomer.org,   
+
 AMY.LOPEZ@sakilacustomer.org,  
+
 ANNA.HILL@sakilacustomer.org,       
+
 REBECCA.SCOTT@sakilacustomer.org,   
+
 VIRGINIA.GREEN@sakilacustomer.org,  
+
 KATHLEEN.ADAMS@sakilacustomer.org  
 
+
+Em customer, busque pelos atores que nunca foram assistidos por esses customer dentro do Sakila.
+
+Não usar join
