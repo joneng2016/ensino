@@ -1,4 +1,4 @@
-
+```
 const numberOfInteraction = 10000
 const timeOfOneInteraction = 0.005
 
@@ -60,3 +60,4 @@ function main () {
         counter = 0;
     }
 }
+```
