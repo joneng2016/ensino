@@ -1,4 +1,4 @@
-
+```
 const numberOfInteraction = 500
 const timeOfOneInteraction = 0.1
 
@@ -34,3 +34,4 @@ const art = new Agent("agentOne",`${600*Math.random()}px`, `${((600-500)*Math.ra
 function main () {
 
 }
+```
