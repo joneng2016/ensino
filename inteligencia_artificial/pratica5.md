@@ -1,4 +1,3 @@
-```
 
 const numberOfInteraction = 500
 const timeOfOneInteraction = 0.1
@@ -30,9 +29,8 @@ artefact("artefact13", "250px", "500px")
 artefact("artefact14", "0px", "300px")
 artefact("artefact10", "650px", "300px")
 
-const art = new Agent("agentOne",\`${600*Math.random()}px\`, \`${((600-500)*Math.random()) + 550}px\`)
+const art = new Agent("agentOne",`${600*Math.random()}px`, `${((600-500)*Math.random()) + 550}px`)
 
 function main () {
 
 }
-```
