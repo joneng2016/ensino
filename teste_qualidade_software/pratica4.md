@@ -35,7 +35,6 @@ app = Flask(__name__)
 def go_home():
     mydb = mysql.connector.connect(
     host="localhost",
-    port="3307",
     user="root",
     password="",
     database="api"
