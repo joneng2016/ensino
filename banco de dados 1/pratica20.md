@@ -13,6 +13,52 @@ FROM
 WHERE
   customer_id <= 2 or customer >= 4 and amount >= 6 and amount <= 7 and payment_date >= "2005-05-15" 
   and payment_date <= "2005-06-17"
+```
 
+
+Contudo não é bom estruturar esse `query` assim, a maneira mais correta é: 
 
 ```
+SELECT
+  *
+FROM
+  payment
+WHERE
+  (customer_id <= 2 or customer >= 4) and 
+  (amount >= 6 and amount <= 7) and 
+  (payment_date >= "2005-05-15" and payment_date <= "2005-06-17")
+```
+
+Exercícios
+
+1) Busque todos os pagamenetos com customer_id entre 0 e 6 amount entre 2 e 8 e payment_date entre 15-05-2005 16-08-2005
+2) Busque por todos os registros, em category, que possuiem `category_id` entre 2 e 10, que name contenha "Cl" no início, que contenha "ama" no final da string ou que contenha "umen" no meio do name.
+3) Busque todos os registros em `customer` que contenha os seguintes emails: 
+```
+LISA.ANDERSON@sakilacustomer.org  
+NANCY.THOMAS@sakilacustomer.org   
+KAREN.JACKSON@sakilacustomer.org  
+BETTY.WHITE@sakilacustomer.org    
+HELEN.HARRIS@sakilacustomer.org   
+SANDRA.MARTIN@sakilacustomer.org  
+DONNA.THOMPSON@sakilacustomer.org 
+CAROL.GARCIA@sakilacustomer.org   
+```
+e que contenha os seguintes first_names
+```
+MARY   
+PATRICI
+LINDA  
+BARBARA
+ELIZABE
+JENNIFE
+MARIA  
+SUSAN  
+MARGARE
+DOROTHY
+LISA   
+```
+
+ou 
+que tenha `customer_id` entre 19 e 41 ou e tenha `address_id` entre 71 e 83
+
