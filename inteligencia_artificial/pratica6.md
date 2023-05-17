@@ -30,7 +30,7 @@ artefact("artefact14", "0px", "300px")
 artefact("artefact10", "650px", "300px")
 
 const artOne = new Agent("agentOne", `110px`, `650px`, 'blue')
-const artTwo = new Agent("agentOne", `550px`, `650px`, 'green')
+const artTwo = new Agent("agentTwo", `550px`, `650px`, 'green')
 
 let counter = 0
 
