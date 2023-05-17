@@ -1,4 +1,4 @@
-
+```
 const numberOfInteraction = 10000
 const timeOfOneInteraction = 0.005
 
@@ -40,3 +40,4 @@ const halfCounter = 350
 function main () {
     
 }
+```
