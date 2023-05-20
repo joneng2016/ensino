@@ -44,7 +44,7 @@
 1. O cardápio de uma casa de lanches é dado pela tabela abaixo:
 
 
-Código | Produto | Preço | Unitário (R$)
+Código | Produto | Preço Unitário (R$)
 
 100 | Cachorro quente |  R$ 1,70
 
