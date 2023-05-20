@@ -124,12 +124,19 @@ nome de duas cidades do país selecionado e a língua que se fala neste país.
 escolha do tipo de filme que gosta de assistir (utilize uma entrada do tipo radio ou outra a de seleção)
 e a idade do usuário. Faça esta pesquisa para 5 usuários (apresente na página HTML a opção de
 digitação para as cinco pessoas):
+
 (a) Comédia
+
 (b) Romance
+
 (c) Terror
+
 (d) Aventura
+
 (e) Ação
+
 (f) Ficção
+
 Apresente no final cada gênero de filme e a média das idades dos usuários para cada seleção. Utilize
 o comando switch.
 
@@ -142,11 +149,18 @@ o comando switch.
 escolha do tipo de filme que gosta de assistir (utilize uma entrada do tipo radio ou outra a de seleção)
 e a idade do usuário. Faça esta pesquisa para 5 usuários (apresente na página HTML a opção de
 digitação para as cinco pessoas):
+
 (a) Comédia
+
 (b) Romance
+
 (c) Terror
+
 (d) Aventura
+
 (e) Ação
+
 (f) Ficção
+
 Apresente no final cada gênero de filme e a média das idades dos usuários para cada seleção. Utilize
 o comando switch.
