@@ -30,12 +30,19 @@ Então nós temos quatro produtos que são fornecidos por três empresas. Por co
 Assim sendo, os registros ficam da seguinte espécie
 
 cliente 1
+
 cliente 2
+
 cliente 3
+
 produto 1
+
 produto 2
+
 cliente 1 compra produto 1 e produto 2
+
 cliente 2 compra produto 2 e produto 3
+
 cliente 3 compra produto 1
 
 Assim sendo, a tabela clientes_produtos fica aproximadamente dessa forma:
