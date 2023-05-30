@@ -37,4 +37,7 @@ Lembre-se de utilizar a sintaxe correta do OFFSET em cada consulta para obter os
 
 
 
+Exercício 5:
+Busque todas as cidades que assistiram o filme de KEVIN BLOOM. Limite em 3 registros e traga a partir do terceiro
+
 
