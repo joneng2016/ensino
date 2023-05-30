@@ -25,7 +25,7 @@ Exercício 1:
 Considere uma tabela chamada "actor". Escreva uma consulta SQL que retorne a partir do quinto registro, limitando o resultado a 3 registros.
 
 Exercício 2:
-Suponha que você tenha uma tabela chamada "city" . Escreva uma consulta SQL que retorne a partir do segundo registro, ordenando-os em ordem alfabética.
+Suponha que você tenha uma tabela chamada "city" . Escreva uma consulta SQL que retorne a partir do segundo registro, ordenando-os em ordem alfabética e limitando em 4.
 
 Exercício 3:
 Considere uma tabela chamada "store". Escreva uma consulta SQL que retorne a partir do terceiro registro, limitando o resultado a 5 registros, ordenando-os por nome em ordem decrescente.
