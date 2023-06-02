@@ -1,3 +1,4 @@
+```
 explain select * from city where city_id  in (
 	select  city_id from address where address_id in (
 		select address_id from customer c where customer_id in (
@@ -20,3 +21,4 @@ explain select * from city where city_id  in (
 	)
 ) limit 3 
 offset 3;
+```
