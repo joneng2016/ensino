@@ -74,7 +74,7 @@ Todos os registros precisam ser feitos da forma mais eficiente possível
 
 2 - Com subselect, monte query traz o nome do cliente, a empresa do cliente, o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque - trazer para um conjunto de clientes (veja in) pelo nome. Deve haver uma ordenação orientada pela quantidade de produtos sendo essa descendente.
 
-## Conteúdos que serão avaliados e medidos.
+## Conteúdos que serão avaliados e medidos
 
 * Criação de Base de Dados/Tabelas
 * Insert
