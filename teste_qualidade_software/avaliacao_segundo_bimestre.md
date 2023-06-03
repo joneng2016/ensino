@@ -4,6 +4,35 @@ Tendo em vista o programa do anexo 1. Para realizar o start desse script, copie 
 e cole em um arquivo .py. Não apenas isso como também crie um arquivo chamado `requirements.txt` no mesmo diretório do .py já criado. Esse arquivo de requirements deve conter o seguinte conteúdo `pandas`. Feito isso, instale o `Python3` e o `pip3` em seu 
 computador. Então execute: `pip3 install -r requirements.txt`
 
+Esse script faz o seguinte:
+
+1 - busca os dados de certos usuários
+
+2 - formata esses dados em uma dada estrutura
+
+3 - cria um objeto de processamento de dados
+
+4 - escreve um arquivo csv
+
+Tendo em vista esse script, no final da execução do método `execute` crie os seguintes testes unitários:
+
+1 - Crie um teste onde self._user é um array e é maior do que zero (objetivo é verificar) 
+se os dados estão sendo retornados no banco de dados.
+
+2 - Crie um teste em self._user que acesse uma determinada linha (pode ser a primeira posição) e verifique se o dicionário contem os seguintes atributos: 
+
+* name
+* age
+* document
+* data_record
+
+3 Crie um teste em self._before_data_structure que avalie se existem os seguintes atributos: "name", "age", "document", "data_record"
+
+4 Ainda na mesma variávle de três, crie um teste para verificar apenas esses atributos existem, se não há mais nenhum para além desses sendo criado.
+
+5 Crie um teste que verifique se o arquivo `file.csv` realmente foi criado ao término da execução do software.
+
+6 Crie um teste que verifique se o conteúdo do arquivo corresponde ao que se faz presente dentro do array self._user
 
 ## Anexo 1
 
