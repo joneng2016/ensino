@@ -30,6 +30,28 @@ WHERE condição;
 * A cláusula WHERE pode ser usada em cada consulta individual dentro do UNION para aplicar restrições específicas.
 * Funções agregadas, como COUNT, SUM, AVG, etc., podem ser usadas nas consultas SELECT dentro do UNION para calcular valores agregados para o conjunto de resultados combinado.
 
+```
+select 
+	city,
+	"category" as tab
+from 
+	city c2 
+where 
+	city like "c%"
+union
+select
+	name,
+	"city" as tab
+from 
+	category c 
+where 
+	name like "c%";
+  ```
+
+
+
+
+
 
 1) Em uma única query, verifique todos os atores, cidades e países que contem a letra i dentro do seu nome. Identifique em uma coluna.
 2) Verifique o id de todas as "store" e "address" com last_update maior que "2006-01-01" e que contenha em address o termpo "My".
