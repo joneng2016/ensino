@@ -23,6 +23,14 @@ Exemplos Práticos:
 
 Exemplo 1: INNER JOIN entre duas tabelas.
 
+select
+	*
+from 
+	address 
+inner join 
+	city on address.city_id = city.city_id;
+
+  
 Exemplo 2: INNER JOIN entre várias tabelas.
 
 
@@ -40,3 +48,9 @@ Escrever consultas SQL utilizando INNER JOIN para combinar dados de tabelas rela
 Tutoriais online sobre INNER JOIN no MySQL.
 Observações Finais:
 Certifique-se de fornecer exemplos práticos durante a aula e encoraje a participação ativa dos alunos. Explique os conceitos de forma clara e esteja preparado para responder a perguntas. O INNER JOIN é uma habilidade essencial em SQL, e a prática é fundamental para o domínio dessa técnica.
+
+
+1) Busque todos os filmes com categoria Action
+2) Busque todos os endereços do país South Africa
+3) Busque todos os pagamentos de MARY SMITH, limit em 2
+4) Busque todos os filmes que foram assistidos por HELEN HARRIS
