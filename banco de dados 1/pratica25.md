@@ -22,14 +22,14 @@ Uso da cláusula ON para especificar a condição de junção.
 Exemplos Práticos:
 
 Exemplo 1: INNER JOIN entre duas tabelas.
-
+```
 select
 	*
 from 
 	address 
 inner join 
 	city on address.city_id = city.city_id;
-
+```
   
 Exemplo 2: INNER JOIN entre várias tabelas.
 
