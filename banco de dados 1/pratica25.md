@@ -33,7 +33,25 @@ inner join
   
 Exemplo 2: INNER JOIN entre várias tabelas.
 
-
+```
+select
+	c2.*,
+	c.city_id as city_city_id,
+	a.city_id as address_city_id
+from 
+	address a
+inner join 
+	city c
+	on 
+		a.city_id = c.city_id
+inner join
+	country c2 
+	on
+		c.country_id = c2.country_id 
+where
+	c2.country ="Brazil"
+;
+```
 Discussão sobre possíveis problemas e soluções ao usar INNER JOIN.
 Considerações Finais:
 
