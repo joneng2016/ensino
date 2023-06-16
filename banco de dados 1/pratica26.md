@@ -46,4 +46,13 @@ select
 from 
 	operario o
 inner join ferramenta f on o.id_ferramenta = f.id_ferramenta;
+
+
+
+select 
+	* 
+from 
+	operario o
+right join ferramenta f on o.id_ferramenta = f.id_ferramenta;
+
 ```
