@@ -12,6 +12,7 @@ Adicione cinco registros conforme o seu entendimento
 (id_classes, nome, id_professor, id_aluno)
 Adicione dois registros conforme o seu entendimento
 
+## Execução
 Faça os registros de tal forma que o join entre as tabelas de professores, alunos e classes traga sempre dois registros a menos no inner join
 quando contraposto ao left join
 
