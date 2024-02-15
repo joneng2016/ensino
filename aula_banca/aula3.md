@@ -6,7 +6,7 @@
 * __Herbert Schildt__, __Maria Lúcia Blanck Lisbôa Aldir José Coelho Corrêa da Silva__ - Java para Iniciantes: Crie, Compile e Execute Programas Java Rapidamente
 
 
-## Revisão
+## Revisão (4 min)
 
 * Como compilar e executar um arquivo Java por linha de comando
 * Como iniciar um projeto básico Java no IntelliJ
@@ -62,7 +62,7 @@ for (double i = 0; i < 35; i ++) {
 ```
 
 
-## Orientação a objetos
+## Orientação a objetos (10 min - 14 min)
 
 * Paradigma de Programação
 * Apresenta uma alta abstração, funcionando de forma mais próxima a realidade humana.
@@ -206,7 +206,7 @@ public class CadastroDeLivros {
 ```
 
 
-## Métodos
+## Métodos (6 min - 20 min)
 
 Toda vez que queremos exibir as informações do livro, precisamos invocar: 
 
