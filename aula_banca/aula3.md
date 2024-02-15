@@ -8,7 +8,7 @@
 
 ## Revisão
 
-* Como compilar e executar um arquivo Java
+* Como compilar e executar um arquivo Java por linha de comando
 * Como iniciar um projeto básico Java no IntelliJ
 * Declaração e atribuição de variáveis
 ```
