@@ -99,7 +99,7 @@ public class CalculadoraDeEstoque {
 Podemos criar uma classe Livro.
 
 ```
-public class Livro {
+class Livro {
 
 }
 ```
@@ -108,7 +108,7 @@ Ela pode conter os atributos das classes:
 
 
 ```
-public class Livro {
+class Livro {
     String nome;
     String descricao;
     double valor;
@@ -150,7 +150,7 @@ public class CadastroDeLivros {
     }
 }
 
-public class Livro {
+class Livro {
     String nome;
     String descricao;
     double valor;
@@ -228,7 +228,7 @@ tipoDeRetorno nomeDoComportamento() {
 Logo, dentro do contexto da classe Livro, o código ficaria assim:
 
 ```
-public class Livro {
+class Livro {
 
     String nome;
     String descricao;
@@ -270,6 +270,24 @@ public class CadastroDeLivros {
         outroLivro.isbn = "978-85-66250-22-0";
         
         outroLivro.mostrarDetalhes();
+    }
+}
+
+class Livro {
+
+    String nome;
+    String descricao;
+    double valor;
+    String isbn;
+
+    void mostrarDetalhes() {
+        String mensagem = "Mostrando detalhes do livro";
+        System.out.println(mensagem);
+
+        System.out.println(nome);
+        System.out.println(descricao);
+        System.out.println(valor);
+        System.out.println(isbn);
     }
 }
 ```
