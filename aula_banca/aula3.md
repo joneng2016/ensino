@@ -25,7 +25,7 @@ public class CalculadoraDeEstoque {
 
 * Tipos primitivos - Tipos de variáveis que a linguagem nos fornece.
 
-![alt text](aula3.png "Tipos")
+![alt text](img1.png "Tipos")
 
 * Condicionais
 
