@@ -1,4 +1,4 @@
-# Aula 01 - Introdução
+# Aula 0 - Introdução
 
 Avaliação das diversas possibilidades de arquitetura das soluções de software. Criação de soluções computacionais distribuídas e integração de sistemas de diferentes plataformas.
 
@@ -20,34 +20,119 @@ Avaliação das diversas possibilidades de arquitetura das soluções de softwar
 
 ## Avaliação
 
-* A1: Apresentação do projeto - 2.0 pontos + Prova escrita bimestral - 3.0 pontos
-* A2: Defesa de código - 5.0 pontos
+* A1: Avaliações que consiste na entrega de um código e uma defesa do mesmo em sala de aula
+    * Avaliação 1 - 1.25  pontos
+    * Avaliação 2 - 1.25  pontos
+    * Avaliação 3 - 1.25  pontos
+    * Avaliação 4 - 1.25  pontos
+* A2: Prova escrtia envolvendo todo o conteúdo do semestre
+    * 5.0 pontos
 
 
 ## Planejamento da Disciplina
 
-* 26/02 - Apresentação da disciplina, configuração do ambiente e exercícios.
-
+* 26/02 - Apresentação da disciplina, contrato pedagógico, configuração do ambiente e exercícios.
 * 04/03 - Criação de uma API no modelo MVC
+    * Exposição
+        * Comentar o conceito de ClientSide X ServerSide
+        * Processamento de dados em Servidor
+        * Trafego de dados na camada TCP/IP
+        * Delinear o conceito de uma aplicação
+        * Relação entre endpoint e execução lógica
+        * Apresenta o conceito de controller dentro do verbo GET
+    * Atividade
+        * Criar uma api que resolve uma equação do segundo grau
 * 11/03 - Criação de uma API no modelo MVC
-* 18/03 - Refatoração de uma API no modelo MVC
+    * Exposição
+        * Descrever o projeto da Avaliação 1
+        * Revisar aula 04/03
+        * Definir o conceito de Model
+        * Configurar Sequelize
+        * Apresentar o conceito de GET
+        * Apresentar o conceito de POST
+    * Atividade
+        * Criar uma api envolvendo rotas GET e POST
+* 18/03 - Criação de uma API no modelo MVC
+    * Exposição
+        * Revisãar aula 11/03
+        * Apresentar o conceito de PUT
+        * Exemplo do conceito de PUT
+        * Apresentar o conceito de DELETE
+        * Exemplo do conceito de DELETE
+    * Atividade
+        * Criar uma api envolvendo rotas PUT e DELETE
 * 25/03 - Criação de uma API com padrões modernos
-* 31/03 - Criação de uma API com padrões modernos
+    * Exposição
+        * Apresentar uma API em Java X SpringBoot
+        * Apresentar uma API em .DOTNET 
+    * Atividade
+        * Criar uma api com uma dessas tecnologias
+* 31/03 - Avaliação 1
+    * Defesa de código e entrega do documento
+
 
 * 08/04 - Consumo de APIs externas
+    * Exposição
+        * Apresentar o conceito de microserviços
+        * Start de uma api pronta (feita pelo professor)
+        * Mostrar como uma api em Java consome essa outra api
+    * Atividade
+        Consumir outros endpoints da api feita pelo professor
 * 15/04 - Consumo de APIs externas
-* 22/04 - Apresentação do projeto (2,0)
-* 29/04 - Prova Bimestral (3,0)
+    * Exposição
+        * Descrever o projeto da Avaliação 2
+        * Apresentar o conceito de microserviços
+        * Start de uma api pronta (feita pelo professor)
+        * Mostrar como uma api em C# consome essa outra api
+    * Atividade
+        Consumir outros endpoints de api feita pelo professor
+* 22/04 - Consumo de APIs externas
+    * Exposição
+        * Apresentar codificação HTTP 200, 404, 500...
+        * Tratar processo de falha de uma api para outra
+    * Atividade
+        * Definir tratativas de exceção
+* 29/04 - Avaliação 2
+    * Defesa de código e entrega do documento
+
 
 * 06/05 - Integração de sistemas com mensageria
+    * Exposição
+        * Mostrar o conceito de Mensageria
+        * Apresentar e configurar a tecnologia RabbitMQ
+        * Apresentar os conceitos de: produtor, fila, exchange e consumidor
+        * Criar o exemplo de uma fila
+    * Atividade
+        * Conceber uma fila e solicitar certas operações
 * 13/05 - Integração de sistemas com mensageria
-* 20/05 - Integração de sistemas com mensageria
+    * Exposição
+        * Descrever o projeto da Avaliação 3
+        * Mostrar como ocorre o consumo de uma fila por parte da API
+    * Atividade
+        * Executar a integração de um sistema de mensageria a uma api
+* 20/05 - Avaliação 3
+    * Defesa de código e entrega do documento
+
 * 27/05 - Teste e monitoria de aplicações integradas
- 
-* 03/06 - Desenvolvimento do projeto
-* 10/06 - Defesa de código (5,0)
+    * Exposição
+        * Descrever o projeto da Avaliação 4
+        * Abordar o conceito de teste de carga de uma API
+        * Abordar métricas principais do teste de carga
+        * Configurar o Postman para teste de carga de uma api
+    * Atividade
+        * Executar teste de carga de uma determinada api
+* 03/06 - Teste e monitoria de aplicações integradas
+    * Exposição
+        * Configurar testes quentes no Postman
+        * Abordar o conceito de testes unitários
+        * Comentar sobre ferramentas de mercado para efetuar monitoramento
+        * Abordar as diferentes métricas
+    * Atividade
+        * Desenvolver o teste quente e um teste unitário
+* 10/06 - Avaliação 4
+    * Defesa de código e entrega do documento
 * 17/06 - Connect Week
-* 24/06 - Semana de Prova ETI
+* 24/06 - Prova Bimestral (3,0)
 
 ## Plano de Aula
 
