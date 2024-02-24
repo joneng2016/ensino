@@ -2,6 +2,22 @@
 
 Desenvolvimento de sistemas computacionais, aplicando técnicas de arquitetura de software voltadas para o suporte a processos empresariais.
 
+## Bibliografia Básica
+
+ESCOBAR. LEANDRO FABIAN ALMEIDA . Business Process Modeling Universidade Positivo, 2014. E-book. 
+LAUDON, K.; LAUDON, J. Sistemas de informação gerenciais. 11. ed.  São Paulo: Pearson, 2011. E-book.
+OLIVEIRA, Djalma de Pinho Rebouças. Sistemas de Informações Gerenciais - Estratégicas - Táticas - Operacionais. Editora Atlas, 2018
+O’BRIAN, J.; MARAKAS, G. Administração de sistemas de informação. 15. ed. Porto Alegre: AMGH, 2013
+
+## Bibliografia Complementar
+
+AUDY, Jorge Luis Nicolas; ANDRADE, Gilberto Keller de; CIDRAL, Alexandre. Fundamentos de sistemas de informação. Porto Alegre: Bookman, 2005. reimpr. 2007 208 p. ISBN 9788536304489.
+BALTZAN, P.; PHILLIPS, A. Sistemas de informação. Porto Alegre: AMGH. 2012
+WETHERBE, James C. Analise de sistemas para sistemas de informação por computador. 3a ed. Rio de Janeiro: Campus, 1987. 279p. ISBN 8570014414
+REZENDE, Denis Alcides.  Planejamento de sistemas de informação e informática. São Paulo: Atlas, 2015.
+WAZLAWICK, Raul Sidnei. Análise e projeto de sistemas de informação orientados a objetos. Rio de Janeiro: Elsevier, 2004. 298 p. (Sociedade Brasileira de Computação). ISBN 8535215646
+
+
 ## Objetivos de aprendizagem específicos da componente curricular
 
 * Ao concluir a componente curricular, o estudante será capaz de...
@@ -109,3 +125,11 @@ Desenvolvimento de sistemas computacionais, aplicando técnicas de arquitetura d
 * 20/06/2024 - Avaliação prática A2: Implementação contas a pagar e contas a receber, Implementação do processo de integração contábil
     * Arquitetura da aula
 * 27/06/2024 - Avaliação A1
+
+## Ferramentas
+
+* Google Draw IO
+* Node JS
+* VsCode
+* Postman
+* ReactJS
