@@ -88,3 +88,46 @@ BORDIN, M. V. et al. Processamento paralelo e distribuído. Porto Alegre: SAGAH,
 SOUSA, R. Sistemas distribuídos: princípios e paradigmas. 2. ed. São Paulo: Editora McGraw Hill, 2013.<br>
 SCHILDT, H. Java para iniciantes: crie, compile e execute programas Java rapidamente. 6 ed. Porto Alegre: Bookman, 2015. E-book.<br>
 FREITAS, P. H. C. et al. Programação Back End III. Porto Alegre: SAGAH, 2021.
+
+
+
+## Configurar o ambiente Java
+
+* Ir ao google e digitar "Download java jdk"
+* Clicar no link "Java Download"
+* Clique em Java archive
+* Selecione o Java 21
+* Acesse o Windows X64 Installer
+* Execute os passos da instalação
+* Acesse o disco C:\Arquivo de Programas\Java\jdk...\bin -> copie o endereço
+* Em "Este Computador", clique com botão direito, clique em "Propriedades"
+* Na parte direita, acesse "Configurações avançadas do sistema"
+* Acesse a aba "Avançado"
+* Vá em Variávies de Ambiente
+* Clique em "Novo"
+* Em uma das linhas, clique em "Colar" para Valor da variável e remova o "bin", em nome da variável cole "JAVA_HOME"
+* Acesse a variável PATH, clique em editar. Depois clique em Novo, colo o caminho do Java mantendo o /bin
+* Acesse o Powershell e digite java - version
+* https://www.youtube.com/watch?v=xRBd2l580Ac
+
+## Instalar IntelliJ IDE
+
+* Acesse o Google
+* Digite intellij download community edition IDEA
+* Baixe a ide community edition
+* Instalar
+
+### Instalar Dotnet
+
+* Acesse o google e digite o Dotnet
+* Clique em Download
+* Em .NET 8.0, clique em "Install .NET..."
+* Acesse o powershell e digite --version
+* Acesse o VSCode
+* 1 -> Instale o C# e o C# kit devtools
+
+### Instalar o Node
+
+* nodejs.org
+* Baixar a LTS
+* Instalar
