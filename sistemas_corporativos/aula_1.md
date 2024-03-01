@@ -12,6 +12,13 @@
 
 
 <img src="fig/Organograma-ICN.png" alt="Figura do site https://instituto.cancaonova.com/organograma/"/>
+
+<img src="fig/img2.png" alt="Figura do site https://crmes.org.br/institucional-2/organograma/"/>
+
+
+<img src="fig/img3.png" alt="Figura do site http://etcdf.com.br/?page_id=675"/>
+
+
 ## 2. Exposição: Abordagem por processos (integração horizontal) - 30min
 
 # 2.1 Atividade  em equipe: Desenhar uma cadeia de valor
