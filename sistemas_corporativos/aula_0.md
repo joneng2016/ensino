@@ -50,8 +50,8 @@ WAZLAWICK, Raul Sidnei. Análise e projeto de sistemas de informação orientado
         * 1. Exposição: Abordagem funcional (organogramas) - 20min
         * 1.1 Atividade  em equipe: Desenhar um organograma - 20min
         * 2. Exposição: Abordagem por processos (integração horizontal) - 30min
-        * 2.1 Atividade  em equipe: Desenhar uma cadeia de valor - 20min
-        * 3. Exposição: Processos de negócios (requerem agregação de valor) e Processos de apoio (requerem economia) - 20min
+        * 2.1 Atividade  em equipe: Desenhar uma cadeia de valor
+        * 3. Exposição: Processos de negócios (requerem agregação de valor) e Processos de apoio (requerem economia) 
         * 3.1 Atividade  em equipe: Selecionar uma empresa ou um setor e listar os processos de negócios e de apoio (não é exaustivo)
 * 14/03/2024 - BPMN
     * Arquitetura da aula
