@@ -15,10 +15,10 @@
 <span>Figura do site https://instituto.cancaonova.com/organograma/</span>
 
 
-<img src="fig/img3.png" alt="Figura do site https://crmes.org.br/institucional-2/organograma/"/>
+<img src="fig/img2.jpg" alt="Figura do site https://crmes.org.br/institucional-2/organograma/"/>
 <span>Figura do site https://crmes.org.br/institucional-2/organograma/</span>
 
-<img src="fig/img4.jpg" alt="Figura do site http://etcdf.com.br/?page_id=675"/>
+<img src="fig/img3.jpg" alt="Figura do site http://etcdf.com.br/?page_id=675"/>
 <span>Figura do site http://etcdf.com.br/?page_id=675</span>
 
 * Melhores empresas criam estruturas estáveis
@@ -39,7 +39,7 @@
 * De acordo com Davenport (1994), devem estar ordenadas cronologicamente, com início, fim e entra-
 das e saídas claramente definidas.
 
-<img src="fig/img4.png" />
+<img src="fig/img4.jpg" />
 <span>Ebook - Business Process Modeling - Leandro Fabian Almeida Escobar</span>
 
 
@@ -50,7 +50,7 @@ das e saídas claramente definidas.
     * Não elimina a visão funcional, mas uma forma nova de entender, planejar e executar as atividades dentro da empresa
 
 
-<img src="fig/img5.png" />
+<img src="fig/img5.jpg" />
 <span>Ebook - Business Process Modeling - Leandro Fabian Almeida Escobar</span>
 
 
