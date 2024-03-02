@@ -15,10 +15,10 @@
 <span>Figura do site https://instituto.cancaonova.com/organograma/</span>
 
 
-<img src="fig/img2.png" alt="Figura do site https://crmes.org.br/institucional-2/organograma/"/>
+<img src="fig/img4.png" alt="Figura do site https://crmes.org.br/institucional-2/organograma/"/>
 <span>Figura do site https://crmes.org.br/institucional-2/organograma/</span>
 
-<img src="fig/img3.jpg" alt="Figura do site http://etcdf.com.br/?page_id=675"/>
+<img src="fig/img5.jpg" alt="Figura do site http://etcdf.com.br/?page_id=675"/>
 <span>Figura do site http://etcdf.com.br/?page_id=675</span>
 
 * Melhores empresas criam estruturas estáveis
