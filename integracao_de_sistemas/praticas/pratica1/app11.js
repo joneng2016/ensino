@@ -19,7 +19,7 @@ app.get("/plus_two_values", (req, res) => {
 })
 
 
-app.get("/find_by_in_list_name", (req, res) => {
+app.get("/find_age_by_list_name", (req, res) => {
     const nameToFind = req.query.name
 
     const list = [
@@ -36,7 +36,64 @@ app.get("/find_by_in_list_name", (req, res) => {
     res.json(response)
 })
 
+class CatDTO {
+    constructor(
+        listOfCats
+    ) {
+        this.listOfCats = listOfCats
+    }
 
+    getListOfCats() {
+        return this.listOfCats
+    }
+}
+
+
+class CatController {
+    constructor(catDTO) {
+        this.catDTO = catDTO
+    } 
+
+    findAllCats(req, res) {
+        if (!req.query.catName) {
+            res
+                .status(400)
+                .json(
+                    {
+                        message:"define the name of cat in queryString catName, please"
+                    }
+                )
+
+            return 
+        }
+
+
+        const cats = this.catDTO.getListOfCats()
+            .filter(
+                e => e.catName === req.query.catName
+            )
+
+        cats.length > 0 ? res.json(cats) : res.status(404).json({message:"cat not found"})
+    }
+}
+
+
+const cat = new CatController(
+    new CatDTO(
+        [
+            {catName: 'Miau', tutor: "Jorge"},
+            {catName: 'Tom', tutor: "Alex"},
+            {catName: 'Frajola', tutor: "Witon"},
+            {catName: 'Bola de Neve', tutor: "Orlando"},            
+
+        ]
+    )
+)
+
+
+app.get("/cat", (req, res) => {
+    cat.findAllCats(req, res)
+})
 
 
 app.listen(port, () => console.log("api is up"))
