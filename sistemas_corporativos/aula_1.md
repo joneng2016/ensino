@@ -73,4 +73,33 @@ das e saídas claramente definidas.
 <span>Ebook - Business Process Modeling - Leandro Fabian Almeida Escobar</span>
 
 
-### 3.1 Atividade  em equipe: Selecionar uma empresa ou um setor e listar os processos de negócios e de apoio (não é exaustivo)
+<img src="fig/img7.png" />
+<span>De https://holmes.app/blog/cadeia-de-valor/</span>
+
+### Atividades
+
+Considere uma empresa que comecializa produtos médicos (tal como luvas, seringas, jalecos). Essa empresa é composta por quatro setores:
+
+* Compras
+    * Gestão Estoque
+    * Gestão de Fornecedores
+* Comercial
+    * Gestão de Vendas
+    * Gestão de Relacionamento com Cliente
+* Recursos humanos
+* Tecnologia da Informação
+    * Devops
+    * Infraestrutura
+    * Desenvolvimento
+
+
+Essa empresa é composta pelos seguintes processos:
+
+1 - Compra de fornecedores <br>
+2 - Venda para os hospitais (entrar em contato com compradores de hospitais, clínicas) <br>
+3 - Administração do estoque <br>
+4 - Desenvolvimento de Software <br>
+
+1 - Conceba o organograma da empresa <br>
+2 - Conceba um processo de resolução de bugs (seja criativo em termos de etapas de processo e sua respectiva sequência) <br>
+3 - Conceba a cadeia de valor da empresa (seja criativo em termo de etapas de processo e sua respectiva sequência) <br>
