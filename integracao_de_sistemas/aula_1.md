@@ -7,14 +7,14 @@
 * Adicione o seguinte bloco de código:
 
 ```
-const app = require("express")
+const express = require("express")
 ```
 
 * Para executar o programa, faça: node app1.js
 * Vamos ver se o objeto foi criado corretamente, para isso faça:
 
 ```
-const app = require("express")
+const app = express()
 
 console.log(app)
 ```
