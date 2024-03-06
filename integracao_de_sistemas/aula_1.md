@@ -184,16 +184,23 @@ export class AppController {
 ### Exercícios
 
 1 - Crie uma rota get que resolve uma equação do segundo grau mediante a fórmula de bascara - https://brasilescola.uol.com.br/matematica/equacao-2-grau.htm
+
 2 - Crie uma rota get que contem uma lista com 10 livros de objetos na segunda estrutura: 
+
 * nome_livro
 * autor
 * descricao
+  
 Essa rota deve receber um input com a seguinte informação "autor" e deve retornar todos os livros deste
+
 3 - Crie um arquivo em sua máquina, esse arquivo deve conter uma lista de 10 itens, da seguinte forma:
+
 
 comida:Hamburguer,preco:10,00 <br>
 comida:Pizza,preco:15,00
 
+
 -> os demais intens é liberdade criativa sua.
+
 
 Depois disso, crie uma rota get recebe o nome da comida e, então, le o arquivo. Por sua vez, retorna o preço da comida em estrutura JSON. Considere fazer a regra de negócio em uma Controller. 
