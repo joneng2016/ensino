@@ -21,16 +21,27 @@ Pode fazer na linguagem/framework que se sentir mais confortável.
 Critérios de avaliação:
 
 1 -  NOTA: 0,31 - Funcionamento da rota get/3
+
 2 -  NOTA: 0,31 - Funcionamento da rota get/4
+
 3 -  NOTA: 0,31 - Funcionamento da rota post/5
+
 4 -  NOTA: 0,31 - Funcionamento da rota put/6
+
 5 -  NOTA: 0,31 - Funcionamento da rota delete/7
+
 6 -  NOTA: 0,31 - Defender corretamente o funcionamento da rota get/3
+
 7 -  NOTA: 0,31 - Defender corretamente o funcionamento da rota get/4
+
 8 -  NOTA: 0,31 - Defender corretamente o funcionamento da rota post/5
+
 9 -  NOTA: 0,31 - Defender corretamente o funcionamento da rota put/6
+
 10 - NOTA: 0,31 - Defender corretamente o funcionamento da rota delete/7
+
 11 - NOTA: 0,31 - Todos os integrantes do grupo devem apresentar
+
 12 - NOTA: 0,31 - O tempo da apresentação deve ser respeitado
 
 ## Resolver o exercício da aula anterior
