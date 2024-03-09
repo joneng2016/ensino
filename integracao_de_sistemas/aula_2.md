@@ -2,12 +2,71 @@
 
 ## Descrição da Avaliação 1 - 02/04 ou 03/04
 
-Descrever
+1 - Uma loja que vende produtos eletrônicos.
+
+2 - Esses produtos são organizados mediante a uma tabela com a seguinte natureza: nome (nome do produto), empresa (empresa do produto), descrição (descrição do produto), quantidade (quantidade do produto), marca (marca do produto), valor (valor do produto)
+
+3 - Crie uma rota get que exibe todos os produtos
+
+4 - Crie uma rota get que exibe apenas os produtos especificados por meio do nome, mediante querystring
+
+5 - Crie uma rota post que faz o insert de produtos novos
+
+6 - Crie uma rota put que faz update dos produtos
+
+7 - Crie uma rota delete que faz a remoção dos produtos
+
+Pode fazer na linguagem/framework que se sentir mais confortável.
+
+Critérios de avaliação:
+
+1 -  NOTA: 0,31 - Funcionamento da rota get/3
+2 -  NOTA: 0,31 - Funcionamento da rota get/4
+3 -  NOTA: 0,31 - Funcionamento da rota post/5
+4 -  NOTA: 0,31 - Funcionamento da rota put/6
+5 -  NOTA: 0,31 - Funcionamento da rota delete/7
+6 -  NOTA: 0,31 - Defender corretamente o funcionamento da rota get/3
+7 -  NOTA: 0,31 - Defender corretamente o funcionamento da rota get/4
+8 -  NOTA: 0,31 - Defender corretamente o funcionamento da rota post/5
+9 -  NOTA: 0,31 - Defender corretamente o funcionamento da rota put/6
+10 - NOTA: 0,31 - Defender corretamente o funcionamento da rota delete/7
+11 - NOTA: 0,31 - Todos os integrantes do grupo devem apresentar
+12 - NOTA: 0,31 - O tempo da apresentação deve ser respeitado
 
 ## Resolver o exercício da aula anterior
 
+3 - Crie um arquivo em sua máquina, esse arquivo deve conter uma lista de 10 itens, da seguinte forma:
 
-Descrever
+comida:Hamburguer,preco:10,00
+comida:Pizza,preco:15,00
+
+-> os demais intens é liberdade criativa sua.
+
+Depois disso, crie uma rota get recebe o nome da comida e, então, le o arquivo. Por sua vez, retorna o preço da comida em estrutura JSON. Considere fazer a regra de negócio em uma Controller.
+
+```
+@Get('/food/:nameFood')
+  readFileFood(@Param('nameFood') nameFood: string) {
+    const content = fs.readFileSync('./file/f.txt', 'utf8');
+
+    const lineObjects = content.split('\n').map((line) => {
+      const parts = line.split(',');
+      const nameValueFirst = parts[0].split(':');
+      const nameValueSecond = parts[1].split(':');
+
+      const toReturn = { comida: '', preco: '' };
+
+      toReturn[nameValueFirst[0]] = nameValueFirst[1];
+      toReturn[nameValueSecond[0]] = nameValueSecond[1];
+
+      return toReturn;
+    });
+
+    return lineObjects.find((item) => item.comida === nameFood);
+  }
+```
+
+
 
 
 ## Concebendo uma rota POST
@@ -293,3 +352,7 @@ A controller fica:
     });
   }
 ```
+
+## Exercício
+
+Crie uma tabela que represente os produtos de um mercado. Deve conter informações como nome, empresa, quantidade e preço. Crie, usando models, service e controllers uma rota POST que faz o inser deste objeto

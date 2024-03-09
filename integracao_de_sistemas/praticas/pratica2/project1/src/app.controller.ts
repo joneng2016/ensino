@@ -5,6 +5,7 @@ import { ResponseCreateBooking } from './dtos/ResponseCreateBooking';
 import { AppService } from './app.service';
 import { InjectModel } from '@nestjs/sequelize';
 import { Booking } from './models/Booking';
+import * as fs from 'fs';
 
 @Controller()
 export class AppController {
@@ -17,6 +18,26 @@ export class AppController {
   @Get()
   getHello(): string {
     return this.appService.getHello();
+  }
+
+  @Get('/food/:nameFood')
+  readFileFood(@Param('nameFood') nameFood: string) {
+    const content = fs.readFileSync('./file/f.txt', 'utf8');
+
+    const lineObjects = content.split('\n').map((line) => {
+      const parts = line.split(',');
+      const nameValueFirst = parts[0].split(':');
+      const nameValueSecond = parts[1].split(':');
+
+      const toReturn = { comida: '', preco: '' };
+
+      toReturn[nameValueFirst[0]] = nameValueFirst[1];
+      toReturn[nameValueSecond[0]] = nameValueSecond[1];
+
+      return toReturn;
+    });
+
+    return lineObjects.find((item) => item.comida === nameFood);
   }
 
   @Post('/insert-object')
