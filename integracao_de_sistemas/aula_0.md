@@ -10,7 +10,7 @@ Avaliação das diversas possibilidades de arquitetura das soluções de softwar
 
 * O aluno será capaz de desenvolver aplicações com uma linguagem orientada a objetos utilizando conceitos de classes, objetos, abstração, herança, encapsulamento e polimorfismo. O aluno estará apto a utilizar componentes básicos da linguagem Java (pacote java.lang) e tratar corretamente os possíveis erros da aplicação via tratamento de exceções. Também será capaz de entender e aplicar os conceitos de interface e coleções, fundamentais para construção de aplicações modernas.
 
-## Objetivos de aprendizagem 
+## Objetivos de aprendizagem
 
 * MVC
 * Microsserviços

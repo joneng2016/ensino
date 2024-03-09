@@ -1,4 +1,4 @@
-# Criação de uma API no modelo MVC - Encontro 1
+# Aula 1 - Criação de uma API no modelo MVC - Encontro 1
 
 * Abra o powershell
 * Verifique se o node está corretamente instalado
