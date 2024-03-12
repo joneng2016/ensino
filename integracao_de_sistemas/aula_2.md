@@ -151,10 +151,6 @@ import { ResponseBookDTO } from './dtos/ResponseBookDTO';
 
 ## Provisionando banco
 
-```
-mkdir /tmp/mysql-data
-```
-
 Se for fazer com docker
 ```
 docker run --name basic-mysql --rm -v /tmp/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=ANSKk08aPEDbFjDO -e MYSQL_DATABASE=testing -p 3307:3306 -it mysql:8.0
@@ -164,6 +160,7 @@ Se não, abra a ide de Banco de Dados do seu computador e execute diretamente a 
 
 
 ```
+create database testing; 
 use testing;
 
 CREATE TABLE Bookings (
