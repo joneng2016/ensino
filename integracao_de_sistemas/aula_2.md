@@ -155,9 +155,12 @@ import { ResponseBookDTO } from './dtos/ResponseBookDTO';
 mkdir /tmp/mysql-data
 ```
 
+Se for fazer com docker
 ```
 docker run --name basic-mysql --rm -v /tmp/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=ANSKk08aPEDbFjDO -e MYSQL_DATABASE=testing -p 3307:3306 -it mysql:8.0
 ```
+
+Se não, abra a ide de Banco de Dados do seu computador e execute diretamente a query que se segue
 
 
 ```
@@ -244,9 +247,9 @@ import { Booking } from './models/Booking';
     SequelizeModule.forRoot({
       dialect: 'mysql',
       host: 'localhost',
-      port: 3307,
+      port: 3306, // 3306 para o banco rodando local, mas 3307 para o banco rodando no docker
       username: 'root',
-      password: 'ANSKk08aPEDbFjDO',
+      password: 'ANSKk08aPEDbFjDO', // tem que ser a senha definida para o seu banco de dados
       database: 'testing',
       models: [Booking],
     }),
