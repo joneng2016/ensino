@@ -20,16 +20,21 @@
 
 
 <img src="fig/aula3/fig1.png" />
+
 <span>Ebook - Business Process Modeling - Leandro Fabian Almeida Escobar</span>
+
 
 * O gateway inclusivo funciona como uma porta lógica “OR”, também baseado em dados.
 
 <img src="fig/aula3/fig1.gif" />
+
 <span>https://blog.iprocess.com.br/2021/05/diferencas-entre-os-gateways-de-bpmn-com-animacoes/</span>
 
 
 <img src="fig/aula3/fig2.png" />
+
 <span>Ebook - Business Process Modeling - Leandro Fabian Almeida Escobar</span>
+
 
 Atividade - Em uma dada empresa a criação de uma ordem de serviço pode ser feita tanto por meio de um sistema de computador como por meio de uma requisição ao departamento técnico. Depois disso, essa ordem entra dentro de um "backlog" e fica no aguardo para ser processada.  
 
@@ -51,6 +56,7 @@ O gateway exclusivo funciona como uma porta “XOR”
 <img src="fig/aula3/fig3.gif" />
 <span>https://blog.iprocess.com.br/2021/05/diferencas-entre-os-gateways-de-bpmn-com-animacoes/</span>
 
+
 Atividade - Uma empresa de contabilidade fornece comida para seus funcionários. Esse processo pode ser feito apenas mediante a uma única empresa. Se essa empresa constatar a "Comida Familiar" para trazer marmitas a semana inteira, então ela não pode entrar em contato com a "Coma muito bem e seja feliz". O contrário também é verdade. Após a solicitação, a comida é entregue a empresa de contabilidade e toda ela fica estocada em um armazem adequado
 
 ## 3.4 Gateways Baseados em Eventos 30 min 
@@ -59,11 +65,14 @@ Atividade - Uma empresa de contabilidade fornece comida para seus funcionários.
 <img src="fig/aula3/fig4.gif" />
 <span>https://blog.iprocess.com.br/2021/05/diferencas-entre-os-gateways-de-bpmn-com-animacoes/</span>
 
-Atividade - Um operador de telemarketing descobre um problema no sistema. Esse problema deve ser relatado para o setor técnico que é divido em finanças, experiência do usuário e cadastro de produto. Se o problema for alguma incoformidade financeira, então este deve ser relatdo para finanças. Se o prolema esiver vinculado a alguma inconsistência no produto, então este deve ser relatdo para "cadastro do produto". Contudo, se o problema estiver vinculado a alguma não conformidade do início ao fim da experiência do usuário com o produto, o mesmo - então, deve ser relatado para experiência do produto. Depois disso a área notificada deve prestar a manutenção correspondente e então prestar a devida manutenção.
 
+Atividade - Um operador de telemarketing descobre um problema no sistema. Esse problema deve ser relatado para o setor técnico que é divido em finanças, experiência do usuário e cadastro de produto. Se o problema for alguma incoformidade financeira, então este deve ser relatdo para finanças. Se o prolema esiver vinculado a alguma inconsistência no produto, então este deve ser relatdo para "cadastro do produto". Contudo, se o problema estiver vinculado a alguma não conformidade do início ao fim da experiência do usuário com o produto, o mesmo - então, deve ser relatado para experiência do produto. Depois disso a área notificada deve prestar a manutenção correspondente e então prestar a devida manutenção.
+    
 ## 3.3 Erros e exceções
 
 <img src="fig/aula3/fig3.gif" />
+
+
 <span>
 https://blog.iprocess.com.br/2013/04/respondendo-a-duvidas-vale-usar-evento-de-erro-em-bpmn-para-tratar-excecao-de-negocio/
 </span>
