@@ -15,7 +15,7 @@
 6 - Crie uma rota put que faz update dos produtos
 
 7 - Crie uma rota delete que faz a remoção dos produtos
-
+''
 Pode fazer na linguagem/framework que se sentir mais confortável.
 
 Critérios de avaliação:
