@@ -19,11 +19,9 @@
 
 ## Avaliação 1
 
-### Processo 1
+### Processo 1 - Compra coletiva
 
 Leia atentamente o texto abaixo e faça a modelagem do(s) processo(s) usando a notação BPMN.
-
-Compra coletiva
 
 Em um site de compra coletiva, são publicadas ofertas de diversos estabelecimentos com um super desconto.
 
@@ -42,11 +40,10 @@ Após o encerramento da oferta, são gerados cupons para cada compra realizada, 
 De: https://www.leandroguarino.com.br/modelagem-processos-negocios-bpmn/exercicio-de-modelagem-de-processos-de-negocios-04/
 
 
-### Processo 2
+### Processo 2 - Feira de Aparecida
 
 Leia atentamente o texto abaixo e faça a modelagem do(s) processo(s) usando a notação BPMN.
 
-Feira de Aparecida
 Um comerciante da feira de Aparecida trabalha aos finais de semana e feriados e vende brinquedos e aparelhos eletrônicos.
 
 Toda sexta-feira ou um dia antes de um feriado, ele carrega sua barraca, leva-a para o local da feira, monta-a, posiciona seus produtos e fecha-a com uma lona.
