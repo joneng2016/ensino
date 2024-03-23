@@ -2,6 +2,9 @@
 
 Padrões de Projetos
 
+Exemplos tirados de: https://refactoring.guru/pt-br/design-patterns
+Também serve como material de apoio para essa aula
+
 ## Retrospectiva
 
 * Rota GET
