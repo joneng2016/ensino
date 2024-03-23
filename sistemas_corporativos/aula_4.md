@@ -19,7 +19,63 @@
 
 ## Avaliação 1
 
+### Processo 1
 
+Leia atentamente o texto abaixo e faça a modelagem do(s) processo(s) usando a notação BPMN.
+
+Compra coletiva
+
+Em um site de compra coletiva, são publicadas ofertas de diversos estabelecimentos com um super desconto.
+
+Toda oferta possui título, descrição, regulamento, valor real do produto/serviço, valor da oferta, quantidade mínima de compradores, quantidade máxima de compradores, quantidade máxima de compras por usuário, data/hora de início e data/hora de término.
+
+As ofertas podem ser publicadas para uma ou mais cidades e sempre estão vinculadas a um único estabelecimento. Os estabelecimentos possuem nome, razão social, telefone, CNPJ, e-mail e responsável. As cidades possuem um nome e uma informação que marca se serão exibidas no site ou não.
+
+Para comprar, os visitantes do site de compra coletiva devem se cadastrar informando nome, e-mail e as cidades das quais querem receber ofertas. No ato da compra, o usuário deve informar a quantidade de ofertas que deseja comprar, além de ser necessário armazenar a data/hora da compra.
+
+Todo usuário pode indicar o site para outras pessoas, a fim de ganhar crédito de um determinado valor quando estas realizarem a primeira compra. Assim, os créditos podem ser utilizados na realização da compra.
+
+Sempre que um novo crédito é atribuído a um usuário, é necessário saber o valor creditado, a compra e o usuário que deram origem ao crédito.
+
+Após o encerramento da oferta, são gerados cupons para cada compra realizada, caso o número de compras da oferta tenha ultrapassado a quantidade mínima de compradores. Cada cupom possui identificação única, data de início da validade, data de fim da validade e data/hora em que foi gerado. É essencial saber de qual compra o cupom foi gerado.
+
+De: https://www.leandroguarino.com.br/modelagem-processos-negocios-bpmn/exercicio-de-modelagem-de-processos-de-negocios-04/
+
+
+### Processo 2
+
+Leia atentamente o texto abaixo e faça a modelagem do(s) processo(s) usando a notação BPMN.
+
+Feira de Aparecida
+Um comerciante da feira de Aparecida trabalha aos finais de semana e feriados e vende brinquedos e aparelhos eletrônicos.
+
+Toda sexta-feira ou um dia antes de um feriado, ele carrega sua barraca, leva-a para o local da feira, monta-a, posiciona seus produtos e fecha-a com uma lona.
+
+Nos dias de venda (sábado, domingo ou feriado), por volta das 5h da manhã, ele vai até o local da barraca e retira a lona para começar as atividades.
+
+Quando um cliente chega, ele o aborda perguntando se está procurando algum produto específico. Se a conversa com o cliente for convertida em venda, ele testa o(s) produto(s) comprado(s) na frente do cliente e, se estiverem funcionando perfeitamente, coloca-o(s) na caixa específica, coloca as caixas em uma sacola, recebe o pagamento do cliente (em dinheiro), dá o troco (se necessário) e entrega a sacola ao cliente.
+
+Caso algum produto testado dê problema, o comerciante separa-o para tentar arrumar posteriormente e pega outra unidade do mesmo produto para o cliente.
+
+Ao final de cada dia de vendas, o comerciante organiza novamente os produtos e fecha a barraca com a lona.
+
+Se for o último dia, ele guarda os produtos, desmonta a barraca e transporta-a para sua residência.
+
+
+### Critérios Avaliativos
+
+* 0,125 - Conter tarefas e atividades
+* 0,125 - Conter eventos eventos de início, eventos intermediários, eventos de fim.
+* 0,125 - Apresentar fluxos convergentes e divergentes
+* 0,125 - Ter pelo menos um dos seguintes gateways: inclusivos, Paralelo, Exclusivo, Baseados em Eventos.
+* 0,125 - Apresentar Erros e exceções
+* 0,125 - Conseguir explicar todo o fluxo
+* 0,125 - Respeitar o tempo da apresentação com uma ordem de erro de +/- 2 minutos (Do processo 1 e do processo 2 dentro do tempo total)
+* 0,125 - Conseguir responder com exatidão todas as perguntas feitas pelo professor e pelos colegas ao término da apresentação
+
+É válido para os dois processos.
+
+-> Valendo 1 ponto
 
 ## Configurando o Nest JS
 
