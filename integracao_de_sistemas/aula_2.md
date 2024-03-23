@@ -78,8 +78,6 @@ Depois disso, crie uma rota get recebe o nome da comida e, então, le o arquivo.
 ```
 
 
-
-
 ## Concebendo uma rota POST
 ```
 import { ... Body, ... } from '@nestjs/common';
