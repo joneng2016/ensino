@@ -386,6 +386,15 @@ private clientCodeChainOfResponsability(handler: Handler) {
 ```
 
 
+A controller fica
+
+```
+  @Get('/chain-of-responsability')
+  public chainOfResponsability(): object {
+    return this.appDesignPatternsService.chainOfResponsability();
+  }
+```
+
 
 ## State
 
