@@ -136,52 +136,6 @@ import { ... Body, ... } from '@nestjs/common';
   }
 ```
 
-## Rota POST com entidade
-
-Cria um diretório para os dtos
-```
-mkdir dtos;
-cd dtos;
-```
-
-Crie o DTO BookDTO
-
-```
-export class BookDTO {
-  public title: string;
-  public content?: string;
-  public authorEmail: string;
-}
-```
-
-Crie o DTO ResponseBookDTO
-
-
-```
-import { BookDTO } from './BookDTO';
-
-export class ResponseBookDTO {
-  result: BookDTO;
-}
-```
-
-Crie a controller
-```
-import { BookDTO } from './dtos/BookDTO';
-import { ResponseBookDTO } from './dtos/ResponseBookDTO';
-```
-
-```
-  @Post('/insert-object-with-dto')
-  insertObjectWithDTO(@Body() postData: BookDTO): ResponseBookDTO {
-    const responseBookDTO = new ResponseBookDTO();
-
-    responseBookDTO.result = postData;
-
-    return responseBookDTO;
-  }
-```
-
 ## Provisionando banco
 
 Se for fazer com docker
@@ -245,24 +199,6 @@ export class Booking extends Model {
   authorEmail: string;
 }
 ```
-
-Em dtos, crie o arquivo ResponseCreateBooking.ts
-
-```
-import { BookDTO } from './BookDTO';
-
-export class ResponseCreateBooking {
-  public message: string;
-  public booking: BookDTO;
-
-  public constructor(message, booking: BookDTO) {
-    this.message = message;
-    this.booking = booking;
-  }
-}
-```
-
-
 Em app.module, crie: 
 
 ```
@@ -313,59 +249,14 @@ Crie a controller
   @Post('/booking')
   async createBooking(
     @Body() postData: BookDTO,
-  ): Promise<ResponseCreateBooking> {
+  ) {
     this.booking.create({
       title: postData.title,
       content: postData.content,
       authorEmail: postData.authorEmail,
     });
 
-    return new ResponseCreateBooking('the insert was successfulll', postData);
-  }
-```
-
-
-## Usando Services
-
-Em app.service.ts
-
-```
-import { Injectable } from '@nestjs/common';
-import { Booking } from './models/Booking';
-import { InjectModel } from '@nestjs/sequelize';
-import { BookDTO } from './dtos/BookDTO';
-
-@Injectable()
-export class AppService {
-  constructor(
-    @InjectModel(Booking)
-    private booking: typeof Booking
-  ) {}
-
-  getHello(): string {
-    return 'Hello World!';
-  }
-
-  createBooking(postData: BookDTO) {
-    this.booking.create({
-      title: postData.title,
-      content: postData.content,
-      authorEmail: postData.authorEmail,
-    });
-  }
-}
-```
-`
-
-A controller fica:
-
-```
-  @Post('/booking-service')
-  async createBookingWithService(
-    @Body() postData: BookDTO,
-  ): Promise<ResponseCreateBooking> {
-    this.appService.createBooking(postData);
-    return new ResponseCreateBooking('the insert was successfulll', postData);
+    return {msg: "Response is success"}
   }
 ```
 
@@ -374,12 +265,12 @@ A controller fica:
 
 ```
 @Get('/booking')
-  async getBooking(): Promise<Booking[]> {
+  async getBooking() {
     return this.booking.findAll();
   }
 
   @Get('/booking/:id')
-  async getBookingById(@Param('id') id: number): Promise<Booking[]> {
+  async getBookingById(@Param('id') id: number) {
     return this.booking.findAll({
       where: {
         id,
@@ -388,7 +279,7 @@ A controller fica:
   }
 
   @Get('/booking-querystring')
-  async getBookingByQueryString(@Query('id') id: number): Promise<Booking[]> {
+  async getBookingByQueryString(@Query('id') id: number) {
     return this.booking.findAll({
       where: {
         id,
@@ -405,11 +296,16 @@ Atividade: Em relação a tabela ProdutoMercados crie uma rota PUT que faça o u
 
 ## Delete 10 min
 
-Service
+
+Controller
 
 ```
-  async deleteBooking(id: number) {
-    const booking = await this.booking.findOne({
+  @Delete('/booking')
+  async deleteBooking(
+    @Query('id') id: number,
+  ) {
+
+     const booking = await this.booking.findOne({
       where: {
         id,
       }
@@ -422,21 +318,10 @@ Service
       );
     }
 
-    return await booking.destroy();
-  }
-```
+    await booking.destroy();
 
-
-Controller
-
-```
-  @Delete('/booking')
-  async deleteBooking(
-    @Query('id') id: number,
-  ) : Promise<ResponseDeleteDTO> {
-    this.validationIdElement(id);
-    this.appService.deleteBooking(id);
-
-    return new ResponseDeleteDTO();
+    return {
+  	msg: "success"
+    }
   }
 ```
