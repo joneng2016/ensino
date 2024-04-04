@@ -248,7 +248,7 @@ Crie a controller
 ```
   @Post('/booking')
   async createBooking(
-    @Body() postData: BookDTO,
+    @Body() postData,
   ) {
     this.booking.create({
       title: postData.title,
@@ -288,13 +288,33 @@ Crie a controller
   }
 ```
 
-## Atividades PUT 40min
+##  PUT 
+```
+  @Put('/booking')
+  async putBooking(
+    @Query('id') id: number,
+    @Body() body,
+  ) {
+    
+     const booking = await this.booking.findOne({
+      where: {
+        id,
+      }
+     });
 
-Atividade: Crie uma nova controller PUT para que o update não seja feito mediante ao id, mas sim mediante ao authorEmail
+     if (!booking) {
+       throw new HttpException(
+        'Not Found booking to this id', 
+        HttpStatus.NOT_FOUND
+      );
+    }
 
-Atividade: Em relação a tabela ProdutoMercados crie uma rota PUT que faça o update de um determinado registro, hora por id hora por produto. Considere as validações e tratativas de exceção.
+    await booking.update(putData);
 
-## Delete 10 min
+    return {msg:'success'}
+  }
+```
+## Delete
 
 
 Controller
