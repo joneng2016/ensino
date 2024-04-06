@@ -24,6 +24,7 @@
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/sequelize": "^10.0.1",
+    "axios": "^1.6.8",
     "fs": "^0.0.1-security",
     "mysql2": "^3.9.2",
     "reflect-metadata": "^0.2.0",

@@ -5,7 +5,7 @@ export class ResponseUpdateBooking {
   public booking: BookDTO;
 
   public constructor(booking: BookDTO) {
-    this.message = "This update of this bookings is success";
+    this.message = 'This update of this bookings is success';
     this.booking = booking;
   }
 }

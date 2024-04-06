@@ -21,6 +21,7 @@ import { AppUserController } from './app.usercontroller';
     }),
     SequelizeModule.forFeature([Booking, ProdutoMercado]),
   ],
+  // Adicione a classe AppUserController para que o framework saiba que ela existe
   controllers: [AppController, AppDesignPatternsController, AppUserController],
   providers: [AppService, AppDesignPatternsService],
 })
