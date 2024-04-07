@@ -1,0 +1,2 @@
+comida:Hamburguer,preco:10,00
+comida:Pizza,preco:15,00
