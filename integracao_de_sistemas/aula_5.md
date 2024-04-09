@@ -18,6 +18,7 @@ Integração entre apis, uma api chamando a outra.
 * Clone o projeto https://github.com/joneng2016/learning-api
 * Abra o banco de dados e execute o seguinte script: https://github.com/joneng2016/learning-api/blob/master/db/scripts.sql
 * Acesse o diretório via powershell -> learning-api/user-api/
+* Execute o comando: npm i
 * Execute o comando npm run start:dev
 * Execute um POST para testar, pode fazer este:
 
