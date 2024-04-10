@@ -48,9 +48,6 @@ curl --location 'localhost:3004/users'
 
 ```
 import { Controller, Get, Query } from '@nestjs/common';
-import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
-import { UserDTO } from './dtos/UserDTO';
-import axios from 'axios';
 
 @Controller('/user')
 export class AppUserController {
