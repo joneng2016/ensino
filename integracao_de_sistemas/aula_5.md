@@ -43,6 +43,9 @@ curl --location 'localhost:3004/users'
 
 ## Vamos codar.
 
+* Crie um projeto neste:  git clone https://github.com/nestjs/typescript-starter.git NOME_DO_SEU_PROJETO
+* acesse o diretório cd ../NOME_DO_SEU_PROJETO
+* npm i
 * Crie um arquivo: src/app.usercontroller.ts
 * Crie a seguinte classe:
 
@@ -63,10 +66,6 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { Booking } from './models/Booking';
-import { ProdutoMercado } from './models/ProdutoMercado';
-import { AppDesignPatternsController } from './app.designpatternscontroller';
-import { AppDesignPatternsService } from './app.designpatternsservice';
 import { AppUserController } from './app.usercontroller';
 
 @Module({
@@ -78,13 +77,13 @@ import { AppUserController } from './app.usercontroller';
       username: 'root',
       password: 'ANSKk08aPEDbFjDO',
       database: 'testing',
-      models: [Booking, ProdutoMercado],
+      models: [],
     }),
-    SequelizeModule.forFeature([Booking, ProdutoMercado]),
+    SequelizeModule.forFeature([]),
   ],
   // Adicione a classe AppUserController para que o framework saiba que ela existe
-  controllers: [AppController, AppDesignPatternsController, AppUserController],
-  providers: [AppService, AppDesignPatternsService],
+  controllers: [AppController, AppUserController],
+  providers: [AppService],
 })
 export class AppModule {}
 ```
