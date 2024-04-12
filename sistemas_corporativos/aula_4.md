@@ -309,7 +309,7 @@ Crie a controller
       );
     }
 
-    await booking.update(putData);
+    await booking.update(body);
 
     return {msg:'success'}
   }
