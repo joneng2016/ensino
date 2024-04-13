@@ -1,0 +1,247 @@
+# Aula 5
+
+## Prova
+
+__Semana do 29/04__
+
+* API REST GET,POST,PUT,DELETE
+* JWT
+
+* Defesa de código ou questões?
+
+## JWT
+
+* Autenticação via JWT
+
+## Criando a API
+
+* Crie uma API nova: https://docs.nestjs.com/
+
+```
+git clone https://github.com/nestjs/typescript-starter.git project
+cd project
+npm install
+npm run start
+npm install --save @nestjs/sequelize sequelize sequelize-typescript mysql2
+npm install --save-dev @types/sequelize
+npm install --save @nestjs/jwt
+```
+
+## Abra o banco de dados e execute o seguinte sql
+
+https://github.com/joneng2016/learning-api/blob/master/db/scripts.sql
+
+
+
+## Crie a Model da tabela Product
+
+* Em src, faça o diretório ./src/models
+* Crie o arquivo Product.ts
+
+```
+import {
+  Column,
+  Model,
+  Table,
+  AutoIncrement,
+  PrimaryKey,
+} from 'sequelize-typescript';
+
+@Table
+export class Product extends Model {
+  @PrimaryKey
+  @AutoIncrement
+  @Column
+  id: number;
+
+  @Column
+  name: string;
+
+  @Column
+  description: string;
+
+  @Column
+  company: string;
+
+  @Column
+  price: number;
+
+  @Column
+  amount: number;
+}
+```
+
+## Crie a Model da tabela User
+
+* Em src, faça o diretório ./src/models
+* Crie o arquivo User.ts
+
+```
+import {
+  Column,
+  Model,
+  Table,
+  AutoIncrement,
+  PrimaryKey,
+} from 'sequelize-typescript';
+
+@Table
+export class User extends Model {
+  @PrimaryKey
+  @AutoIncrement
+  @Column
+  id: number;
+
+  @Column
+  name: string;
+
+  @Column
+  email: string;
+
+  @Column
+  password: string;
+
+  @Column
+  document: string;
+
+  @Column
+  phone: string;
+
+  @Column
+  address: string;
+}
+```
+
+
+## Dentro da Controller
+
+* Faça a injeção das duas models no construtor
+
+```
+import {
+  Controller,
+  Get,
+  Post,
+  Put,
+  Body,
+  Query,
+  HttpCode,
+  HttpStatus,
+  Delete,
+  Headers,
+  HttpException
+} from '@nestjs/common';
+import { AppService } from './app.service';
+import { JwtService } from '@nestjs/jwt';
+import { User } from './models/User';
+import { Product } from './models/Product';
+import { InjectModel } from '@nestjs/sequelize';
+
+@Controller('products')
+public constructor(
+  @InjectModel(Product),
+  private readonly product: typeof Product,         
+  @InjectModel(User) 
+  private readonly user: typeof User,
+  private readonly appService: AppService,
+  private readonly jwtService: JwtService,
+) {}
+```
+
+
+## Vamos montar uma rota get
+
+```
+@Get()
+  @HttpCode(HttpStatus.OK)
+  public async getProducts(
+    @Query('name') name,
+  ) {
+    return name
+      ? this.product.findAll({
+          where: {
+            name,
+          },
+        })
+      : this.product.findAll();
+  }
+```
+
+
+## Vamos montar uma rota post
+
+```
+  @Post()
+  @HttpCode(HttpStatus.CREATED)
+  public createProduct(@Body() body): object {
+    this.product.create(body);
+    return { message: 'Product created', body };
+  }
+```
+
+## Agora vamos fazer o seguinte, no banco de dados - vamos rodar um insert na tabela user:
+
+
+```
+INSERT INTO Users
+	(name, email, password, document, phone, address)
+	VALUES
+	('Nome nome','email@email.com','senha123','zzzz-zzz','0800 000 000', '123');
+
+```
+
+
+## Vamos fazer a injenção do JWT no construtor
+
+```
+  @Get('login')
+  public async login(
+    @Query('email') email,
+    @Query('password') password,
+  ): Promise<object> {
+    const user = await this.user.findOne({
+      where: {
+        email,
+        password: Md5.hashStr(password),
+      },
+    });
+
+    if (!user) {
+      throw new HttpException('User not found', HttpStatus.NOT_FOUND);
+    }
+
+    return {
+      token: await this.jwtService.signAsync({
+        name: user.dataValues.name,
+        email: user.dataValues.email,
+        password: user.dataValues.password,
+      }),
+    };
+  }
+```
+
+## Vamos realizar uma adaptação na rota GET
+
+```
+  @Get()
+  @HttpCode(HttpStatus.OK)
+  public async getProducts(
+    @Query('name') name,
+    @Headers('authorization') authorization
+  ) {
+    let user = this.jwtService.verify(authorization);
+
+    user =  this.user.findOne({
+      where: {
+        email: user.email,
+        password: user.password,
+      },
+    });
+
+    if (!user) {
+      throw new HttpException('User not found', HttpStatus.NOT_FOUND);
+    }
+
+    return this.appService.selectProduct(name);
+  }
+```
