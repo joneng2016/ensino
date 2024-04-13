@@ -4,6 +4,7 @@
 
 * Breve resumo da avaliação
 * Alinhar sobre a próxima avaliação
+* Próxia avaliação 06/05
 
 ## Objetivo
 
