@@ -94,9 +94,6 @@ export class AppModule {}
 
 ```
 import { Controller, Get, Query } from '@nestjs/common';
-import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
-import { UserDTO } from './dtos/UserDTO';
-import axios from 'axios';
 
 @Controller('/user')
 export class AppUserController {
