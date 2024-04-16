@@ -66,22 +66,9 @@ Na app.module.ts, faça:
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { SequelizeModule } from '@nestjs/sequelize';
 import { AppUserController } from './app.usercontroller';
 
 @Module({
-  imports: [
-    SequelizeModule.forRoot({
-      dialect: 'mysql',
-      host: 'localhost',
-      port: 3307,
-      username: 'root',
-      password: 'ANSKk08aPEDbFjDO',
-      database: 'testing',
-      models: [],
-    }),
-    SequelizeModule.forFeature([]),
-  ],
   // Adicione a classe AppUserController para que o framework saiba que ela existe
   controllers: [AppController, AppUserController],
   providers: [AppService],
@@ -179,11 +166,29 @@ export class AppUserController {
 
 ## Fazendo uma request GET com função nativa js
 
+Vamos criar uma classe DTO, para isso - em src, crie o diretório dtos. Depois disso crie a classe:
+
+UserDTO.ts
+
+```
+export class UserDTO {
+  public id: number;
+  public name: string;
+  public email: string;
+
+  constructor(user) {
+    this.id = user.id;
+    this.name = user.name;
+    this.email = user.email;
+  }
+}
+```
+
+Então, na AppUserController, crie: 
 ```
 import { Controller, Get, Query } from '@nestjs/common';
 import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
 import { UserDTO } from './dtos/UserDTO';
-import axios from 'axios';
 
 @Controller('/user')
 export class AppUserController {
