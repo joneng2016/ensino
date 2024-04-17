@@ -296,6 +296,21 @@ Execute
 npm i axios
 ```
 
+DTO
+```
+export class ResponseOfVerifyAndCreateUser {
+  public msg: string;
+  public user: any;
+
+  public constructor(msg: string, user: any) {
+    this.msg = msg;
+    this.user = user;
+  }
+}
+```
+
+Controller
+
 ```
 import { Controller, Get, Query } from '@nestjs/common';
 import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
