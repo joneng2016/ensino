@@ -111,7 +111,31 @@ export class User extends Model {
   address: string;
 }
 ```
+## Configurando a Model
+```
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { SequelizeModule } from '@nestjs/sequelize';
+import { Product } from './models/Product';
+import { User } from './models/User';
 
+@Module({
+  imports: [    SequelizeModule.forRoot({
+    dialect: 'mysql',
+    host: 'localhost',
+    port: 3306, // 3306 para o banco rodando local, mas 3307 para o banco rodando no docker
+    username: 'root',
+    password: 'positivo', // tem que ser a senha definida para o seu banco de dados
+    database: 'generaldbs',
+    models: [Product, User],
+  }),
+  SequelizeModule.forFeature([Product, User]),],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
+```
 
 ## Dentro da Controller
 
