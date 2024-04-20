@@ -1,0 +1,9 @@
+.notFoundClass {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    background-color:  #ea2031;
+}
