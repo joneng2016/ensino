@@ -23,7 +23,7 @@ Integração entre apis, uma api chamando a outra.
 * Execute o comando npm run start:dev
 * Execute um POST para testar, pode fazer este:
 
-```
+```bash
 curl --location 'localhost:3004/users' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -37,7 +37,7 @@ curl --location 'localhost:3004/users' \
 ```
 
 * Execute o GET assim
-```
+```bash
 curl --location 'localhost:3004/users'
 ```
 
@@ -50,7 +50,7 @@ curl --location 'localhost:3004/users'
 * Crie um arquivo: src/app.usercontroller.ts
 * Crie a seguinte classe:
 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 
 @Controller('/user')
@@ -62,7 +62,7 @@ export class AppUserController {
 
 Na app.module.ts, faça:
 
-```
+```typescript
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -79,7 +79,7 @@ export class AppModule {}
 
 ## Fazendo uma request POST com função nativa js
 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 
 @Controller('/user')
@@ -170,7 +170,7 @@ Vamos criar uma classe DTO, para isso - em src, crie o diretório dtos. Depois d
 
 UserDTO.ts
 
-```
+```typescript
 export class UserDTO {
   public id: number;
   public name: string;
@@ -185,7 +185,7 @@ export class UserDTO {
 ```
 
 Então, na AppUserController, crie: 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 import { UserDTO } from './dtos/UserDTO';
 
@@ -291,12 +291,12 @@ export class AppUserController {
 
 Execute
 
-```
+```bash
 npm i axios
 ```
 
 DTO
-```
+```typescript
 export class ResponseOfVerifyAndCreateUser {
   public msg: string;
   public user: any;
@@ -310,7 +310,7 @@ export class ResponseOfVerifyAndCreateUser {
 
 Controller
 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
 import { UserDTO } from './dtos/UserDTO';
@@ -429,7 +429,7 @@ export class AppUserController {
 
 ## Fazendo uma rota POST com axios
 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
 import { UserDTO } from './dtos/UserDTO';
@@ -571,7 +571,7 @@ export class AppUserController {
 
 ## Lógica usando uma outra api
 
-```
+```typescript
 
 import { Controller, Get, Query } from '@nestjs/common';
 import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
