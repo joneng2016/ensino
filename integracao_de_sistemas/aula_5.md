@@ -747,19 +747,19 @@ export class AppUserController {
       delete user.data[0].password;
 
       // formatamos a resposta usando dto
-      return new ResponseOfVerifyAndCreateUser(
-        'esse usuário existe, mas o email não confere.',
-        user.data[0],
-      );
+      return {
+        msg: 'esse usuário existe, mas o email não confere.',
+        user: user.data[0],
+      };
     }
 
     // para o cenário onde o usuário existe e o email confere
     delete user.data[0].password;
 
-    return new ResponseOfVerifyAndCreateUser(
-      'esse usuário existe e o email confere.',
-      user.data[0],
-    );
+    return {
+      msg: 'esse usuário existe e o email confere.',
+      user: user.data[0],
+    };
   }
 
   // função que cria um novo usuário
@@ -777,10 +777,10 @@ export class AppUserController {
     await axios.post('http://localhost:3004/users', newUserObject);
 
     // retornamos a resposta encapsulada em um objeto
-    return new ResponseOfVerifyAndCreateUser(
-      'esse usuário não existe, então foi criado em nossa base de dados - por gentileza: atualize informações como password, documento, telefone e endereço assim que possível.',
-      newUserObject,
-    );
+    return {
+      msg: 'esse usuário não existe, então foi criado em nossa base de dados - por gentileza: atualize informações como password, documento, telefone e endereço assim que possível.',
+      user: newUserObject,
+    };
   }
 }
 ``` 
