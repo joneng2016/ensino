@@ -227,7 +227,7 @@ INSERT INTO Users
     const user = await this.user.findOne({
       where: {
         email,
-        password: Md5.hashStr(password),
+        password
       },
     });
 
