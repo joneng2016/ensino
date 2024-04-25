@@ -118,6 +118,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Product } from './models/Product';
+import { JwtService } from '@nestjs/jwt/dist/jwt.service';
 import { User } from './models/User';
 
 @Module({
@@ -128,7 +129,7 @@ import { User } from './models/User';
     username: 'root',
     password: 'positivo', // tem que ser a senha definida para o seu banco de dados
     database: 'generaldbs',
-    models: [Product, User],
+    models: [Product, User, JwtService],
   }),
   SequelizeModule.forFeature([Product, User]),],
   controllers: [AppController],
