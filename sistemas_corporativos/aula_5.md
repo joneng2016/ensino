@@ -277,3 +277,33 @@ INSERT INTO Users
     return this.appService.selectProduct(name);
   }
 ```
+
+
+## Protegendo rota POST 
+
+```
+@Post() 
+  @HttpCode(HttpStatus.CREATED)
+  public createProduct(
+    @Body() body,
+    @Headers('authorization') authorization
+  ): object {
+    const userOfAuthorization = this.jwtService.verify(authorization)
+
+    const user = this.user.findOne(
+      {
+        where: {
+          email: userOfAuthorization.email,
+          password: userOfAuthorization.password
+        }
+      }
+    )
+
+    if (!user) {
+      throw new HttpException('User no found', HttpStatus.UNAUTHORIZED);
+    }
+
+    this.product.create(body)
+    return {message: 'Product created', body}
+  }
+```
