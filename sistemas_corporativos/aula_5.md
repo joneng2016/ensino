@@ -118,29 +118,31 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Product } from './models/Product';
-import { JwtService } from '@nestjs/jwt/dist/jwt.service';
 import { User } from './models/User';
 import { JwtModule } from '@nestjs/jwt';
 
-@Module({
-  JwtModule.register({
-      secret: 'MySecretKey',
+ @Module({
+  imports: [
+    JwtModule.register({
+      secret: 'MySecresstKey',
       signOptions: { expiresIn: '1000s' },
-  }),
-  imports: [    SequelizeModule.forRoot({
-    dialect: 'mysql',
-    host: 'localhost',
-    port: 3306, // 3306 para o banco rodando local, mas 3307 para o banco rodando no docker
-    username: 'root',
-    password: 'positivo', // tem que ser a senha definida para o seu banco de dados
-    database: 'generaldbs',
-    models: [Product, User, JwtService],
-  }),
-  SequelizeModule.forFeature([Product, User]),],
+    }),
+    SequelizeModule.forRoot({
+      dialect: 'mysql',
+      host: 'localhost',
+      port: 3306, // 3306 para o banco rodando local, mas 3307 para o banco rodando no docker
+      username: 'root',
+      password: 'positivo', // tem que ser a senha definida para o seu banco de dados
+      database: 'generaldbs',
+      models: [Product, User],
+    }),
+    SequelizeModule.forFeature([Product, User]),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
+
 ```
 
 ## Dentro da Controller
