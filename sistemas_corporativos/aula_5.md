@@ -120,8 +120,13 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { Product } from './models/Product';
 import { JwtService } from '@nestjs/jwt/dist/jwt.service';
 import { User } from './models/User';
+import { JwtModule } from '@nestjs/jwt';
 
 @Module({
+  JwtModule.register({
+      secret: 'MySecretKey',
+      signOptions: { expiresIn: '1000s' },
+  }),
   imports: [    SequelizeModule.forRoot({
     dialect: 'mysql',
     host: 'localhost',
