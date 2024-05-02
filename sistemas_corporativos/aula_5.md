@@ -226,6 +226,32 @@ INSERT INTO Users
 ## Vamos fazer a injenção do JWT no construtor
 
 ```
+import {
+  Controller,
+  Get,
+  Query,
+  HttpException,
+  HttpStatus,
+} from '@nestjs/common';
+import { JwtService } from '@nestjs/jwt';
+import { User } from './models/User';
+import { InjectModel } from '@nestjs/sequelize';
+
+@Controller('auth')
+export class AppJwtController {
+  public constructor(
+    private readonly jwtService: JwtService,
+    @InjectModel(User)
+    private readonly user: typeof User,
+  ) {}
+}
+```
+
+
+## Vamos montar a rota de login
+
+
+```
   @Get('login')
   public async login(
     @Query('email') email,
