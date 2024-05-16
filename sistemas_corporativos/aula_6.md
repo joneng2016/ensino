@@ -23,7 +23,11 @@ npm i
 * Para além disso, em learning-api acesse o diretório "product-api" e então faça;
 
 ```
-npm i
+npm install
+npm install --save @nestjs/sequelize sequelize sequelize-typescript mysql2
+npm install --save-dev @types/sequelize
+npm install --save @nestjs/jwt
+
 npm run start 
 ```
 
