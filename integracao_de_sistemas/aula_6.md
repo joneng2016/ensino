@@ -42,7 +42,7 @@ export default class UserClient {
 
   private constructor() {
     this.client = axios.create({
-      baseURL: 'http://localhost:3005',
+      baseURL: 'http://localhost:3004',
       timeout: 5000,
     });
   }
