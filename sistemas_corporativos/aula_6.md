@@ -5,7 +5,7 @@
 * NEXT JS: Framework baseado em ReactJS
 
 ```
-npm install next@latest react@latest react-dom@latest
+npx create-next-app@latest
 ```
 
 Ou clone
