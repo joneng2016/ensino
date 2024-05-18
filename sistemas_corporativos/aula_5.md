@@ -2,7 +2,7 @@
 
 ## Prova
 
-__Semana do 29/04__
+__Semana do  09/05__
 
 * API REST GET,POST,PUT,DELETE
 * JWT
@@ -119,22 +119,30 @@ import { AppService } from './app.service';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Product } from './models/Product';
 import { User } from './models/User';
+import { JwtModule } from '@nestjs/jwt';
 
-@Module({
-  imports: [    SequelizeModule.forRoot({
-    dialect: 'mysql',
-    host: 'localhost',
-    port: 3306, // 3306 para o banco rodando local, mas 3307 para o banco rodando no docker
-    username: 'root',
-    password: 'positivo', // tem que ser a senha definida para o seu banco de dados
-    database: 'generaldbs',
-    models: [Product, User],
-  }),
-  SequelizeModule.forFeature([Product, User]),],
+ @Module({
+  imports: [
+    JwtModule.register({
+      secret: 'MySecresstKey',
+      signOptions: { expiresIn: '1000s' },
+    }),
+    SequelizeModule.forRoot({
+      dialect: 'mysql',
+      host: 'localhost',
+      port: 3306, // 3306 para o banco rodando local, mas 3307 para o banco rodando no docker
+      username: 'root',
+      password: 'positivo', // tem que ser a senha definida para o seu banco de dados
+      database: 'generaldbs',
+      models: [Product, User],
+    }),
+    SequelizeModule.forFeature([Product, User]),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
+
 ```
 
 ## Dentro da Controller
@@ -218,6 +226,32 @@ INSERT INTO Users
 ## Vamos fazer a injenção do JWT no construtor
 
 ```
+import {
+  Controller,
+  Get,
+  Query,
+  HttpException,
+  HttpStatus,
+} from '@nestjs/common';
+import { JwtService } from '@nestjs/jwt';
+import { User } from './models/User';
+import { InjectModel } from '@nestjs/sequelize';
+
+@Controller('auth')
+export class AppJwtController {
+  public constructor(
+    private readonly jwtService: JwtService,
+    @InjectModel(User)
+    private readonly user: typeof User,
+  ) {}
+}
+```
+
+
+## Vamos montar a rota de login
+
+
+```
   @Get('login')
   public async login(
     @Query('email') email,
@@ -226,7 +260,7 @@ INSERT INTO Users
     const user = await this.user.findOne({
       where: {
         email,
-        password: Md5.hashStr(password),
+        password
       },
     });
 
@@ -267,5 +301,35 @@ INSERT INTO Users
     }
 
     return this.appService.selectProduct(name);
+  }
+```
+
+
+## Protegendo rota POST 
+
+```
+@Post() 
+  @HttpCode(HttpStatus.CREATED)
+  public createProduct(
+    @Body() body,
+    @Headers('authorization') authorization
+  ): object {
+    const userOfAuthorization = this.jwtService.verify(authorization)
+
+    const user = this.user.findOne(
+      {
+        where: {
+          email: userOfAuthorization.email,
+          password: userOfAuthorization.password
+        }
+      }
+    )
+
+    if (!user) {
+      throw new HttpException('User no found', HttpStatus.UNAUTHORIZED);
+    }
+
+    this.product.create(body)
+    return {message: 'Product created', body}
   }
 ```

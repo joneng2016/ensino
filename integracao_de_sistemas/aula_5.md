@@ -4,7 +4,7 @@
 
 * Breve resumo da avaliação
 * Alinhar sobre a próxima avaliação
-* Próxia avaliação 06/05
+* Próxia avaliação 06/05 (Aula 5)
 
 ## Objetivo
 
@@ -23,7 +23,7 @@ Integração entre apis, uma api chamando a outra.
 * Execute o comando npm run start:dev
 * Execute um POST para testar, pode fazer este:
 
-```
+```bash
 curl --location 'localhost:3004/users' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -37,7 +37,7 @@ curl --location 'localhost:3004/users' \
 ```
 
 * Execute o GET assim
-```
+```bash
 curl --location 'localhost:3004/users'
 ```
 
@@ -50,7 +50,7 @@ curl --location 'localhost:3004/users'
 * Crie um arquivo: src/app.usercontroller.ts
 * Crie a seguinte classe:
 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 
 @Controller('/user')
@@ -62,7 +62,7 @@ export class AppUserController {
 
 Na app.module.ts, faça:
 
-```
+```typescript
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -79,7 +79,7 @@ export class AppModule {}
 
 ## Fazendo uma request POST com função nativa js
 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 
 @Controller('/user')
@@ -170,7 +170,7 @@ Vamos criar uma classe DTO, para isso - em src, crie o diretório dtos. Depois d
 
 UserDTO.ts
 
-```
+```typescript
 export class UserDTO {
   public id: number;
   public name: string;
@@ -185,7 +185,7 @@ export class UserDTO {
 ```
 
 Então, na AppUserController, crie: 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 import { UserDTO } from './dtos/UserDTO';
 
@@ -291,12 +291,12 @@ export class AppUserController {
 
 Execute
 
-```
+```bash
 npm i axios
 ```
 
 DTO
-```
+```typescript
 export class ResponseOfVerifyAndCreateUser {
   public msg: string;
   public user: any;
@@ -310,7 +310,7 @@ export class ResponseOfVerifyAndCreateUser {
 
 Controller
 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
 import { UserDTO } from './dtos/UserDTO';
@@ -429,7 +429,7 @@ export class AppUserController {
 
 ## Fazendo uma rota POST com axios
 
-```
+```typescript
 import { Controller, Get, Query } from '@nestjs/common';
 import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
 import { UserDTO } from './dtos/UserDTO';
@@ -571,7 +571,7 @@ export class AppUserController {
 
 ## Lógica usando uma outra api
 
-```
+```typescript
 
 import { Controller, Get, Query } from '@nestjs/common';
 import { ResponseOfVerifyAndCreateUser } from './dtos/ResponseOfVerifyAndCreateUser';
@@ -747,19 +747,19 @@ export class AppUserController {
       delete user.data[0].password;
 
       // formatamos a resposta usando dto
-      return new ResponseOfVerifyAndCreateUser(
-        'esse usuário existe, mas o email não confere.',
-        user.data[0],
-      );
+      return {
+        msg: 'esse usuário existe, mas o email não confere.',
+        user: user.data[0],
+      };
     }
 
     // para o cenário onde o usuário existe e o email confere
     delete user.data[0].password;
 
-    return new ResponseOfVerifyAndCreateUser(
-      'esse usuário existe e o email confere.',
-      user.data[0],
-    );
+    return {
+      msg: 'esse usuário existe e o email confere.',
+      user: user.data[0],
+    };
   }
 
   // função que cria um novo usuário
@@ -777,10 +777,10 @@ export class AppUserController {
     await axios.post('http://localhost:3004/users', newUserObject);
 
     // retornamos a resposta encapsulada em um objeto
-    return new ResponseOfVerifyAndCreateUser(
-      'esse usuário não existe, então foi criado em nossa base de dados - por gentileza: atualize informações como password, documento, telefone e endereço assim que possível.',
-      newUserObject,
-    );
+    return {
+      msg: 'esse usuário não existe, então foi criado em nossa base de dados - por gentileza: atualize informações como password, documento, telefone e endereço assim que possível.',
+      user: newUserObject,
+    };
   }
 }
 ``` 

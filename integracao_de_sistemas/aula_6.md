@@ -37,61 +37,49 @@ npm install --save @nestjs/jwt
 * Crie o arquivo UserClient.ts
 
 ```
-import { Controller, Get, Query } from '@nestjs/common';
-import { AppService } from './app.service';
-import { UserClient } from './clients/user/UserClient';
-import { ProductClient } from './clients/product/ProductClient';
+import axios from 'axios';
 
-@Controller()
-export class AppController {
-  private userClient: UserClient;
-  private productClient: ProductClient;
+export default class UserClient {
+  private static instance: UserClient;
+  private client: any;
 
-  constructor(private readonly appService: AppService) {
-    this.userClient = UserClient.getInstance();
-    this.productClient = ProductClient.getInstance();
+  private constructor() {
+    this.client = axios.create({
+      baseURL: 'http://localhost:3004',
+      timeout: 5000,
+    });
   }
 
-  @Get('products')
-  async getProduts() {
-    const userClient = (await this.userClient.get('?name=Jonathan')).data;
+  public static getInstance() {
+    if (UserClient.instance === undefined) {
+      UserClient.instance = new UserClient();
+    }
 
-    await this.productClient.authenticationProcess(
-      userClient[0].email,
-      userClient[0].password,
-    );
-
-    return (await this.productClient.products()).data 
-  }
-}
-```
-
-## Dentro da Controller (app.controller)
-
-```
-import { Controller, Get, Query } from '@nestjs/common';
-import { AppService } from './app.service';
-import { UserClient } from './clients/user/UserClient';
-import { ProductClient } from './clients/product/ProductClient';
-
-@Controller()
-export class AppController {
-  private userClient: UserClient;
-  private productClient: ProductClient;
-
-  constructor(private readonly appService: AppService) {
-    this.userClient = UserClient.getInstance();
-    this.productClient = ProductClient.getInstance();
+    return UserClient.instance;
   }
 
-  @Get('products')
-  async getProduts() {
-    const userClient = (await this.userClient.get('?name=Nome1')).data;
+  public async find(name: string) {
+    const queryString = name ? `?name=${name}` : '';
+    const response = await this.client.get(`/users${queryString}`);
 
-    return userClient
+    return response.data.length === 0 
+      ? { msg: 'No products found' }
+      : {
+          msg: 'User found',
+          users: response.data.map((user: any) => {
+            delete user.createdAt;
+            delete user.updatedAt;
+
+            return user;
+        }
+      )
+    };
   }
 }
+
 ```
+
+
 
 ## Agora vamos criar um serviço de consumo com JWT
 
@@ -136,7 +124,7 @@ export class ProductClient {
 }
 ```
 
-## Vamos adaptar a nossa controller
+## Vamos criar a nossa controller
 
 ```
 import { Controller, Get, Query } from '@nestjs/common';
