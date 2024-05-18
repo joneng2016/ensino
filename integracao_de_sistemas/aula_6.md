@@ -2,6 +2,9 @@
 
 ## Organização do consumo dos serviços em clients
 
+## Suba a Product-api/ User-api
+
+https://github.com/joneng2016/learning-api/blob/master/start.md
 
 ## Criando uma nova api
 
