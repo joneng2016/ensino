@@ -8,26 +8,18 @@ https://github.com/joneng2016/learning-api/blob/master/start.md
 
 ## Criando uma nova api
 
-
 * Crie uma API nova: https://docs.nestjs.com/
 
 ```
-git clone https://github.com/nestjs/typescript-starter.git project
-cd project
+git clone https://github.com/joneng2016/learning-api
+cp -r /learning-api/framework_of_class/nest_node183_framework/ name_of_my_project
 npm install
-npm run start
-npm install --save @nestjs/sequelize sequelize sequelize-typescript mysql2
-npm install --save-dev @types/sequelize
-npm install --save @nestjs/jwt
+npm run start:dev
 ```
 
 ## Suba a UserApi e a ProductApi
 
-* Clone o rep learning-api ou então de um pull
-* Neste powershell, acesse a user-api e digite npm run start
-* Em um novo powershell acesse o product-api e digite npm run start
-* Execute: https://github.com/joneng2016/learning-api/blob/master/db/scripts.sql
-
+* Execute o seguinte tutorial: https://github.com/joneng2016/learning-api/blob/master/start.md
 
 
 ## Montando o client da UserCLient
@@ -122,6 +114,25 @@ export class ProductClient {
     });
   }
 }
+```
+
+## Retomando o último encontro
+
+Clone o projeto
+```
+https://github.com/joneng2016/learning-api
+```
+Acesse o diretório
+```
+cd part_of_class/aula6_part1_completed
+```
+Realize a instalação das dependências
+```
+npm i
+```
+Inicie o projeto
+```
+npm run start:dev
 ```
 
 ## Vamos criar a nossa controller

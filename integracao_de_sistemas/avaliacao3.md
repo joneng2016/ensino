@@ -7,6 +7,7 @@ Crie uma api que faça as seguintes operações:
 * * Execute o seguinte tutorial: https://github.com/joneng2016/learning-api/blob/master/start.md
 
 * Contem uma rota tipo post que passa o seguinte payload:
+```
 {
     user: __usuário conforme a base de dados__,
     password: __password conforma base de dados__,
@@ -34,7 +35,7 @@ Crie uma api que faça as seguintes operações:
         }
     ]
 }
-
+```
 
 * Essa rota deve autenticar o login da product-api, deve escrever os três produtos e também deve retornar todos os produtos registrados na base inclusive os que são referenciados no sql do seguinte tutorial:  https://github.com/joneng2016/learning-api/blob/master/start.md em https://github.com/joneng2016/learning-api/blob/master/db/scripts.sql.
 
