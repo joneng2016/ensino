@@ -1,6 +1,4 @@
-# Aula 6
-
-## Organização do consumo dos serviços em clients
+# Aula 6 - Organização do consumo dos serviços em clients
 
 ## Suba a Product-api/ User-api
 
@@ -166,3 +164,8 @@ export class AppController {
   }
 }
 ```
+
+## Fala a respeito da Avaliação 3
+
+https://github.com/joneng2016/ensino/blob/master/integracao_de_sistemas/avaliacao3.md
+
