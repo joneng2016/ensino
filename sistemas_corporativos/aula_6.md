@@ -220,7 +220,7 @@ export default function Home() {
     </main>
   );
 }
-
+```
 
 Observe que já cuidamos quando o login não ocorre, precisamos tratar o caso para quando o login ocorre = então: Crie o seguitne diretório:
 
