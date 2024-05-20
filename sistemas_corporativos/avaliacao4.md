@@ -1,6 +1,6 @@
 # Avaliação 4
 
-Essa avaliação trata-se da escolha do tema do projeto que você fará de hoje até o final dessa disciplina. Trata-se da formatação de um PDF para ser submetido até as __23:59 das 31/05/2024__. O texto é a respeito de um CRUD que deve conter os seguintes itens:
+Essa avaliação trata-se da escolha do tema do projeto que você fará de hoje até o final dessa disciplina. Trata-se da formatação de um PDF para ser submetido até as __23:59 das 02/06/2024__. O texto é a respeito de um CRUD que deve conter os seguintes itens:
 
 * Pelo menos uma tabela
 * Pelo menos uma tabela de usuário que será relacionado a autenticação JWT
