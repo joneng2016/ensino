@@ -1,4 +1,4 @@
-# Avaliacao 3
+# Avaliação 3
 
 * Usando react (nos moldes da aula 6) crie uma tela que tenha os seguintes inputs:
 

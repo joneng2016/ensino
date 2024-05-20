@@ -22,8 +22,8 @@ npm i
 * Execute o sql que está em learning-api que está em db
 * Para além disso, em learning-api acesse o diretório "product-api" e então faça;
 * Para isso, execute o código presente em: https://github.com/joneng2016/learning-api/blob/master/start.md
-
 * Acesse o diretório src/app/page.js e remova todo esse código:
+
 ```
 import Image from "next/image";
 import styles from "./page.module.css";
