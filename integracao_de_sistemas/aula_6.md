@@ -96,6 +96,16 @@ export class ProductClient {
     return ProductClient.instance;
   }
 
+  public async destroyer(id: number) {
+    return (await axios.delete(
+      `${this.url}products?id=${id}`,
+      {
+        headers: {
+          Authorization: this.token,
+        }
+      }
+    )).data
+  }
   public async authenticationProcess(email, password) {
     this.token = (
       await axios.get(
