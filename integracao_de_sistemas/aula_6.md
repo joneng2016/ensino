@@ -184,8 +184,7 @@ export class AppController {
 
   @Delete('delete_product_price200')
   public async deleteProduct(@Query('name') name: string) {
-    let response = [];
-
+    const response = [];
     const {email, password} = await this.getUserInformation(name);
 
     await this.productClient.authenticationProcess(
@@ -197,12 +196,14 @@ export class AppController {
       email,
       password
     );
+    
+    const productsFiltered = (await this.productClient.products())
+      .data
+      .filter(e => e.price === '200.00');
 
-    (await this.productClient.products()).data.forEach(async (element) => {
-      if (element.price == '200.00') {
-        response.push(await this.productClient.destroyer(element.id))
-      }
-    });
+    for(let i = 0; i < productsFiltered.length; i++) {
+      response.push(await this.productClient.destroyer(productsFiltered[i].id));
+    }
 
     return response;
   }
