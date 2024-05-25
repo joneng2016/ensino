@@ -16,6 +16,10 @@ Executar a entrega do projeto final nas seguintes etapas
 
 https://docs.google.com/document/d/1i70BcZrF8Lved1TxTDP1_q6p5uYzGHDKiib-H2BTw5Q/edit?usp=sharing
 
+ou 
+
+https://github.com/joneng2016/ensino/blob/master/sistemas_corporativos/documents/Padr%C3%A3o%20Projeto%20Final%20(1).docx
+
 __Vocẽ terá até 28/06 as 23:59 para realizar essa entrega.__
 
 ## Critérios de avaliação
