@@ -50,8 +50,9 @@ header
 }
 ```
 
-
 response 
+
+```
 {
     [
         userId:'usuário 1'
@@ -67,7 +68,7 @@ response
         msg: 'Mensagem'
     ]
 }
-
+```
 
 
 ## Auth-API
