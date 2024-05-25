@@ -40,7 +40,7 @@ A apresentação deverá ser feita na semana 24/06, haverá 5 minutos por aprese
 
 * Entrega 28/06 23:59
 * Trabalho individual
-* COLOCAR TEMPLATE
+* Template: https://docs.google.com/document/d/1P-0exnYfZ-t5VKy55pMjh_-_JA8hYw3vk6PB29bZPI0/edit?usp=sharing
 
 ## Estrutura Geral de cada serviço
 
