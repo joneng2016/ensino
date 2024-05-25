@@ -40,8 +40,10 @@ A apresentação deverá ser feita na semana 24/06, haverá 5 minutos por aprese
 
 * Entrega 28/06 23:59
 * Trabalho individual
-* Template: https://docs.google.com/document/d/1P-0exnYfZ-t5VKy55pMjh_-_JA8hYw3vk6PB29bZPI0/edit?usp=sharing
-
+* Template: 
+    * Fonte 1: https://docs.google.com/document/d/1P-0exnYfZ-t5VKy55pMjh_-_JA8hYw3vk6PB29bZPI0/edit?usp=sharing
+    * Fonte 2: https://github.com/joneng2016/ensino/blob/master/integracao_de_sistemas/documentos/Padr%C3%A3o%20Projeto%20Final.docx
+    
 ## Estrutura Geral de cada serviço
 
 ### Receive-Send-API
