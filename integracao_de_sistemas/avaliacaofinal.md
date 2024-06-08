@@ -3,7 +3,7 @@
 * Criar um sistema de chat usando microserviços, tabelas e apis.
 
 ## Regras gerais
-* Deve ser individual
+* Deve ser no máximo em dupla
 * Toda api que tiver que chamar uma outra api, deve fazer isso via classe Client
 * Lógicas de regra de negócio devem estar em classes de Service
 * Toda api que chamar uma tabela, deve fazer isso via Model 

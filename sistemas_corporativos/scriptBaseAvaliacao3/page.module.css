@@ -1,0 +1,16 @@
+.colum {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 50px;
+  width: 30%;
+}
+
+.lineButton {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+}
+
+.lineButton button {
+  margin: auto;
+}
