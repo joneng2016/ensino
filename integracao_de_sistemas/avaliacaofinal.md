@@ -19,7 +19,7 @@ __Usuários:__
 
 * Usuário 1 manda mensagem para usuário 4: Olá, tudo bem?
 * Usuário 4 manda mensagem para usuário 3: Está chovendo hoje
-* Usuário 2 manda mensagem para usuário 1: Quer ir para a minha casa hojje 
+* Usuário 2 manda mensagem para usuário 1: Quer ir para a minha casa hoje 
 
 
 Para os três casos, mostrar funcionando:
@@ -181,16 +181,16 @@ __GET token__
 
 header
 
-QueryString
-
-```
-?user=userId
-```
-
 ```
 {
     Authorization: token
 }
+```
+
+QueryString
+
+```
+?user=userId
 ```
 
 response
@@ -266,12 +266,12 @@ if (!user) {
         token: false
     }
 }
-```
+
 
 const token = jwtTokenGenerate(
     {email: user.email, password: user.password}
 )
-
+```
 
 __POST user__
 
@@ -371,6 +371,3 @@ trivial
 * Todos os serviços codificados: 2 pontos
 * Respeito dos Padrões de Software: 1 pontos
 * Respeito dos Padrões de Documento: 1 ponto
-
-
-
