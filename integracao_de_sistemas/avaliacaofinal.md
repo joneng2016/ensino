@@ -135,6 +135,13 @@ payload
 }
 ```
 
+response
+```
+{
+    msg:'ok'
+}
+```
+
 
 pseudo-codigo da controller
 
