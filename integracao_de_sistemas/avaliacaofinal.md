@@ -17,9 +17,9 @@ __Usuários:__
 * usuário 3, usuario1@email.com senha123
 * usuário 4, usuario1@email.com senha321
 
-* Usuário 1 manda mensagem para usuário 4: Olá, tudo bem?
-* Usuário 4 manda mensagem para usuário 3: Está chovendo hoje
-* Usuário 2 manda mensagem para usuário 1: Quer ir para a minha casa hoje 
+* Usuário 1 manda mensagem para usuário 4: Olá, tudo bem? (bate no POST /message, depois no POST /message/worker e depois no GET /message)
+* Usuário 4 manda mensagem para usuário 3: Está chovendo hoje (bate no POST /message, depois no POST /message/worker e depois no GET /message)
+* Usuário 2 manda mensagem para usuário 1: Quer ir para a minha casa hoje  (bate no POST /message, depois no POST /message/worker e depois no GET /message)
 
 
 Para os três casos, mostrar funcionando:
@@ -50,7 +50,8 @@ A apresentação deverá ser feita na semana 24/06, haverá 5 minutos por aprese
     * Recebe a mensagem
     * Consulta a Auth-API para saber se o usuário está autenticado
     * Armazena a mensagem na fila
-    * Consulta a mensagem do usuário na fila
+    * Endpoit worker que envia os dados da fila para uma tabela de message
+    * Consulta a mensagem da tabela de message  
     * Consulta é feita mediante JWT 
  
 __POST /message__
@@ -111,7 +112,57 @@ chamaApiEscreveMensagemNaTabelaDeHistorico(
 
 ```
 
+
+__POST__ /message/worker
+
+Lê todas as mensagems de um determinado canal formado por `${userIdSend}${userIdReceive}` e transfere para a tablea de message
+
+
+header
+
+```
+{
+    Authorization: token
+}
+```
+
+payload
+
+```
+{
+    userIdSend,
+    userIdReceive,
+}
+```
+
+
+pseudo-codigo da controller
+
+```
+
+const authApiResponse = chamaAuthApiVerificaSeEstaAutenticado(
+    headers.token,
+    body.userId
+)
+
+if (!authApiResponse.data.auth) {
+    return {
+        msg: 'not auth'
+    }
+}
+
+
+consultaMesagemDoCanalEscreveNaTabelaMessageViaRecordApi(`${userIdSend}${userIdReceive}`)
+
+
+return criaFormatoMessage(msgs);
+```
+
+
+
 __GET /message__
+
+Lê as mensagems direto da tabela message (via a Record-API)
 
 QueryString
 ```
@@ -167,7 +218,7 @@ const users = chamaAuthApiPegaTodosOsUsuariosDaBase();
 
 
 const msgs = users.map(user => {
-    return consultaMesagemDaFilaPorCanal(`${user.Id}${body.userId}`)
+    return consultaViaHistoryApiAndPointDaTabelaMessage(`${user.Id}${body.userId}`)
 })
 
 return criaFormatoMessage(msgs);
