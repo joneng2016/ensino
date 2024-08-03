@@ -35,7 +35,6 @@ Neste curso, exploraremos os conceitos fundamentais de bancos de dados, focando 
 - Quem são vocês?
 - Vocês trabalham com Banco de Dados?
 - Já trabalharam com Desenvolvimento de Software?
-- Fiquem à vontade para fazer mais perguntas ou prosseguir com a apresentação. Estou à disposição! 😊
 
 ---
 
