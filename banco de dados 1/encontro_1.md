@@ -16,7 +16,7 @@ Neste curso, exploraremos os conceitos fundamentais de bancos de dados, focando 
 # Avaliação
 
 - **A1**: Projeto Final (5 pontos)
-- **A2**: Trabalhos ao Longo do Semestre
+- **A2**: Trabalhos ao Longo do Semestre  (5 pontos)
 - **Observação**: Detalhes sobre os critérios de avaliação serão fornecidos posteriormente.
 
 ---
@@ -24,7 +24,7 @@ Neste curso, exploraremos os conceitos fundamentais de bancos de dados, focando 
 # Sobre o Professor
 
 - **Nome**: Professor Jonathan Morris Samara
-- **Formação**: Engenharia Elétrica (UTFPR), Mestre em Informática Industrial (UTFPR)
+- **Formação**: Engenharia Elétrica (UFPR), Mestre em Informática Industrial (UTFPR)
 - **Experiência**: 10 anos em Desenvolvimento de Software Web
 - **Contato**: jonathan@up.edu.br (Comunicação apenas por vias institucionais; não respondo WhatsApp)
 
@@ -35,7 +35,6 @@ Neste curso, exploraremos os conceitos fundamentais de bancos de dados, focando 
 - Quem são vocês?
 - Vocês trabalham com Banco de Dados?
 - Já trabalharam com Desenvolvimento de Software?
-- Fiquem à vontade para fazer mais perguntas ou prosseguir com a apresentação. Estou à disposição! 😊
 
 ---
 
