@@ -143,5 +143,27 @@ Neste curso, exploraremos os conceitos fundamentais de bancos de dados, focando 
 - Linguagem DTL e DCL.
 
 ---
+# Bibliografia
+
+1. **DATE, C. J.** Introdução a sistemas de bancos de dados. Rio de Janeiro: Campus, 2004.
+
+2. **ELMASRI, Ramez; NAVATHE, Sham.** Sistemas de banco de dados.
+
+3. **MACHADO, Felipe N. R.** Tecnologia e projeto de Data Warehouse: uma visão multidimensional. 6. ed. São Paulo: Érica, 2013.
+
+---
+# Bibliografia Complementar
+
+1. **CHEN, Peter.** Gerenciando banco de dados: a abordagem entidade-relacionamento para projeto lógico. São Paulo: McGraw-Hill, 1990.
+
+2. **KHOSHAFIAN, Setrag.** Banco de dados orientado a objeto. Rio de Janeiro: Infobook, 1994.
+
+3. **KROENKE, David M; SOARES, Luiz Carlos Gabriel; KURBAN, Amir.** Banco de dados: fundamentos, projeto e implementação. 6. ed. Rio de Janeiro: LTC, 1999.
+
+4. **MACHADO, Felipe Nery Rodrigues.** Tecnologia e projeto de Data Warehouse: uma visão multidimensional. 6. ed. São Paulo: Érica, 2013.
+
+5. **PEREIRA, Silvio do Lago.** Estruturas de dados fundamentais: conceitos e aplicações. 12. ed. São Paulo: Érica, 2008.
+
+6. **YONG, Chu Shao.** Banco de dados: organização sistemas e administração. São Paulo: Atlas, 1984.
 
 Se precisar de mais alguma alteração, é só avisar!
