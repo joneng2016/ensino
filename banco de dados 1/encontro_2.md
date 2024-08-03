@@ -4,6 +4,7 @@
 - Introdução e Estrutura dos Dados
 - Professor Jonathan Morris Samara
 - **Objetivo da Apresentação:** Fornecer uma compreensão abrangente dos conceitos fundamentais de bancos de dados, desde a definição de dados até os diferentes tipos de bancos de dados.
+- **Texto Base** https://github.com/joneng2016/ensino/blob/master/banco%20de%20dados%201/TextoEncontro2.pdf
 
 ## Slide 2: Objetivos da Apresentação
 - **Definir Dados:** Compreender o conceito de dados e suas características.
