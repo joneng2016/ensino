@@ -8,7 +8,7 @@
 
 
 ---
-# 2: Introdução
+# Introdução
 
 - **Arquitetura Ponto-a-Ponto (P2P)**: Modelo de organização de sistemas distribuídos.
 - Cada nó funciona simultaneamente como cliente e servidor.
@@ -17,7 +17,7 @@
 
 ---
 
-#3: Características da Arquitetura Ponto-a-Ponto
+# Características da Arquitetura Ponto-a-Ponto
 
 ### Descentralização:
 - Não há um servidor central.
@@ -86,7 +86,7 @@
 
 ---
 
-#Aplicações Comuns
+# Aplicações Comuns
 
 ### Compartilhamento de Arquivos:
 - Exemplo: BitTorrent utiliza P2P para distribuir arquivos entre usuários.
