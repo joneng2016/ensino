@@ -108,8 +108,48 @@
 
 ---
 
+# Arquitetura Publish-Subscribe
+- A arquitetura **Publish-Subscribe (Pub/Sub)** facilita a comunicação assíncrona em sistemas distribuídos.
+- **Publishers** (publicadores) enviam mensagens sem precisar conhecer os **Subscribers** (assinantes).
+- A comunicação é mediada por um sistema de mensageria (broker), que distribui mensagens para assinantes interessados.
+---
+#  Características da Arquitetura Pub/Sub
+- **Desacoplamento**: Produtores e consumidores são independentes no tempo e no espaço.
+- **Assinatura Baseada em Interesses**: Assinantes recebem apenas mensagens relevantes.
+- **Distribuição Efetiva de Mensagens**: Broker distribui mensagens para os assinantes apropriados.
+- **Escalabilidade**: Facilidade para adicionar novos publicadores ou assinantes.
+---
+#  Funcionamento da Arquitetura Pub/Sub
+- **Publicadores**: Enviam mensagens para tópicos.
+- **Assinantes**: Se registram em tópicos e recebem mensagens correspondentes.
+- **Broker (Mediador)**: Recebe e distribui mensagens entre publicadores e assinantes.
+---
+#  Benefícios da Arquitetura Pub/Sub
+- **Flexibilidade e Modularidade**: Permite fácil adição e remoção de componentes.
+- **Alta Disponibilidade e Resiliência**: Falhas em um componente não afetam o sistema como um todo.
+- **Facilidade na Adição de Novos Componentes**: Integra novos publicadores ou assinantes sem reconfigurações complexas.
+---
+#  Desafios da Arquitetura Pub/Sub
+- **Garantia de Entrega**: Complexidade na entrega exata das mensagens.
+- **Orquestração e Gestão de Mensagens**: Gestão de tópicos e assinaturas pode ser complexa.
+- **Latência**: Atrasos podem ocorrer em sistemas distribuídos globalmente.
+
+---
+#  Aplicações Comuns da Arquitetura Pub/Sub
+- **Sistemas de Notificação**: Atualizações em tempo real para usuários.
+- **Processamento de Dados em Tempo Real**: Ex: Apache Kafka para grandes volumes de dados.
+- **Arquiteturas de Microserviços**: Comunicação entre serviços sem dependências rígidas.
+
+---
+#  Conclusão
+- Arquitetura Pub/Sub oferece modularidade e escalabilidade para sistemas distribuídos.
+- Desafios incluem garantia de entrega e ge
+
+
+---
+
 # Arquitetura de Microserviços
-**Organização e Manutenção de Sistemas Modernos**
+**Microserviços**
 
 ---
 
