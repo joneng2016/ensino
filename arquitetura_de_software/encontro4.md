@@ -322,3 +322,59 @@ app.listen(PORT, () => {
 });
 ```
 ---
+
+
+# Arquitetura Pipes-and-Filters: Processamento Modular de Dados
+
+---
+
+# Introdução
+
+A arquitetura Pipes-and-Filters organiza o processamento de dados em etapas interconectadas. Cada filtro processa dados, enquanto os pipes conectam e transmitem dados entre filtros.
+
+---
+
+# Características
+
+- **Modularidade**: Filtros independentes.
+- **Composição Flexível**: Configuração e reconfiguração de pipelines.
+- **Processamento Sequencial**: Dados fluem através de filtros.
+- **Reutilização de Componentes**: Filtros reutilizáveis em diferentes pipelines.
+
+---
+
+# Funcionamento
+
+- **Filtros**: Realizam operações específicas sobre os dados.
+- **Tubos**: Transportam dados de um filtro para outro e garantem a transmissão correta.
+
+---
+
+# Benefícios
+
+- **Simplicidade e Clareza**: Facilita desenvolvimento e depuração.
+- **Flexibilidade e Extensibilidade**: Adição e remoção de filtros sem impacto significativo.
+- **Manutenção Facilitada**: Atualização independente de filtros.
+- **Paralelismo e Escalabilidade**: Suporta processamento paralelo.
+
+---
+
+# Desafios
+
+- **Overhead de Comunicação**: Pode introduzir overhead, especialmente em sistemas complexos.
+- **Sincronização e Ordenação**: Garantir a sequência correta dos dados.
+- **Complexidade na Coordenação**: Coordenação difícil em pipelines complexos.
+
+---
+
+# Aplicações Comuns
+
+- **Processamento de Linguagem Natural (NLP)**: Tokenização, análise sintática.
+- **Sistemas de Compilação**: Transformação de código-fonte.
+- **Processamento de Dados**: Pipelines ETL para dados.
+
+---
+
+# Conclusão
+
+A arquitetura Pipes-and-Filters proporciona um sistema modular e flexível para processamento de dados, com benefícios significativos em clareza, reutilização e manutenção, apesar de desafios na comunicação e coordenação.
