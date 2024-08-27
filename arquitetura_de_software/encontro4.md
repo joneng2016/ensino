@@ -57,7 +57,7 @@
 
 ---
 
-# Benefícios dos Microserviços
+# Benefícios P2P
 
 ### Resiliência e Confiabilidade:
 - Redes mais resilientes a falhas.
@@ -73,7 +73,7 @@
 
 ---
 
-# Desafios dos Microserviços
+# Desafios P2P
 
 ### Gestão da Segurança:
 - Falta de controle central dificulta a proteção contra ataques maliciosos.
