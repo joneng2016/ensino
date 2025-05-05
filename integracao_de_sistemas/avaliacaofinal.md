@@ -34,7 +34,7 @@ A apresentação deverá ser feita na semana 24/06, haverá 5 minutos por aprese
 
 ## Arquitetura
 
-<img src="figs/imgav41.png" />
+<img src="figs/arquitetura avaliacao final.drawio.png" />
 
 ## Entregar documento final conforme o template (28/06 23:59):
 
