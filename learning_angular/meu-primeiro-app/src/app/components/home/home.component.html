@@ -1,0 +1,13 @@
+<p>Oi do vídeo {{ name }}</p>
+
+<button (click)="changeName()">Mudar nome</button>
+
+@if(hasToShowTitle) {
+    <h1>Meu título</h1>
+} @else {
+    <h1>Não mostrar título</h1>
+}
+
+@for(item of listItens; track item.id) {
+    <p>{{ item.id }}</p>
+}

@@ -3,8 +3,8 @@
 * Criar um sistema de chat usando microserviços, tabelas e apis.
 
 ## Regras gerais
-* Deve ser no máximo em dupla
-* Toda api que tiver que chamar uma outra api, deve fazer isso via classe Client
+* Deve ser realizado em grupos de no mínimo quatro e no máximo seis pessoas.
+* Todas chamada deve ser protegida por cache
 * Lógicas de regra de negócio devem estar em classes de Service
 * Toda api que chamar uma tabela, deve fazer isso via Model 
 
@@ -36,14 +36,24 @@ A apresentação deverá ser feita na semana 24/06, haverá 5 minutos por aprese
 
 <img src="figs/arquitetura avaliacao final.drawio.png" />
 
-## Entregar documento final conforme o template (28/06 23:59):
+## Apresentação/Critério de avaliação
 
-* Entrega 28/06 23:59
-* Trabalho individual
-* Template: 
-    * Fonte 1: https://docs.google.com/document/d/1P-0exnYfZ-t5VKy55pMjh_-_JA8hYw3vk6PB29bZPI0/edit?usp=sharing
-    * Fonte 2: https://github.com/joneng2016/ensino/blob/master/integracao_de_sistemas/documentos/Padr%C3%A3o%20Projeto%20Final.docx
-    
+Defesa de código por meio de uma apresentação que deve conter os seguinte elementos
+
+* Todos os integrantes devem falar (0.5 pontos)
+* O problema deve ser contextualizado (0.5 pontos)
+* Deve haver diagramas que representem a implementação (0.5 pontos)
+* O código deve ser apresentado de forma clara e legível (1.0 ponto)
+* Evidenciar a utilização de Redis (0.25 pontos)
+* Evidenciar a utilização de Fila (0.25 pontos)
+* Evidenciar o consumo de APIs (0.25 pontos)
+* Explicar todo o código (1.25 pontos)
+* As apresentações devem durar entre 15 a 30 minutos (0.25 pontos)
+* Os integrantes devem mostrar o código funcionando (0.25 pontos)
+* __Integrante que faltar, a não ser por motivo válido, terá sua nota zerada__
+
+
+
 ## Estrutura Geral de cada serviço
 
 ### Receive-Send-API
@@ -52,7 +62,8 @@ A apresentação deverá ser feita na semana 24/06, haverá 5 minutos por aprese
     * Armazena a mensagem na fila
     * Endpoit worker que envia os dados da fila para uma tabela de message
     * Consulta a mensagem da tabela de message  
-    * Consulta é feita mediante JWT 
+    * Consulta é feita mediante JWT
+    * Deve ser feita em NodeJS
  
 __POST /message__
 
@@ -234,7 +245,7 @@ return criaFormatoMessage(msgs);
 
 
 ### Auth-API
-
+    * Deve ser feita em PHP
 __GET token__
 
 header
@@ -393,7 +404,7 @@ trivial
 ```
 
 ### Record-API
-
+    * Deve ser feita em Python
 
 __POST__ message 
 
@@ -422,10 +433,3 @@ pseudo-codigo controller
 ```
 trivial
 ```
-
-### Critérios de avaliação
-
-* Apresentação: 1 ponto
-* Todos os serviços codificados: 2 pontos
-* Respeito dos Padrões de Software: 1 pontos
-* Respeito dos Padrões de Documento: 1 ponto
