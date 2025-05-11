@@ -34,7 +34,7 @@ A apresentação deverá ser feita na semana 24/06, haverá 5 minutos por aprese
 
 ## Arquitetura
 
-<img src="figs/arquitetura avaliacao final.drawio.png" />
+<img src="figs/fig2.png" />
 
 ## Apresentação/Critério de avaliação
 
